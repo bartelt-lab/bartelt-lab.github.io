@@ -236,18 +236,22 @@ span.darknav {
 }
 
 .affiliate-logos img {
-    width: 90%;
-    max-width: 150px;
+    width: auto;
+    max-width: 200px;
     min-width: 50px;
+    height: 80px;
     margin: auto;
+    object-fit: contain;
 }
 
 .logos-row {
-  font-size: 0;
-  margin-top: 40px;
+    font-size: 0;
+    margin-top: 40px;
+    display: flex;
+    align-items: center;
 }
 
-.logos-row  > * {
+.logos-row > * {
     float: none;
     display: inline-block;
     font-size: 14px;
@@ -813,7 +817,7 @@ nav#navbar-main li {
 }
 
 .navbar-brand a img {
-    height: 50px;
+    height: 40px;
     display:inline;
     float:inherit;
     padding-right: 10px;
