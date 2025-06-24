@@ -90,47 +90,168 @@
     </section>
 
 
-    <!-- Theses Section -->
-    <section id="process" class="home-section">
-        <div class="container">
+    <section id="seminar" class="home-section">
+    <div class="container">
         <div class="row">
-            <div class="col-xs-12 col-md-3 section-heading">
-            <h1>Topics</h1>
+        <div class="col-xs-12 col-md-3 section-heading">
+            <h1>Seminar Topics</h1>
             <p style="font-size: 0.9em; color: #666;">Summer Semester 2025</p>
-            </div>
-            <div class="col-xs-12 col-md-9">
+        </div>
+        <div class="col-xs-12 col-md-9">
             <div class="course-list-item" itemscope itemtype="http://schema.org/CreativeWork">
-                <div class="row">
+            <div class="row">
                 <div class="col-sm-12">
-                    <div class="course-description">
-                        This semester, we offer the following topics. If not stated otherwise, the topics are open to bachelor and master students.
-                    </div>
+                <div class="course-description">
+                    The following seminar topics are available. Click on each to expand the full description and objectives.
+                </div>
 
-                    <div class="thesis-topics" style="margin-top: 1.5em;">
-                        <ul>
-                        <li>
-                            <strong>Exploring Prompt Loss Weighting in Language Model Fine-Tuning.</strong>  
-                            Supervised fine-tuning is the process of adapting a pre-trained language model to specific tasks by training it on labeled datasets. Traditionally, equal emphasis is placed on both the input prompts and their corresponding outputs (completions) during this training. However, recent research has begun to explore the effects of assigning different weights to prompts and completions—a method known as Prompt Loss Weighting (PLW). Studies have shown that varying PLW can significantly influence model performance, particularly in tasks involving short responses. 
-                            
-                            This seminar aims to further investigate the impact of PLW across a broader range of datasets and domains. You will conduct experiments using an implementation provided by us, systematically adjusting PLW during different stages of training to observe its effects on model outcomes. The objective is to develop a scheduling system that dynamically selects optimal PLW values tailored to specific training scenarios.
-                            
-                            The seminar will begin with an overview of existing research on PLW, highlighting key findings and methodologies. The main focus will then shift to practical experimentation, where you will implement and evaluate various PLW strategies in different contexts. This work aims to provide deeper insights into the effective application of PLW in supervised fine-tuning, contributing to enhanced training practices for language models.
-                        </li>
-                        <li>
-                            <strong>Reinforcement Learning</strong> This seminar teaches the basics of reinforcement learning in a practical way. You will be provided with a Jupyter Notebook that contains the full running code - ready for experiments. In your seminar, you would then adjust a specific parameter of the algorithm, compare the outcomes, and describe the results in a report.  Contrary to a theoretical seminar, the literature review in this work is limited.
-                        </li>
-                        <li>
-                            <strong>Fine-Tuning Segment Anything (SAM)</strong> is a powerful foundation model for segmentation, capable of processing diverse images and videos across domains. However, its performance can vary depending on the application. To address this, recent research has introduced adapter modules to fine-tune SAM for specific tasks or datasets. In this seminar, the student will analyze and compare different adapter strategies for SAM, evaluating their effectiveness in improving segmentation performance across selected use cases.
-                        </li>
+                <style>
+                    details {
+                    margin-bottom: 1.5em;
+                    }
+                    details summary {
+                    cursor: pointer;
+                    position: relative;
+                    padding-left: 1.2em;
+                    font-weight: bold;
+                    line-height: 1.4;
+                    }
+                    details summary::before {
+                    content: '\25B6';
+                    position: absolute;
+                    left: 0;
+                    transition: transform 0.2s ease;
+                    }
+                    details[open] summary::before {
+                    content: '\25BC';
+                    }
+                    details summary:hover {
+                    background: rgba(0, 123, 255, 0.05);
+                    color: #007bff;
+                    }
+                    details summary:hover::before {
+                    color: #007bff;
+                    }
+                </style>
+
+                <div class="thesis-topics" style="margin-top: 1.5em;">
+
+                    <details>
+                    <summary>Approaches to Program Synthesis from Natural Language</summary>
+                    <p>This seminar paper explores how machine learning, particularly neural network-based models, can be used to automatically generate computer programs from natural language descriptions. The central goal of these approaches is to enable users to describe their intent in everyday language and receive executable code in response — without manually writing any code.</p>
+                    <p>The paper focuses on data-driven techniques, including transformer-based language models and fine-tuned models trained on code-text pairs. These models aim to learn the mapping between natural language specifications and source code by generalizing from large-scale training data.</p>
+                    <p>Key aspects discussed include model architectures, input-output representations (e.g., code as text vs. abstract syntax trees), and the role of domain-specific languages (DSLs) in constraining the output space. The paper also examines how these systems are evaluated, the limitations they face (e.g., ambiguity in natural language, lack of precise specifications), and strategies to improve reliability, such as retrieval-based augmentation or user-in-the-loop guidance.</p>
+                    <p>Finally, the seminar will highlight current trends and open research challenges, including improving generalization, handling complex multi-step tasks, and ensuring correctness and security in synthesized programs.</p>
+                    <strong>Objectives:</strong>
+                    <ul>
+                        <li>Summarize modern ML-based and neural approaches to program synthesis from natural language</li>
+                        <li>Analyze the capabilities and limitations of current models</li>
+                        <li>Explore evaluation strategies and benchmark tasks</li>
+                        <li>Identify emerging trends and future research directions</li>
                     </ul>
-                    </div>
-                </div>
+                    </details>
+
+                    <details>
+                    <summary>Inductive vs. Transductive Approaches in Programming-by-Example: A Comparative Study and Evaluation Benchmarks</summary>
+                    <p>Programming-by-Example (PBE) is a paradigm in which a system learns to generate a program purely from a small set of input-output examples, without requiring an explicit description of the task. It aims to mimic how humans can infer a general rule from just a few demonstrations.</p>
+                    <p>Within this domain, two complementary paradigms have emerged: inductive and transductive synthesis. Inductive PBE methods attempt to generate a general program that is consistent with all provided examples. The resulting program can typically be applied to new, unseen inputs. Transductive PBE methods directly predict the output for a specific input using the training examples, without necessarily inferring a reusable program.</p>
+                    <p>This seminar paper provides a comparative analysis of these two paradigms. It investigates the underlying assumptions, strengths, and limitations of inductive and transductive approaches, and discusses when each is more suitable — for instance, generalization vs. specificity, interpretability vs. performance.</p>
+                    <p>The work also presents a curated collection of benchmark datasets that are commonly used to evaluate PBE models. These include both classical and modern datasets designed to test compositional generalization, robustness, domain transfer, and step-wise reasoning. Each benchmark is categorized by domain (e.g., string manipulation, list processing), task type (e.g., single-step, multi-step), and which paradigm(s) it best evaluates.</p>
+                    <strong>Objectives:</strong>
+                    <ul>
+                        <li>Provide a structured comparison of inductive and transductive PBE approaches</li>
+                        <li>Identify typical use cases and limitations for both paradigms</li>
+                        <li>Collect and categorize publicly available benchmarks for fair and comprehensive evaluation</li>
+                        <li>Highlight open research questions and opportunities for hybrid or adaptive approaches</li>
+                    </ul>
+                    </details>
+
+                    <details>
+                    <summary>Real-World Applications of Concept Bottleneck Models Beyond Image Classification</summary>
+                    <p>Concept Bottleneck Models (CBMs) offer a promising framework for interpretable machine learning by predicting high-level, human-understandable concepts as an intermediate step before making final predictions. Unlike standard end-to-end neural networks, CBMs enable direct inspection, validation, and even manual intervention at the concept level—offering a transparent interface between data and decision.</p>
+                    <p>This seminar paper explores how CBMs are being adopted and adapted in real-world domains, with a particular focus on applications beyond conventional image classification tasks (e.g., ImageNet). The student will investigate in which settings CBMs have demonstrated practical value or have been purposefully designed for domain-specific challenges. These include, but are not limited to, applications in medicine (e.g., diagnosis from visual or structured data), science and engineering (e.g., interpretable control or simulations), and safety-critical fields such as autonomous driving or environmental monitoring.</p>
+                    <p>The paper will analyze how domain constraints influence concept design, supervision strategies (manual vs. discovered concepts), and the trade-offs between interpretability and predictive performance. Special attention should be paid to how concepts are defined, how well they align with domain knowledge, and how user-in-the-loop methods leverage CBM explanations for interactive decision-making.</p>
+                    <p>Further aspects may include:</p>
+                    <ul>
+                        <li>The architecture and training pipelines of domain-adapted CBMs</li>
+                        <li>Evaluation metrics that capture both task performance and explanation quality</li>
+                        <li>Examples where CBMs improve trust, robustness, or fairness in decision-making</li>
+                        <li>Known limitations or failure cases of CBMs in practice</li>
+                    </ul>
+                    <strong>Objectives:</strong>
+                    <ul>
+                        <li>Map the current landscape of CBM use in applied settings beyond general-purpose image tasks</li>
+                        <li>Understand how domain-specific needs shape concept design and evaluation</li>
+                        <li>Critically assess the benefits and limitations of CBMs in practical use</li>
+                        <li>Identify opportunities for future work in expanding CBMs into new domains or modalities</li>
+                    </ul>
+                    </details>
+
+                    <details>
+                    <summary>Guiding World Models with Visual Concepts: Enhancing Interpretability in Embodied AI</summary>
+                    <p>In the realm of embodied AI, world models are pivotal for enabling agents to predict and interact with their environments. Traditionally, these models process raw sensory data, which can be opaque and challenging to interpret. Recent advancements suggest that integrating human-understandable visual concepts—such as object categories or spatial relationships—can serve as effective prompts, enhancing both the performance and interpretability of these models.</p>
+                    <p>This seminar explores how visual concepts are employed to guide world models in embodied AI systems. By examining a selection of recent studies, the paper will analyze methods where visual concepts are used to prompt models, facilitating tasks like navigation, manipulation, and decision-making. The focus will be on understanding the mechanisms of this integration and its impact on model transparency and user interaction.</p>
+                    <strong>Objectives:</strong>
+                    <ul>
+                        <li>Review key methodologies that incorporate visual concepts into world models within embodied AI</li>
+                        <li>Analyze the benefits of using visual prompts for enhancing model interpretability and performance</li>
+                        <li>Discuss challenges and limitations associated with this approach</li>
+                        <li>Identify potential directions for future research in concept-guided world modeling</li>
+                    </ul>
+                    </details>
+
+                    <details>
+                    <summary>From Language to Action: Large Language Models as Agents for GUI Automation and Testing</summary>
+                    <p>The emergence of Large Language Models (LLMs) has paved the way for intelligent agents capable of interacting with and automating Graphical User Interfaces (GUIs) across a variety of platforms. In this seminar, the idea is to explore the design, capabilities, and applications of LLM-based GUI agents, with a focus on areas such as automated GUI testing, task automation, and adaptive interaction in novel environments.</p>
+                    <p>For example, the main interest lies in areas such as recent advances in multimodal web agents that can navigate and operate websites, their application for automatically evaluating if requirements are correctly implemented for automatically generated GUIs, autonomous exploration and grounding of GUI actions in unfamiliar settings, and zero-shot, human-like automated GUI testing on mobile devices. By investigating these and related work, interested students will gain insight into the current state, challenges, and future directions of LLM-based GUI agents.</p>
+                    <strong>References:</strong>
+                    <ul>
+                        <li>He et al. (2024). WebVoyager. arXiv:2401.13919</li>
+                        <li>Fan et al. (2025). GUI-Bee. arXiv:2501.13896</li>
+                        <li>Lu et al. (2025). WebGen-Bench. arXiv:2505.03733</li>
+                        <li>Liu et al. (2023). Chatting with GPT-3. arXiv:2305.09434</li>
+                    </ul>
+                    </details>
+
+                    <details>
+                    <summary>Large Language Models in Building Information Modeling</summary>
+                    <p>With the rapid progress of large language models (LLMs) in recent years, their use as domain-specific assistants has become feasible. Building Information Modeling (BIM) systems—whose data are typically exchanged via the Industry Foundation Classes (IFC) schema—encode a building’s geometry, semantics, and lifecycle attributes. When paired with LLMs, BIM workflows gain new capabilities: models can be queried in plain language, regulatory documents can be parsed automatically to check compliance, and copilot agents can help author or modify building elements.</p>
+                    <p>In the seminar thesis, the student first introduces the core concepts underlying transformer-based LLMs and BIM/IFC data structures. A broad literature survey then catalogues and critically assesses existing papers that apply LLMs to BIM tasks such as information retrieval, model generation, and rule checking. Finally, the student identifies open research gaps—including geometric reasoning, hallucination control, benchmarking, and data security—and outlines opportunities for future work.</p>
+                    <strong>References:</strong>
+                    <ul>
+                        <li>Zheng & Fischer (2023). BIM-GPT. arXiv:2304.09333</li>
+                        <li>Du et al. (2024). Text2BIM. arXiv:2408.08054</li>
+                        <li>Pacheco & Berkmiller (2024). BIMConverse</li>
+                        <li>Madireddy et al. (2025). Electronics, 14(11), 2146</li>
+                    </ul>
+                    </details>
+
+                    <details>
+                    <summary>LLM Agents with Growing Toolboxes: Library-Learning Approaches to Skill Acquisition</summary>
+                    <p>Large-language-model (LLM) agents can call external “tools” (APIs, code snippets, software commands) to solve tasks they could not address with text generation alone. Recent research shows that agents can grow these toolboxes autonomously—an ability called library learning. By discovering, refining and re-using self-written tools, an agent gradually builds a personal skill library, improving data efficiency and task breadth without retraining the base model.</p>
+                    <p>This seminar thesis requires the student to:</p>
+                    <ul>
+                        <li>Introduce core concepts: tool-calling LLM agents (planner–executor loops, reflection, memory), library learning (skill abstraction, retention, reuse)</li>
+                        <li>Survey the literature on agents that maintain or expand tool libraries—covering embodied systems (e.g., Minecraft), web-navigation agents, large tool-benchmarks, and frameworks for automatic tool synthesis</li>
+                        <li>Critically assess each work in terms of toolbox construction, evaluation protocol, scalability and safety, then identify research gaps and outline opportunities for future investigation</li>
+                    </ul>
+                    <strong>References:</strong>
+                    <ul>
+                        <li>Wang et al. (2023). Voyager. arXiv:2305.16291</li>
+                        <li>Zhang et al. (2025). SkillWeaver. arXiv:2504.07079</li>
+                        <li>Ocker et al. (2024). Tulip Agent. arXiv:2407.21778</li>
+                    </ul>
+                    </details>
+
+                </div><!-- end .thesis-topics -->
                 </div>
             </div>
             </div>
         </div>
         </div>
+    </div>
     </section>
+
 
 
     <!-- Include the same footer -->
