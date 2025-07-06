@@ -1,69 +1,10 @@
 <!doctype html>
 <html lang=en>
 <head>   
-    <!-- Add favicon -->
-    <link rel="icon" type="image/webp" href="assets/icons/avocade.webp">
-    <link rel="shortcut icon" type="image/webp" href="assets/icons/avocado.png">
-    
-    <!-- Add viewport meta tag for mobile responsiveness -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <!-- Site-specific metadata -->
-    <title>Machine Learning and COgnitive SoftwaRE (CORE)</title>
-    <meta name=theme content="hugo-academic-group">
-    <link rel=canonical href=https://bartelt-lab.github.io/>
-    
-    <!-- Third-party CSS -->
-    <link rel=stylesheet href=https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.6.0/styles/default.min.css>
-    <link rel=stylesheet href=https://cdnjs.cloudflare.com/ajax/libs/github-fork-ribbon-css/0.2.2/gh-fork-ribbon.min.css>
-    <link rel=stylesheet href="//fonts.googleapis.com/css?family=Lato:100,300,400,700|Merriweather:100,400,700|Roboto+Mono">
-    
-    <!-- Site-specific resources -->
-    <link rel=stylesheet type="text/css" href=/css/bootstrap.css>
-    <link rel=stylesheet type="text/css" href=/css/academicons.css>
-    <link rel=stylesheet type="text/css" href=/css/font-awesome.css>
-    <link rel=stylesheet type="text/css" href=/css/hugo-academic-group.css>
-    <link rel=stylesheet type="text/css" href=/css/default.css>
-
+    <!-- Header component will be loaded here -->
+    <div id="header-placeholder"></div>
 </head>
 <body>
-    <div class=home-anchor id=home></div>
-    <nav class="navbar navbar-default navbar-fixed-top" id=navbar-main>
-        <div class=container>
-            <div class=navbar-header>
-                <button type=button class="navbar-toggle collapsed" data-toggle=collapse data-target=.navbar-collapse aria-expanded=false>
-                    <span class=sr-only>Toggle navigation</span>
-                    <span class=icon-bar></span>
-                    <span class=icon-bar></span>
-                    <span class=icon-bar></span>
-                </button>
-                <div class=navbar-brand>
-                    <a class=logo>
-                        <img src="/assets/logos/core_logo_no_text.png" alt="Research group logo">
-                    </a>
-                </div>
-            </div>
-            <div class="collapse navbar-collapse" id=#navbar-collapse-1>
-                <ul class="nav navbar-nav navbar-right">
-                    <li class=nav-item>
-                        <a data-scroll href=#top>News</a>
-                    </li>
-                    <li class=nav-item>
-                        <a data-scroll href=#members>People</a>
-                    </li>
-                    <li class=nav-item>
-                        <a data-scroll href=#publications>Publications</a>
-                    </li>
-                    <li class=nav-item>
-                        <a data-scroll href=#courses>Teaching</a>
-                    </li>
-                    <li class=nav-item>
-                        <a data-scroll href=#contact>Contact</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
     <header class=space-below>
         <div class=header-content>
             <div class=header-content-inner>
@@ -71,6 +12,7 @@
             </div>
         </div>
     </header>
+    
     <section id=overview class=home-section>
         <div class=container>
 
@@ -118,6 +60,23 @@
             </div>
         </div>
     </section>
+
+
+    <section id=publications class=home-section>
+        <div class=container>
+            <div class=row>
+                <div class="col-xs-12 col-md-3 section-heading">
+                    <h1>Publications</h1>
+                    <a href="./publications.html" class="see-all-link">See all publications >></a>
+                </div>
+                <div class="col-xs-12 col-md-9" id="publications-container">
+                    <!-- Publications will be loaded here dynamically -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+
     <section id=members class=home-section>
         <div class=container>
             <div class=row>
@@ -361,423 +320,8 @@
         </div>
     </section>
 
-    <section id=publications class=home-section>
-        <div class=container>
-            <div class=row>
-                <div class="col-xs-12 col-md-3 section-heading">
-                    <h1>Publications</h1>
-                    <a href="./iclr-2025/index.html" class="see-all-link">See all publications >></a>
-                </div>
-                <div class="col-xs-12 col-md-9">
 
-                    <div class=pub-list-item itemscope itemtype=http://schema.org/CreativeWork>
-                        <div class=row>
-                            <div class=col-sm-4>
-                                <a href=#publication/dcbm/>
-                                    <img src="/assets/papers/DCBM.pdf" class=pub-banner itemprop=image>
-                                </a>
-                            </div>
-                            <div class=col-sm-8>
-                                <h3 class=article-title itemprop=name>DCBM: Data-Efficient Visual Concept Bottleneck Models</h3>
-                                <div class=pub-authors itemprop=author>
-                                    <div itemprop=author>
-                                        <span class=author-name>
-                                            Katharina Prasse,
-                                        </span>
-                                        <span class=author-name>
-                                            <a href=#member/knab/>Patrick Knab</a>,
-                                        </span>
-                                        <span class=author-name>
-                                            Sascha Marton,
-                                        </span>
-                                        <span class=author-name>
-                                            <a href=#member/bartelt/>Christian Bartelt</a>,
-                                        </span>
-                                        <span class=author-name>
-                                            Margret Keuper
-                                        </span>
-                                    </div>
-                                </div>
-                                <div class=pub-publication>
-                                    ICML 2025
-                                </div>
-                                <div class=pub-links>
-                                    <a class="btn btn-primary btn-outline btn-xs" href=https://arxiv.org/abs/2412.11576>PDF</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class=pub-list-item itemscope itemtype=http://schema.org/CreativeWork>
-                        <div class=row>
-                            <div class=col-sm-4>
-                                <a href=#publication/ankit2024star/>
-                                    <img src="/assets/papers/naacl2025.png" class=pub-banner itemprop=image>
-                                </a>
-                            </div>
-                            <div class=col-sm-8>
-                                <h3 class=article-title itemprop=name>Large Language Models Share Representations of Latent Grammatical Concepts Across Typologically Diverse Languages</h3>
-                                <div class=pub-authors itemprop=author>
-                                    <div itemprop=author>
-                                        <span class=author-name>
-                                            <a href=#member/brinkmann/>Jannik Brinkmann</a>,
-                                        </span>
-                                        <span class=author-name>
-                                            Chris Wendler,
-                                        </span>
-                                        <span class=author-name>
-                                            <a href=#member/bartelt/>Christian Bartelt</a>,
-                                        </span>
-                                        <span class=author-name>
-                                            Aaron Mueller
-                                        </span>
-                                    </div>
-                                </div>
-                                <div class=pub-publication>
-                                    NAACL 2025
-                                    <div itemprop=datePublished>May, 2025</div>
-                                </div>
-                                <div class=pub-links>
-                                    <a class="btn btn-primary btn-outline btn-xs" href=https://arxiv.org/abs/2501.06346>PDF</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class=pub-list-item itemscope itemtype=http://schema.org/CreativeWork>
-                        <div class=row>
-                            <div class=col-sm-4>
-                                <a href=#publication/zenkner2025shedding/>
-                                    <img src="/assets/papers/accuracy_barplot_deepcoder.svg" class=pub-banner itemprop=image>
-                                </a>
-                            </div>
-                            <div class=col-sm-8>
-                                <h3 class=article-title itemprop=name>Shedding Light on Task Decomposition in Program Synthesis: The Driving Force of the Synthesizer Model</h3>
-                                <div class=pub-authors itemprop=author>
-                                    <div itemprop=author>
-                                        <span class=author-name>
-                                            <a href=#member/zenkner/>Janis Zenkner</a>,
-                                        </span>
-                                        <span class=author-name>
-                                            <a href=#member/sesterhenn/>Tobias Sesterhenn</a>,
-                                        </span>
-                                        <span class=author-name>
-                                            <a href=#member/bartelt/>Christian Bartelt</a>
-                                        </span>
-                                    </div>
-                                </div>
-                                <div class=pub-publication>
-                                    ICLR 2025 (DL4C Workshop)
-                                    <div itemprop=datePublished>March, 2025</div>
-                                </div>
-                                <div class=pub-links>
-                                    <a class="btn btn-primary btn-outline btn-xs" href=https://openreview.net/pdf?id=3vqnyd2Xe8>PDF</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
 
-                    <div class=pub-list-item itemscope itemtype=http://schema.org/CreativeWork>
-                        <div class=row>
-                            <div class=col-sm-4>
-                                <a href=#publication/dseg-lime/>
-                                    <img src="/assets/papers/DSEG.png" class=pub-banner itemprop=image>
-                                </a>
-                            </div>
-                            <div class=col-sm-8>
-                                <h3 class=article-title itemprop=name>Beyond Pixels: Enhancing LIME with Hierarchical Features and Segmentation Foundation Models</h3>
-                                <div class=pub-authors itemprop=author>
-                                    <div itemprop=author>
-                                        <span class=author-name>
-                                            <a href=#member/knab/>Patrick Knab</a>,
-                                        </span>
-                                        <span class=author-name>
-                                            Sascha Marton,
-                                        </span>
-                                        <span class=author-name>
-                                            <a href=#member/bartelt/>Christian Bartelt</a>
-                                        </span>
-                                    </div>
-                                </div>
-                                <div class=pub-publication>
-                                    ICLR 2025 (FM-Wild Workshop)
-                                    <div itemprop=datePublished>March, 2024</div>
-                                </div>
-                                <div class=pub-links>
-                                    <a class="btn btn-primary btn-outline btn-xs" href=https://arxiv.org/abs/2403.13622>PDF</a>
-                                    <a class="btn btn-primary btn-outline btn-xs" href=https://github.com/patrick-knab/DSEG-LIME>Code</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class=pub-list-item itemscope itemtype=http://schema.org/CreativeWork>
-                        <div class=row>
-                            <div class=col-sm-4>
-                                <a href=#publication/lime-survey/>
-                                    <img src="/assets/papers/LIME.png" class=pub-banner itemprop=image>
-                                </a>
-                            </div>
-                            <div class=col-sm-8>
-                                <h3 class=article-title itemprop=name>Which LIME should I trust? Concepts, Challenges, and Solutions</h3>
-                                <div class=pub-authors itemprop=author>
-                                    <div itemprop=author>
-                                        <span class=author-name>
-                                            <a href=#member/knab/>Patrick Knab</a>,
-                                        </span>
-                                        <span class=author-name>
-                                            Sascha Marton,
-                                        </span>
-                                        <span class=author-name>
-                                            Udo Schlegel,
-                                        </span>
-                                        <span class=author-name>
-                                            <a href=#member/bartelt/>Christian Bartelt</a>
-                                        </span>
-                                    </div>
-                                </div>
-                                <div class=pub-publication>
-                                    XAI 2025
-                                    <div itemprop=datePublished>March, 2025</div>
-                                </div>
-                                <div class=pub-links>
-                                    <a class="btn btn-primary btn-outline btn-xs" href=https://patrick-knab.github.io/which-lime-to-trust/>Website</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class=pub-list-item itemscope itemtype=http://schema.org/CreativeWork>
-                        <div class=row>
-                            <div class=col-sm-4>
-                                <a href=#publication/marton2024sympol/>
-                                    <img src="/assets/papers/mitigating.png" class=pub-banner itemprop=image>
-                                </a>
-                            </div>
-                            <div class=col-sm-8>
-                                <h3 class=article-title itemprop=name>Mitigating Information Loss in Tree-Based Reinforcement Learning via Direct Optimization</h3>
-                                <div class=pub-authors itemprop=author>
-                                    <div itemprop=author>
-                                        <span class=author-name>
-                                            Sascha Marton,
-                                        </span>
-                                        <span class=author-name>
-                                            <a href=#member/grams/>Tim Grams</a>,
-                                        </span>
-                                        <span class=author-name>
-                                            Florian Vogt,
-                                        </span>
-                                        <span class=author-name>
-                                            Stefan Lüdtke,
-                                        </span>
-                                        <span class=author-name>
-                                            <a href=#member/bartelt/>Christian Bartelt</a>,
-                                        </span>
-                                        <span class=author-name>
-                                            Heiner Stuckenschmidt
-                                        </span>
-                                    </div>
-                                </div>
-                                <div class=pub-publication>
-                                    ICLR 2025
-                                    <div itemprop=datePublished>April, 2025</div>
-                                </div>
-                                <div class=pub-links>
-                                    <a class="btn btn-primary btn-outline btn-xs" href=https://arxiv.org/pdf/2408.08761>PDF</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class=pub-list-item itemscope itemtype=http://schema.org/CreativeWork>
-                        <div class=row>
-                            <div class=col-sm-4>
-                                <a href=#publication/grams2025disentangling/>
-                                    <img src="/assets/papers/disentangling.png" class=pub-banner itemprop=image>
-                                </a>
-                            </div>
-                            <div class=col-sm-8>
-                                <h3 class=article-title itemprop=name>Disentangling Exploration of Large Language Models by Optimal Exploitation</h3>
-                                <div class=pub-authors itemprop=author>
-                                    <div itemprop=author>
-                                        <span class=author-name>
-                                            <a href=#member/grams/>Tim Grams</a>,
-                                        </span>
-                                        <span class=author-name>
-                                            Patrick Betz,
-                                        </span>
-                                        <span class=author-name>
-                                            <a href=#member/bartelt/>Christian Bartelt</a>
-                                        </span>
-                                    </div>
-                                </div>
-                                <div class=pub-publication>
-                                    arXiv
-                                    <div itemprop=datePublished>April, 2025</div>
-                                </div>
-                                <div class=pub-links>
-                                    <a class="btn btn-primary btn-outline btn-xs" href=https://arxiv.org/pdf/2501.08925>PDF</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class=pub-list-item itemscope itemtype=http://schema.org/CreativeWork>
-                        <div class=row>
-                            <div class=col-sm-4>
-                                <a href=#publication/oesterle2024drama/>
-                                    <img src="/assets/papers/DRAMA.png" class=pub-banner itemprop=image>
-                                </a>
-                            </div>
-                            <div class=col-sm-8>
-                                <h3 class=article-title itemprop=name>DRAMA at the PettingZoo: Dynamically Restricted Action Spaces for Multi-Agent Reinforcement Learning Frameworks</h3>
-                                <div class=pub-authors itemprop=author>
-                                    <div itemprop=author>
-                                        <span class=author-name>
-                                            Michael Oesterle,
-                                        </span>
-                                        <span class=author-name>
-                                            <a href=#member/grams/>Tim Grams</a>,
-                                        </span>
-                                        <span class=author-name>
-                                            <a href=#member/bartelt/>Christian Bartelt</a>
-                                        </span>
-                                    </div>
-                                </div>
-                                <div class=pub-publication>
-                                    HICSS 2024
-                                    <div itemprop=datePublished>January, 2024</div>
-                                </div>
-                                <div class=pub-links>
-                                    <a class="btn btn-primary btn-outline btn-xs" href=https://hdl.handle.net/10125/107324>PDF</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class=pub-list-item itemscope itemtype=http://schema.org/CreativeWork>
-                        <div class=row>
-                            <div class=col-sm-4>
-                                <a href=#publication/oesterle2024raise/>
-                                    <img src="/assets/papers/RAISE.png" class=pub-banner itemprop=image>
-                                </a>
-                            </div>
-                            <div class=col-sm-8>
-                                <h3 class=article-title itemprop=name>RAISE the Bar: Restriction of Action Spaces for Improved Social Welfare and Equity in Traffic Management</h3>
-                                <div class=pub-authors itemprop=author>
-                                    <div itemprop=author>
-                                        <span class=author-name>
-                                            Michael Oesterle,
-                                        </span>
-                                        <span class=author-name>
-                                            <a href=#member/grams/>Tim Grams</a>,
-                                        </span>
-                                        <span class=author-name>
-                                            <a href=#member/bartelt/>Christian Bartelt</a>,
-                                        </span>
-                                        <span class=author-name>
-                                            Heiner Stuckenschmidt
-                                        </span>
-                                    </div>
-                                </div>
-                                <div class=pub-publication>
-                                    AAMAS 2024
-                                    <div itemprop=datePublished>May, 2024</div>
-                                </div>
-                                <div class=pub-links>
-                                    <a class="btn btn-primary btn-outline btn-xs" href=https://www.ifaamas.org/Proceedings/aamas2024/pdfs/p1492.pdf>PDF</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-        </div>
-    </section>
-    <section id=courses class=home-section>
-        <div class=container>
-            <div class=row>
-                <div class="col-xs-12 col-md-3 section-heading">
-                    <h1>Teaching</h1>
-                </div>
-                <div class="col-xs-12 col-md-9">
-                    <div class=course-list-item itemscope itemtype=http://schema.org/CreativeWork>
-                        <div class=row>
-                            <div class=col-sm-12>
-                                <h3 class=article-title itemprop=name>
-                                    <a href=#courses/introduction_ai>"Grundlagen der Kuenstlichen Intelligenz" @ TU Clausthal</a>
-                                </h3>
-                                <div class=course-date>
-                                    <div itemprop=datePublished>Winter Semester 2025-2026</div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class=course-list-item itemscope itemtype=http://schema.org/CreativeWork>
-                        <div class=row>
-                            <div class=col-sm-12>
-                                <h3 class=article-title itemprop=name>
-                                    <a href=#courses/introduction_ai>"Grundlagen der Informatik" @ TU Clausthal (DigiTec)</a>
-                                </h3>
-                                <div class=course-date>
-                                    <div itemprop=datePublished>Winter Semester 2025-2026</div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class=course-list-item itemscope itemtype=http://schema.org/CreativeWork>
-                        <div class=row>
-                            <div class=col-sm-12>
-                                <h3 class=article-title itemprop=name>
-                                    <a href=#courses/research_projects>Research Projects</a>
-                                </h3>
-                                <div class=course-date>
-                                    <div itemprop=datePublished>Summer Semester 2025</div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class=course-list-item itemscope itemtype=http://schema.org/CreativeWork>
-                        <div class=row>
-                            <div class=col-sm-12>
-                                <h3 class=article-title itemprop=name>
-                                    <a href="projects.html"><u>European AI Team Projects</u> <i class="fa fa-external-link" style="font-size: 0.6em; margin-left: 2px; vertical-align: super;" aria-hidden=true></i></a>
-                                </h3>
-                                <div class=course-date>
-                                    <div itemprop=datePublished>Summer Semester 2025</div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class=course-list-item itemscope itemtype=http://schema.org/CreativeWork>
-                        <div class=row>
-                            <div class=col-sm-12>
-                                <h3 class=article-title itemprop=name>
-                                    <a href="seminar.html"><u>Proseminar (Bachelor) & Hauptseminar (Master)</u> <i class="fa fa-external-link" style="font-size: 0.6em; margin-left: 2px; vertical-align: super;" aria-hidden=true></i></a>
-                                </h3>
-                                <div class=course-date>
-                                    <div itemprop=datePublished>Summer Semester 2025</div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class=course-list-item itemscope itemtype=http://schema.org/CreativeWork>
-                        <div class=row>
-                            <div class=col-sm-12>
-                                <h3 class=article-title itemprop=name>
-                                    <a href="theses.html"><u>Bachelor and Master Theses</u> <i class="fa fa-external-link" style="font-size: 0.6em; margin-left: 2px; vertical-align: super;" aria-hidden=true></i></a>
-                                </h3>
-                                <div class=course-date>
-                                    <div itemprop=datePublished>Summer Semester 2025</div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
     <section id=contact class=home-section>
         <div class=container>
             <div class=row>
@@ -804,24 +348,12 @@
             </div>
         </div>
     </section>
-    <footer class=site-footer>
-        <div class=container>
-            <p class=powered-by>
-                Christian Bartelt, 2024 &#183;
-                Partially powered by the 
-                <a href=https://github.com/gcushen/hugo-academic target=_blank>Academic theme</a>
-                 for 
-                <a href=http://gohugo.io target=_blank>Hugo</a>
-                .
-                <span class=pull-right>
-                    <a href=#home id=back_to_top>
-                        <span class=button_icon>
-                            <i class="fa fa-chevron-up fa-2x" aria-hidden=true></i>
-                        </span>
-                    </a>
-                </span>
-            </p>
-        </div>
-    </footer>
+
+    <!-- Footer component will be loaded here -->
+    <div id="footer-placeholder"></div>
+
+    <!-- Load component loader and publications script -->
+    <script src="js/components.js"></script>
+    <script src="js/publications.js"></script>
 </body>
 </html>
