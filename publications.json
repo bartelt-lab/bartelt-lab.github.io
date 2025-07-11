@@ -1,6 +1,22 @@
 {
     "publications": [
       {
+        "id": "sesterhenn2025trove",
+        "title": "A Compute-Matched Re-Evaluation of TroVE on MATH",
+        "authors": [
+          {"name": "Tobias Sesterhenn", "link": "#member/sesterhenn"},
+          {"name": "Ian Berlot-Attwell", "link": null},
+          {"name": "Janis Zenkner", "link": "#member/zenkner"},
+          {"name": "Christian Bartelt", "link": "#member/bartelt"}
+        ],
+        "venue": "ICML 2025 (AI4MATH Workshop)",
+        "date": "2025-07",
+        "image": "/assets/papers/trove.png",
+        "links": [
+          {"text": "PDF", "url": "https://github.com/Tsesterh/TroVE_Compute_Matched/blob/main/TroVE_Compute_Matched.pdf"}
+        ]
+      },
+      {
         "id": "kretzer2025closing",
         "title": "Closing the Loop Between User Stories and GUI Prototypes: An LLM-based Assistant for Cross-Functional Integration in Software Development",
         "authors": [
