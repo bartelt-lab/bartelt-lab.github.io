@@ -5,6 +5,7 @@
     <div id="header-placeholder"></div>
 </head>
 <body>
+
     <!-- Introduction to AI Section -->
     <section id="intro-ai" class="home-section">
         <div class="container">
@@ -175,31 +176,62 @@
                     </details>
 
                     <details>
-                    <summary>Large Language Models for Software Engineering: Current Applications and Future Directions</summary>
-                    <p>Large Language Models (LLMs) have demonstrated remarkable capabilities in understanding and generating code, leading to their widespread adoption in software engineering tasks. This seminar paper explores the current landscape of LLM applications in software engineering, examining both their successes and limitations.</p>
-                    <p>The paper will cover key areas where LLMs are being applied, including code generation, bug detection, code review, documentation generation, and program understanding. It will analyze the effectiveness of different approaches, such as fine-tuning on code datasets, prompt engineering techniques, and integration with development tools.</p>
-                    <p>Special attention will be given to evaluation methodologies, including both automated metrics and human-centric assessments. The paper will also discuss challenges such as hallucination, security concerns, and the need for domain-specific adaptations.</p>
-                    <strong>Objectives:</strong>
+                    <summary>From Language to Action: Large Language Models as Agents for GUI Automation and Testing</summary>
+                    <p>The emergence of Large Language Models (LLMs) has paved the way for intelligent agents capable of interacting with and automating Graphical User Interfaces (GUIs) across a variety of platforms. In this seminar, the idea is to explore the design, capabilities, and applications of LLM-based GUI agents, with a focus on areas such as automated GUI testing, task automation, and adaptive interaction in novel environments.</p>
+                    <p>For example, the main interest lies in areas such as recent advances in multimodal web agents that can navigate and operate websites, their application for automatically evaluating if requirements are correctly implemented for automatically generated GUIs, autonomous exploration and grounding of GUI actions in unfamiliar settings, and zero-shot, human-like automated GUI testing on mobile devices. By investigating these and related work, interested students will gain insight into the current state, challenges, and future directions of LLM-based GUI agents.</p>
+                    <strong>References:</strong>
                     <ul>
-                        <li>Survey current LLM applications in software engineering</li>
-                        <li>Analyze evaluation strategies and benchmarks</li>
-                        <li>Identify challenges and limitations</li>
-                        <li>Explore future research directions and opportunities</li>
+                        <li>He et al. (2024). WebVoyager. arXiv:2401.13919</li>
+                        <li>Fan et al. (2025). GUI-Bee. arXiv:2501.13896</li>
+                        <li>Lu et al. (2025). WebGen-Bench. arXiv:2505.03733</li>
+                        <li>Liu et al. (2023). Chatting with GPT-3. arXiv:2305.09434</li>
                     </ul>
                     </details>
 
-                </div>
+                    <details>
+                    <summary>Large Language Models in Building Information Modeling</summary>
+                    <p>With the rapid progress of large language models (LLMs) in recent years, their use as domain-specific assistants has become feasible. Building Information Modeling (BIM) systems—whose data are typically exchanged via the Industry Foundation Classes (IFC) schema—encode a building’s geometry, semantics, and lifecycle attributes. When paired with LLMs, BIM workflows gain new capabilities: models can be queried in plain language, regulatory documents can be parsed automatically to check compliance, and copilot agents can help author or modify building elements.</p>
+                    <p>In the seminar thesis, the student first introduces the core concepts underlying transformer-based LLMs and BIM/IFC data structures. A broad literature survey then catalogues and critically assesses existing papers that apply LLMs to BIM tasks such as information retrieval, model generation, and rule checking. Finally, the student identifies open research gaps—including geometric reasoning, hallucination control, benchmarking, and data security—and outlines opportunities for future work.</p>
+                    <strong>References:</strong>
+                    <ul>
+                        <li>Zheng & Fischer (2023). BIM-GPT. arXiv:2304.09333</li>
+                        <li>Du et al. (2024). Text2BIM. arXiv:2408.08054</li>
+                        <li>Pacheco & Berkmiller (2024). BIMConverse</li>
+                        <li>Madireddy et al. (2025). Electronics, 14(11), 2146</li>
+                    </ul>
+                    </details>
+
+                    <details>
+                    <summary>LLM Agents with Growing Toolboxes: Library-Learning Approaches to Skill Acquisition</summary>
+                    <p>Large-language-model (LLM) agents can call external “tools” (APIs, code snippets, software commands) to solve tasks they could not address with text generation alone. Recent research shows that agents can grow these toolboxes autonomously—an ability called library learning. By discovering, refining and re-using self-written tools, an agent gradually builds a personal skill library, improving data efficiency and task breadth without retraining the base model.</p>
+                    <p>This seminar thesis requires the student to:</p>
+                    <ul>
+                        <li>Introduce core concepts: tool-calling LLM agents (planner–executor loops, reflection, memory), library learning (skill abstraction, retention, reuse)</li>
+                        <li>Survey the literature on agents that maintain or expand tool libraries—covering embodied systems (e.g., Minecraft), web-navigation agents, large tool-benchmarks, and frameworks for automatic tool synthesis</li>
+                        <li>Critically assess each work in terms of toolbox construction, evaluation protocol, scalability and safety, then identify research gaps and outline opportunities for future investigation</li>
+                    </ul>
+                    <strong>References:</strong>
+                    <ul>
+                        <li>Wang et al. (2023). Voyager. arXiv:2305.16291</li>
+                        <li>Zhang et al. (2025). SkillWeaver. arXiv:2504.07079</li>
+                        <li>Ocker et al. (2024). Tulip Agent. arXiv:2407.21778</li>
+                    </ul>
+                    </details>
+
+                </div><!-- end .thesis-topics -->
                 </div>
             </div>
             </div>
         </div>
         </div>
+    </div>
     </section>
 
     <!-- Footer component will be loaded here -->
     <div id="footer-placeholder"></div>
 
-    <!-- Load component loader -->
+    <!-- Load component loader and publications script -->
     <script src="js/components.js"></script>
+    <script src="js/publications.js"></script>
 </body>
 </html>
