@@ -1,10 +1,36 @@
-<!doctype html>
-<html lang=en>
-<head>   
-    <!-- Header component will be loaded here -->
-    <div id="header-placeholder"></div>
+<!-- Include header -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Teaching - Machine Learning and Cognitive Software</title>
+
+    <!-- Add viewport meta tag for mobile responsiveness -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Add the same CSS imports as index.html -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.6.0/styles/default.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/github-fork-ribbon-css/0.2.2/gh-fork-ribbon.min.css">
+    <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Lato:100,300,400,700|Merriweather:100,400,700|Roboto+Mono">
+    <link rel="stylesheet" type="text/css" href="/css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="/css/academicons.css">
+    <link rel="stylesheet" type="text/css" href="/css/font-awesome.css">
+    <link rel="stylesheet" type="text/css" href="/css/hugo-academic-group.css">
+    <link rel="stylesheet" type="text/css" href="/css/default.css">
 </head>
 <body>
+    <!-- Add back button at the top -->
+    <nav class="navbar navbar-default navbar-fixed-top" id="navbar-main">
+        <div class="container">
+            <div class="collapse navbar-collapse" id=#navbar-collapse-1>
+                <ul class="nav navbar-nav navbar-left">
+                    <li class=nav-item>
+                        <a data-scroll href=index.html style="padding-left: 0;">Back</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
     <!-- Introduction to AI Section -->
     <section id="intro-ai" class="home-section">
         <div class="container">
@@ -172,15 +198,65 @@
                                                     The rapid evolution of software development tools has enabled the automatic generation of user interfaces from low- to high-fidelity prototypes. However, these approaches typically result in front-end prototypes with limited or no backend functionality, restricting their practical applicability. Recent advancements in Large Language Models (LLMs) offer new possibilities for generating not only front-end interfaces but also complete backend systems directly from natural language requirements.
                                                 </p>
                                                 <p>
-                                                    This thesis will evaluate the capabilities and limitations of current LLM-based approaches for generating full-stack applications. You will design and implement a comprehensive evaluation framework that assesses both the functional correctness and the architectural quality of generated applications. The evaluation will cover aspects such as code quality, security, performance, and adherence to best practices.
+                                                    This bachelor thesis explores and evaluates the effectiveness of current LLMs in generating full-stack applications, including both the backend logic and its integration with the generated front end. Given a collection of requirements described in natural language, the approach aims to automatically produce a functional application that satisfies the specified requirements. The evaluation should be conducted using multiple requirements datasets, assessing the generated applications in terms of correctness, completeness, and integration quality. Furthermore, the thesis systematically investigates and categorizes the typical errors made by LLMs during the generation process. This work provides insights into both the capabilities and limitations of LLM-driven full-stack generation, contributing to the advancement of automated software engineering.
+                                                </p>
+                                            </details>
+                                        </li>
+
+                                        <li>
+                                            <details>
+                                                <summary>BugPlus Studio: An Interactive Environment for Designing, Simulating, and Debugging Programs in the BugPlus Programming Language</summary>
+                                                <p>
+                                                    BugPlus is a minimalist, Turing-complete programming language loosely inspired by marble-logic games like Turing Tumble. A bug is a stateful element that can be connected to other bugs and perform simple additions. When an input signal fires, the bug performs a math operation and forwards the result to the next connected bug. Entire programs are directed graphs of bugbits: the first bugbit receives the only external input; all subsequent activity is determined by wiring and internal states.
                                                 </p>
                                                 <p>
-                                                    You will also explore different prompting strategies and their impact on the quality of generated applications. The goal is to provide insights into how LLMs can be effectively used for rapid prototyping and development of complete software systems.
+                                                    Because of its simplicity yet non-trivial behaviour, BugPlus is a compelling playground for teaching digital-logic concepts, exploring program synthesis, and potentially benchmarking reasoning in Large Language Models. Currently, however, no comprehensive tooling exists for humans to lay out, simulate, and debug BugPlus programs.
+                                                </p>
+                                                <p>
+                                                    This thesis aims to design, implement, and evaluate an integrated desktop or web application—BugPlus Studio—that enables users to:
+                                                </p>
+                                                <ul>
+                                                    <li>Place arbitrary numbers of bugs on a canvas</li>
+                                                    <li>Connect bugs with each other using drag-and-drop wiring with real-time validity checks</li>
+                                                    <li>Simulate program execution step-by-step or in continuous mode, visualising state flips, signal propagation, and output traces</li>
+                                                    <li>Load / save / export programs to a machine-readable format (JSON or CSV-encoded adjacency matrix)</li>
+                                                </ul>
+                                            </details>
+                                        </li>
+
+                                        <li>
+                                            <details>
+                                                <summary>P.R.O.G.R.E.S.S. – Procedural Robot Generator & Export System for Simulation</summary>
+                                                <p>
+                                                    P.R.O.G.R.E.S.S. is intended as an Isaac Sim extension for procedurally generating a wide variety of wheeled mobile robots. In this thesis, you will focus on developing the GUI-based extension, with an emphasis on interactive construction and configuration of mobile robots. The core objective is to support the generation of diverse sets of agents to facilitate the training of deep learning models that can generalize across varying robot configurations and control dynamics.
+                                                </p>
+                                                <p>
+                                                    The envisioned system allows users to design SIMPLE mobile robot models by combining basic geometric shapes (e.g., boxes, cylinders) to define the body structure, and to optionally add joints where articulation is desired—such as for arms, grippers, or sensor mounts.
+                                                </p>
+                                                <p>
+                                                    It is expected to support detailed configuration of wheel parameters, including the number of wheels, their placement on the chassis, whether each wheel is steerable or fixed, and relevant control properties (e.g., maximum steering angle).
+                                                </p>
+                                                <p>
+                                                    The system should automatically generate all required files (e.g., USD and URDF), making the robots compatible with Isaac Sim and exportable to other simulators.
+                                                </p>
+                                            </details>
+                                        </li>
+
+
+                                        <li>
+                                            <details>
+                                                <summary>Tracing Circuits: Automated Discovery of Function-Specific Pathways in Small-Scale Transformer Models</summary>
+                                                <p>
+                                                    In this project, the student will first train or fine-tune small Transformer models on a carefully designed suite of synthetic tasks that reveal distinct model behaviours. 
+                                                    Using Anthropic’s newly open-sourced Circuit Tracer framework, they will trace activation pathways from input tokens through attention heads and MLP neurons all the way to the output logits, obtaining ranked causal paths that explain each behaviour. 
+                                                    The student will fuse these path scores into a single “Specificity × Influence” measureand then implement a greedy pruning routine that collapses the network into a minimal, symbolically describable circuit. 
+                                                    To validate their results, they will compare the recovered mechanisms against the ground-truth algorithmic features embedded in the tasks and against insights reported in prior manual studies, quantifying fidelity, compactness and compute efficiency. 
+                                                    The final deliverables will include an open-source notebook suite that wraps Circuit Tracer for small models and a systematic study of how circuit size and interpretability scale with model width, depth and task difficulty, demonstrating a fully automated approach to Transformer interpretability audits.
                                                 </p>
                                             </details>
                                         </li>
                                     </ul>
-                                </div>
+                                </div> <!-- end .thesis-topics -->
                             </div>
                         </div>
                     </div>
@@ -188,6 +264,7 @@
             </div>
         </div>
     </section>
+
 
     <!-- Master Theses Section -->
     <section id="master" class="home-section">
@@ -205,39 +282,149 @@
                                     The following topics are available for Master theses. Click on each topic to expand its full description.
                                 </div>
 
+                                <style>
+                                    /* Remove default list markers */
+                                    .thesis-topics ul,
+                                    .thesis-topics li {
+                                        list-style: none;
+                                        margin: 0;
+                                        padding: 0;
+                                    }
+
+                                    details {
+                                        margin-bottom: 1em;
+                                    }
+
+                                    details summary {
+                                        cursor: pointer;
+                                        position: relative;
+                                        padding-left: 1.2em;
+                                        font-weight: bold;
+                                        line-height: 1.3;
+                                    }
+
+                                    /* ▶ collapsed */
+                                    details summary::before {
+                                        content: '\25B6';
+                                        position: absolute;
+                                        left: 0;
+                                    }
+
+                                    /* ▼ expanded */
+                                    details[open] summary::before {
+                                        content: '\25BC';
+                                    }
+
+                                    /* Hover effects */
+                                    details summary:hover,
+                                    details summary:hover::before {
+                                        color: #007bff;
+                                    }
+                                    details summary:hover {
+                                        background: rgba(0, 123, 255, 0.05);
+                                    }
+                                </style>
+
                                 <div class="thesis-topics" style="margin-top: 1.5em;">
                                     <ul>
                                         <li>
                                             <details>
-                                                <summary>Investigating the Impact of Training Data Distribution on Program Synthesis Model Performance</summary>
+                                                <summary>Explain Reality: Interactive Explanations with Foundation Models on the Meta Quest 3</summary>
                                                 <p>
-                                                    Program synthesis models are typically trained on datasets that may not be representative of real-world usage patterns. This thesis will investigate how the distribution of training data affects model performance and generalization capabilities.
+                                                    The Explain Reality project aims to bridge the gap between state-of-the-art AI and immersive augmented reality by deploying foundation models such as segmentation and object detection directly on the Meta Quest 3. A first prototype has demonstrated the feasibility of running these models on-device and recognizing objects and regions in the user’s environment.
                                                 </p>
                                                 <p>
-                                                    You will analyze existing datasets, identify potential biases, and design experiments to test how different training distributions affect model behavior. This includes investigating the impact of task complexity, domain specificity, and data augmentation strategies.
+                                                    This thesis takes the next step: making the system truly interactive. The goal is to enable users not just to view visual detections, but to actively engage with their surroundings—asking for explanations about specific objects, receiving contextual information, and navigating their environment through natural interaction.
                                                 </p>
                                                 <p>
-                                                    The goal is to provide insights into how to design better training datasets and improve the robustness of program synthesis models for real-world applications.
+                                                    The work includes enhancing the integration between vision models and user input (e.g., gaze, hand tracking, voice), refining the interface for real-time feedback, and implementing intuitive explanation flows. This thesis is ideal for students excited about building real-world applications at the intersection of machine learning, XR (extended reality), and human-AI interaction.
+                                                </p>
+                                                <p>
+                                                    You will work hands-on with the Meta Quest 3, explore the deployment of machine learning models in immersive environments, and develop APIs and interaction modules that bring intelligent systems closer to daily use.
                                                 </p>
                                             </details>
                                         </li>
 
                                         <li>
                                             <details>
-                                                <summary>Multi-Modal Reasoning in Large Language Models for Software Engineering Tasks</summary>
+                                                <summary>Reimagining MotherNet: Generating Interpretable Models for Tabular Data through Hypernetworks</summary>
                                                 <p>
-                                                    Large Language Models have shown remarkable capabilities in understanding and generating code, but their performance on multi-modal software engineering tasks (involving code, documentation, diagrams, and user interfaces) remains largely unexplored.
+                                                    MotherNet is a recent hypernetwork-based approach designed to generate entire neural networks in a single forward pass, enabling efficient in-context learning on new tabular datasets without task-specific gradient descent. While this approach has shown promising results in terms of speed and predictive accuracy, its reliance on standard neural architectures limits interpretability and structural flexibility.
                                                 </p>
                                                 <p>
-                                                    This thesis will investigate how LLMs can be enhanced to handle multi-modal inputs in software engineering contexts. You will explore techniques for integrating different modalities, evaluate model performance on multi-modal tasks, and develop benchmarks for assessing multi-modal reasoning capabilities.
+                                                    This thesis explores an extension of the MotherNet framework to alternative model representations — such as recursive programs, symbolic rules, or decision trees — with the goal of enabling fast, gradient-free generation of interpretable models. We investigate how to reformulate the decoder of the hypernetwork to emit structured programs or tree-based models, and evaluate the trade-offs in performance, interpretability, and generalization.
                                                 </p>
                                                 <p>
-                                                    The research will contribute to understanding how LLMs can be effectively used for complex software engineering tasks that require reasoning across multiple types of information.
+                                                    This work aims to bridge the gap between hypernetwork-driven meta-learning and the demand for transparent, human-readable model outputs in real-world tabular domains.
+                                                </p>
+                                                <p>
+                                                    <strong>Paper:</strong> <a href="https://arxiv.org/abs/2312.08598" target="_blank">https://arxiv.org/abs/2312.08598</a>
+                                                </p>
+                                            </details>
+                                        </li>
+
+                                        <li>
+                                            <details>
+                                                <summary>Automated Requirements Verification Using LLM-Based GUI Agents</summary>
+                                                <p>
+                                                    The increasing complexity of software systems necessitates robust and efficient methods for requirements verification to ensure system reliability and compliance. Recent advancements in Large Language Models (LLMs) have demonstrated significant potential in automating various software engineering tasks. This thesis investigates the design, implementation, and evaluation of LLM-based Graphical User Interface (GUI) agents for the automated verification of software requirements. Given requirements in natural language (e.g., a collection of user stories) and an implemented interactive GUI-based system, the approach should validate the correct implementation of the requirements. Through a series of experiments on multiple requirements datasets, the proposed approach should be assessed in terms of effectiveness and efficiency. This work should contribute to the field by providing a novel framework and practical insights for adopting LLM-driven agents in requirements engineering processes. 
+                                                </p>
+                                            </details>
+                                        </li>
+
+                                        <li>
+                                            <details>
+                                                <summary>Mechanistically Analyzing Large Language Model Agents</summary>
+                                                <p>
+                                                    Large Language Models (LLMs) are increasingly deployed as autonomous agents capable of reasoning, decision-making across multiple steps. However, the internal mechanisms and the extent to which LLMs can perform agent-like behavior—such as maintaining goals, updating beliefs, or planning — remain poorly understood.
+                                                </p>
+                                                <p>
+                                                    In this you will take a closer look at LLMs and mechanistically analyze their decision-making capabilities.
+                                                </p>
+                                                <p>
+                                                    <strong>Example Paper:</strong> <a href="https://arxiv.org/abs/2210.13382" target="_blank">https://arxiv.org/abs/2210.13382</a>
+                                                </p>
+                                            </details>
+                                        </li>
+
+                                        <li>
+                                            <details>
+                                                <summary>Library Learning for Autoformalization</summary>
+                                                <p>
+                                                    Autoformalization aims to translate informal mathematical text into formal proofs, a key challenge in AI-assisted theorem proving. This thesis investigates how existing library learning techniques, e.g. [1,3], impact the effectiveness and efficiency of autoformalization when integrated with Large Language Models and program synthesis. The goal is to evaluate their ability to reuse previously generated lemmas and improve proof success rates. The study will use benchmark datasets like miniF2F and MATH and compare against baselines without library learning. Results will inform the practical value and limitations of library learning [2] in formal reasoning systems.
+                                                </p>
+                                                <p>
+                                                    <strong>Key references:</strong>
+                                                </p>
+                                                <ul>
+                                                    <li>Wang et al. <em>TROVE: Inducing Verifiable and Efficient Toolboxes for Solving Problems with Large Language Models.</em> ICLR 2024</li>
+                                                    <li>Berlot-Attwell et al. <em>LLM Library Learning Fails: A LEGO-Prover Case Study.</em> arXiv:2504.03048, 2025</li>
+                                                    <li>Zhang et al. <em>Consistent Autoformalization for Constructing Mathematical Libraries.</em> EMNLP 2024</li>
+                                                    <li>Liu et al. <em>Rethinking and Improving Autoformalization: Towards a Faithful Metric and a Dependency Retrieval-based Approach.</em> ICLR 2025</li>
+                                                    <li>Li et al. <em>Autoformalize Mathematical Statements by Symbolic Equivalence and Semantic Consistency.</em> NeurIPS 2024</li>
+                                                </ul>
+                                            </details>
+                                        </li>
+
+                                        <li>
+                                            <details>
+                                                <summary>Interpretable Control of Protein Diffusion Models</summary>
+                                                <p>
+                                                    Protein diffusion models can generate high-quality protein structures, but controlling them to produce specific functional features remains challenging. 
+                                                    This thesis proposes to bridge interpretability research with protein design, asking: can we understand how these models work well enough to control them?
+                                                    The central question is whether interpretability techniques can help us understand and control the generation of functional motifs in protein diffusion models. 
+                                                    Rather than treating these models as black boxes, this work will explore how to probe their internal representations and guide generation toward desired outcomes.
+                                                    The research will adapt interpretability methods like causal tracing to work with continuous diffusion processes, investigating whether model internals contain interpretable directions corresponding to functional features like binding sites or catalytic regions. 
+                                                    If such directions exist, we can explore methods for steering generation along these axes while preserving structural integrity.
+                                                    The scope is intentionally broad, as this intersection remains largely unexplored. 
+                                                    Specific techniques will be refined as we understand what's feasible and most insightful.
+                                                    This work aims to establish new methodologies for interpretable protein design, including tools for probing diffusion model internals and techniques for controlled generation of functional motifs. 
+                                                    More broadly, it could demonstrate how interpretability research can move beyond understanding models to improving their practical utility.
                                                 </p>
                                             </details>
                                         </li>
                                     </ul>
-                                </div>
+                                </div> <!-- end .thesis-topics -->
                             </div>
                         </div>
                     </div>
@@ -246,11 +433,27 @@
         </div>
     </section>
 
-    <!-- Footer component will be loaded here -->
-    <div id="footer-placeholder"></div>
 
-    <!-- Load component loader -->
-    <script src="js/components.js"></script>
+
+    <!-- Include the same footer -->
+    <footer class=site-footer>
+        <div class=container>
+            <p class=powered-by>
+                Christian Bartelt, 2024 &#183;
+                Partially powered by the 
+                <a href=https://github.com/gcushen/hugo-academic target=_blank>Academic theme</a>
+                for 
+                <a href=http://gohugo.io target=_blank>Hugo</a>
+                .
+                <span class=pull-right>
+                    <a href=#home id=back_to_top>
+                        <span class=button_icon>
+                            <i class="fa fa-chevron-up fa-2x" aria-hidden=true></i>
+                        </span>
+                    </a>
+                </span>
+            </p>
+        </div>
+    </footer>
 </body>
 </html>
-
