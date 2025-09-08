@@ -142,8 +142,8 @@
           {"name": "Sascha Marton", "link": null},
           {"name": "Christian Bartelt", "link": "#member/bartelt"}
         ],
-        "venue": "ICLR 2025 (FM-Wild Workshop)",
-        "date": "2024-03",
+        "venue": "ECAI 2025",
+        "date": "2025-10",
         "image": "/assets/papers/DSEG.png",
         "links": [
           {"text": "PDF", "url": "https://arxiv.org/abs/2403.13622"},
@@ -192,8 +192,8 @@
           {"name": "Patrick Betz", "link": null},
           {"name": "Christian Bartelt", "link": "#member/bartelt"}
         ],
-        "venue": "arXiv",
-        "date": "2025-04",
+        "venue": "ECAI 2025",
+        "date": "2025-10",
         "image": "/assets/papers/disentangling.png",
         "links": [
           {"text": "PDF", "url": "https://arxiv.org/pdf/2501.08925"}
