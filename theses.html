@@ -127,31 +127,46 @@
                                     <ul>
                                         <li>
                                             <details>
-                                                <summary>Do Domain-Specific Languages (DSLs) Lead to Overfitting in Program Synthesis?</summary>
+                                                <summary>Bob the Language Model: Can LLMs Construct Buildings? (also possible to work on as a research assistant)</summary>
+                                                Recent advances in Large Language Models (LLMs) have enabled them to generate executable code and 3D scene descriptions from natural language. This thesis investigates how well LLMs can translate architectural or spatial descriptions into Building Information Models (BIM). The study will evaluate different prompting strategies, model architectures, and representations (e.g., IFC, USD, or textual scene graphs) to assess the fidelity, consistency, and semantic correctness of generated BIM structures. The goal is to identify the strengths and limitations of LLMs in digital construction workflows and their potential role as assistive tools for architects and engineers.
                                                 <p>
-                                                    Program synthesis is the task of automatically generating computer programs from high-level descriptions, such as input-output examples. This is often called Programming by Example (PBE). To make the search for correct programs easier, many systems use a Domain-Specific Language (DSL), which defines a set of operations the program can use.
+                                                    <strong>Key References:</strong>
                                                 </p>
-                                                <p>
-                                                    In this thesis, you will explore whether using a DSL causes models to overfit to the training tasks. DSLs are usually designed based on the training data, so models might learn how to solve those tasks well but struggle with different, unseen tasks. This becomes a problem if the test tasks require different combinations of operations or are simply harder to express with the given DSL.
-                                                </p>
-                                                <p>
-                                                    You will design controlled experiments to test this hypothesis. One idea is to change the length or complexity of the test tasks to make them different from the training tasks. This will help us understand how well DSL-based models can generalize and whether they are too specialized for the training distribution.
-                                                </p>
+                                                <ul>
+                                                    <li>- Kampelopoulos, Dimitrios, et al. "A review of LLMs and their applications in the architecture, engineering and construction industry." Artificial Intelligence Review 58.8 (2025): 250.</li>
+                                                    <li>- Taiwo, Ridwan, et al. "Generative AI in the Construction Industry: A State-of-the-art Analysis." arXiv preprint arXiv:2402.09939 (2024).</li>
+                                                    <li>- Liu, Yudong, et al. "Dataset and benchmark for as-built BIM reconstruction from real-world point cloud." Automation in Construction 173 (2025): 106096.</li>
+                                                </ul>
+
                                             </details>
                                         </li>
 
                                         <li>
                                             <details>
-                                                <summary>Designing an Evaluation Library for Programming-by-Example Tasks</summary>
+                                                <summary>On the Shoulders of Giants: Putting Peer-Reviewed LLM Papers to the Test (also possible to work on as a research assistant)</summary>
+                                                Reproducibility is fundamental to scientific progress, especially in fast-moving fields like large language models (LLMs) and neural program synthesis. This thesis aims to reproduce the experiments presented in "Program Synthesis via Test-Time Transduction." (Lee, Kang-il, et al. 25) using a different class of LLMs and under a more rigorous and controlled evaluation setup. By systematically replicating their methodology, comparing against their reported baselines, and extending the evaluation to alternative models and metrics, this work will critically assess how general the original results are, what their limitations might be, and how sensitive they are to implementation choices.
                                                 <p>
-                                                    Most current approaches in programming-by-example (PBE)—where a program is learned from input-output examples—are evaluated using a single metric: the number of test tasks they solve correctly (i.e., accuracy). However, this alone does not tell us how good or meaningful the generated programs really are. For example, two models might solve the same task, but with completely different and unequally readable or generalizable solutions.
+                                                    <strong>Key References:</strong>
+                                                </p>
+                                                <ul>
+                                                    <li>- Lee, Kang-il, et al. "Program Synthesis via Test-Time Transduction." arXiv preprint arXiv:2509.17393 (2025).</li>
+                                                </ul>
+                                            </details>
+                                        </li>
+
+                                        <li>
+                                            <details>
+                                                <summary>Beyond Accuracy: Measuring Intelligence in Programming by Example (also possible to work on as a research assistant)</summary>
+                                                <p>
+                                                    Programming by Example (PBE) aims to learn programs that match input–output examples. While many benchmarks report accuracy-based metrics, such measures often fail to capture generalization, compositionality, or partial correctness. This thesis develops and evaluates alternative metrics for assessing PBE models, such as semantic similarity and structural complexity. Using established PBE datasets (e.g., DeepCoder, RobustFill), the study will compare several state-of-the-art models under the proposed metrics to provide a more nuanced understanding of their reasoning ability and robustness.
                                                 </p>
                                                 <p>
-                                                    In this thesis, you will develop an evaluation library that goes beyond accuracy. You will implement both quantitative metrics (e.g., how similar the predicted program is to a reference solution) and qualitative metrics (e.g., how well the solution matches the task intent). The goal is to create a richer evaluation framework for comparing PBE models.
+                                                    <strong>Key References:</strong>
                                                 </p>
-                                                <p>
-                                                    Once the metrics are implemented, you will use them to analyze and compare the behavior of state-of-the-art systems. This will help identify strengths, weaknesses, and differences between models that accuracy alone cannot reveal.
-                                                </p>
+                                                <ul>
+                                                    <li>- Zenkner, Janis, Tobias Sesterhenn, and Christian Bartelt. "Shedding Light in Task Decomposition in Program Synthesis: The Driving Force of the Synthesizer Model." arXiv preprint arXiv:2503.08738 (2025).</li>
+                                                    <li>- Sesterhenn, Tobias, et al. "A Compute-Matched Re-Evaluation of TroVE on MATH." arXiv preprint arXiv:2507.22069 (2025).</li>
+                                                </ul>
                                             </details>
                                         </li>
 
@@ -303,6 +318,23 @@
 
                                 <div class="thesis-topics" style="margin-top: 1.5em;">
                                     <ul>
+
+                                        <li>
+                                            <details>
+                                                <summary>Speak My Language: Softly Guiding LLMs with a DSL</summary>
+                                                <p>
+                                                    Large Language Models excel at open-ended text generation but often struggle with syntactic validity and compositional reasoning in program synthesis. This thesis explores how soft constraints, i.e., gentle guidance through softly restricting the available output tokes, can align LLM outputs with a Domain-Specific Language (DSL) without fully restricting their generative flexibility. The work will evaluate the trade-offs between expressiveness, syntactic correctness, and functional accuracy across different constraint strengths. Results will inform how softly enforcing LLMs on DSLs can improve performance while preserving generative capabilities of LLMs in neural program generation.
+                                                </p>
+                                                <p>
+                                                    <strong>Key References:</strong>
+                                                </p>
+                                                <ul>
+                                                    <li>- Li, Wen-Ding, et al. "Combining induction and transduction for abstract reasoning." arXiv preprint arXiv:2411.02272 (2024).</li>
+                                                    <li>- Li, Wen-Ding. Code Generation With Large Language Models: Inductive Reasoning and Calibration. Diss. Cornell University, 2025.</li>
+                                                </ul>
+                                            </details>
+                                        </li>
+
                                         <li>
                                             <details>
                                                 <summary>Explain Reality: Interactive Explanations with Foundation Models on the Meta Quest 3</summary>
