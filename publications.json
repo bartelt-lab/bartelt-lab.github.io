@@ -1,6 +1,40 @@
 {
     "publications": [
       {
+        "id": "attwell2026is",
+        "title": "Is This LLM Library Learning? Evaluation Must Account For Compute and Behaviour",
+        "authors": [
+          {"name": "Berlot-Attwell, Ian", "link": null},
+          {"name": "Sesterhenn, Tobias", "link": "#member/sesterhenn"},
+          {"name": "Rudzicz, Frank", "link": null},
+          {"name": "Si, Xujie", "link": null}
+        ],
+        "venue": "EACL 2026",
+        "date": "2026-02",
+        "image": "/assets/papers/eacl_paper.png",
+        "links": [
+          {"text": "PDF", "url": ""}
+        ]
+      },
+      {
+        "id": "kirchdorfer2026investigating",
+        "title": "Investigating Uncertainty Weighting for Multi-Task Learning: Insights and Analytical Alternative: L. Kirchdorfer et al.",
+        "authors": [
+          {"name": "Kirchdorfer, Lukas", "link": null},
+          {"name": "Sesterhenn, Tobias", "link": "#member/sesterhenn"},
+          {"name": "Bartelt, Christian", "link": "#member/bartelt"},
+          {"name": "Stuckenschmidt, Heiner", "link": null},
+          {"name": "Schott, Lukas", "link": null},
+          {"name": "K{\"o}hler, Jan M", "link": null}
+        ],
+        "venue": "International Journal of Computer Vision",
+        "date": "2026-02",
+        "image": "/assets/papers/uwso.png",
+        "links": [
+          {"text": "PDF", "url": ""}
+        ]
+      },
+      {
         "id": "sesterhenn2025trove",
         "title": "A Compute-Matched Re-Evaluation of TroVE on MATH",
         "authors": [
