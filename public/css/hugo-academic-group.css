@@ -8,7 +8,7 @@
  *  Core
  **************************************************/
 
- html {
+html {
     box-sizing: border-box;
 }
 
@@ -18,7 +18,7 @@
     box-sizing: inherit;
 }
 
-header{
+header {
     color: #317053;
     background-size: cover;
     text-align: center;
@@ -47,7 +47,7 @@ header{
     margin-bottom: 10px;
     font-size: 16px;
     font-weight: 300;
-    color: rgba(255,255,255,.8);
+    color: rgba(255, 255, 255, .8);
 }
 
 .slogan-column {
@@ -77,12 +77,14 @@ body {
     padding-top: 0;
     counter-reset: captions;
 }
+
 @media screen and (max-width: 1000px) {
     body {
         /* Offset body content by navbar height. */
         margin-top: 51px;
         padding-top: 0;
     }
+
     .home-anchor {
         top: -51px;
     }
@@ -127,11 +129,12 @@ h4 {
     font-weight: 700;
 }
 
-a, a:visited,
+a,
+a:visited,
 h3.article-title a:hover {
     color: #006199;
-    text-decoration:none;
-    transition:color 0.6s ease;
+    text-decoration: none;
+    transition: color 0.6s ease;
 }
 
 a:hover {
@@ -198,6 +201,7 @@ span.darknav {
     background-color: rgb(255, 255, 255);
     padding: 60px 0 60px 0;
 }
+
 @media screen and (max-width: 768px) {
     .home-section {
         padding: 60px 0 60px 0;
@@ -251,7 +255,7 @@ span.darknav {
     align-items: center;
 }
 
-.logos-row > * {
+.logos-row>* {
     float: none;
     display: inline-block;
     font-size: 14px;
@@ -351,17 +355,18 @@ span.darknav {
     font-size: 20px;
 }
 
-ul.ul-int {
-}
-ul.ul-int li .description p{
+ul.ul-int {}
+
+ul.ul-int li .description p {
     font-weight: 350;
     margin-bottom: 5px;
 }
 
 ul.ul-edu {
     list-style: none;
-}h3
-ul.ul-edu li .description p {
+}
+
+h3 ul.ul-edu li .description p {
     margin: 0;
 }
 
@@ -401,7 +406,8 @@ ul.ul-edu li .description p.institution {
 
 .article-metadata {
     margin-bottom: 20px;
-    line-height: 30px; /* Match share bar line height. */
+    line-height: 30px;
+    /* Match share bar line height. */
     font-size: 14px;
     letter-spacing: 0.03em;
 }
@@ -442,7 +448,7 @@ ul.ul-edu li .description p.institution {
 }
 
 .article-style figure.left-inline {
-    float:left;
+    float: left;
     margin: 0px 10px 0px 0px;
 }
 
@@ -471,7 +477,7 @@ ul.ul-edu li .description p.institution {
 
 .article-style img,
 .article-style video {
-    box-shadow: 1px 1px 0px #edefed,-1px -1px 0px #edefed,1px -1px 0px #edefed,-1px 1px 0px #edefed;
+    box-shadow: 1px 1px 0px #edefed, -1px -1px 0px #edefed, 1px -1px 0px #edefed, -1px 1px 0px #edefed;
     margin: 40px auto 40px auto;
     padding-left: 0;
     padding-right: 0;
@@ -502,7 +508,7 @@ ul.ul-edu li .description p.institution {
 }
 
 .video-wrapper {
-	width: 600px;
+    width: 600px;
     max-width: 100%;
     margin: 40px auto 40px auto;
     display: block;
@@ -558,9 +564,9 @@ img.in-text {
 }
 
 @media only screen and (max-width: 768px) {
-  .pub-banner {
-      width: 180px;
-  }
+    .pub-banner {
+        width: 180px;
+    }
 }
 
 .pub .pub-title {
@@ -569,8 +575,9 @@ img.in-text {
 
 .pub .pub-authors {
     font-style: italic;
-    line-height: 30px; /* Match share bar line height. */
-    float:left;
+    line-height: 30px;
+    /* Match share bar line height. */
+    float: left;
 }
 
 .pub .pub-row-heading {
@@ -686,7 +693,7 @@ img.in-text {
  *  Members
  **************************************************/
 
-#members > .container > .row > .col-md-3:nth-child(4n+1) {
+#members>.container>.row>.col-md-3:nth-child(4n+1) {
     clear: both;
 }
 
@@ -722,7 +729,7 @@ footer a#back_to_top i {
 .btn-primary:focus,
 .btn-primary:active,
 .btn-primary.active,
-.open > .dropdown-toggle.btn-primary {
+.open>.dropdown-toggle.btn-primary {
     background: #006199;
 }
 
@@ -775,13 +782,18 @@ footer a#back_to_top i {
  **************************************************/
 
 .navbar {
-    min-height:5% !important;
+    min-height: 5% !important;
 }
 
 .navbar-default {
     background: #fff;
-    -webkit-box-shadow: 0 1px 2px rgba(0,0,0,0.05);
-    box-shadow: 0 1px 2px rgba(0,0,0,0.05);
+    -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+}
+
+/* Fix Tailwind's .collapse utility overriding Bootstrap's navbar-collapse */
+.navbar-collapse.collapse {
+    visibility: visible;
 }
 
 nav#navbar-main li {
@@ -807,24 +819,24 @@ nav#navbar-main li {
     padding-bottom: 5px;
 }
 
-.navbar-brand{
+.navbar-brand {
     font-weight: bold;
     font-size: 1.2em;
     color: #2b2b2b;
 }
 
-.navbar-brand a{
+.navbar-brand a {
     color: #565a5f;
 }
 
-.navbar-brand a.logo{
+.navbar-brand a.logo {
     text-decoration: none;
 }
 
 .navbar-brand a img {
     height: 40px;
-    display:inline;
-    float:inherit;
+    display: inline;
+    float: inherit;
     padding-right: 10px;
     padding-bottom: 5px;
     text-decoration: none;
@@ -834,60 +846,72 @@ nav#navbar-main li {
     .navbar {
         min-height: 50px !important;
     }
+
     .navbar-header {
         float: none;
         min-height: inherit;
     }
+
     .navbar-left,
     .navbar-right {
         float: none !important;
     }
+
     .navbar-toggle {
         display: block;
     }
+
     .navbar-collapse {
         border-top: 1px solid transparent;
-        box-shadow: inset 0 1px 0 rgba(255,255,255,0.1);
+        box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1);
     }
+
     .navbar-fixed-top {
         top: 0;
         border-width: 0 0 1px;
     }
+
     .navbar-static-top {
         top: 0;
         border-width: 0 0 1px;
     }
+
     .navbar-collapse.collapse {
-        display: none!important;
+        display: none !important;
     }
+
     .navbar-nav {
-        float: none!important;
+        float: none !important;
         margin-top: 7.5px;
     }
+
     .navbar-nav>li {
         float: none;
     }
+
     .navbar-nav>li>a {
         padding-top: 10px;
         padding-bottom: 10px;
         line-height: normal;
     }
-    .collapse.in{
-        display:block !important;
+
+    .collapse.in {
+        display: block !important;
     }
+
     .navbar-brand {
         padding-top: 0px;
         padding-bottom: 0px;
-        display:inline;
+        display: inline;
     }
 
     .navbar-brand a.logo {
-         text-decoration: none;
+        text-decoration: none;
     }
 
     .navbar-brand a img {
         height: 30px;
-        display:inline;
+        display: inline;
         /* padding-right: 10px; */
         padding-bottom: 10px;
     }

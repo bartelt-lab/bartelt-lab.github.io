@@ -1,5 +1,6 @@
 import { Link, useLocation } from 'react-router-dom';
 import { useState, useEffect } from 'react';
+import RightSidebar from './RightSidebar';
 
 const CURRENT_YEAR = new Date().getFullYear();
 
@@ -49,10 +50,15 @@ const Layout = ({ children }) => {
                             <li className="nav-item">
                                 <Link to="/join-us">Join Us</Link>
                             </li>
+                            <li className="nav-item">
+                                <Link to="/core-team-projects">CORE Projects</Link>
+                            </li>
                         </ul>
                     </div>
                 </div>
             </nav>
+
+            <RightSidebar />
 
             {children}
 

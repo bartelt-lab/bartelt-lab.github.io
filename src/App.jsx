@@ -2,6 +2,9 @@ import { Routes, Route, useLocation } from 'react-router-dom';
 import { lazy, Suspense, useEffect } from 'react';
 import Layout from './components/Layout';
 import Home from './pages/Home';
+import DynamoProject from './pages/projects/DynamoProject';
+import AI4AIProject from './pages/projects/AI4AIProject';
+import VergabepilotProject from './pages/projects/VergabepilotProject';
 
 // Lazy-load pages the user may not visit — splits them into separate chunks
 const Publications = lazy(() => import('./pages/Publications'));
@@ -10,6 +13,7 @@ const JoinUs = lazy(() => import('./pages/JoinUs'));
 const Projects = lazy(() => import('./pages/Projects'));
 const Seminar = lazy(() => import('./pages/Seminar'));
 const Theses = lazy(() => import('./pages/Theses'));
+const CoreTeamProjects = lazy(() => import('./pages/CoreTeamProjects'));
 
 // Scroll to top on route change
 function ScrollToTop() {
@@ -37,6 +41,10 @@ function App() {
           <Route path="/projects" element={<Projects />} />
           <Route path="/seminar" element={<Seminar />} />
           <Route path="/theses" element={<Theses />} />
+          <Route path="/core-team-projects" element={<CoreTeamProjects />} />
+          <Route path="/core-team-projects/dynamo" element={<DynamoProject />} />
+          <Route path="/core-team-projects/ai4ai" element={<AI4AIProject />} />
+          <Route path="/core-team-projects/vergabepilot" element={<VergabepilotProject />} />
         </Routes>
       </Suspense>
     </Layout>
