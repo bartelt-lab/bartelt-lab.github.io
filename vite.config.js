@@ -3,6 +3,17 @@ import react from '@vitejs/plugin-react'
 
 // https://vite.dev/config/
 export default defineConfig({
-  base: '/bartelt-lab.github.io/',
   plugins: [react()],
+  base: '/',
+  assetsInclude: ['**/*.mp4', '**/*.MP4', '**/*.webm', '**/*.gif'],
+  build: {
+    rollupOptions: {
+      output: {
+        manualChunks: {
+          'react-vendor': ['react', 'react-dom', 'react-router-dom'],
+        },
+      },
+    },
+    chunkSizeWarningLimit: 1000,
+  },
 })
