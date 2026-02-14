@@ -1,0 +1,451 @@
+<!-- Include header -->
+<!DOCTYPE html>
+<html lang="en">
+<head>   
+    <!-- Header component will be loaded here -->
+    <div id="header-placeholder"></div>
+</head>
+<body>
+
+    <!-- Introduction to AI Section -->
+    <section id="intro-ai" class="home-section">
+        <div class="container">
+            <p>
+                We regularly offer bachelor and masterthesis projects for motivated students who are excited to explore research questions in our areas of interest. 
+                Topics vary depending on ongoing projects, but we are always open to new ideas and collaborative exploration. 
+                Below is a selection of current or recent thesis topics to give you a sense of what working with us might look like.
+            </p>
+        </div>
+    </section>
+
+    <!-- Theses Section -->
+    <section id="topics" class="home-section">
+        <div class="container">
+        <div class="row">
+            <div class="col-xs-12 col-md-3 section-heading">
+            <h1>Process</h1>
+            </div>
+            <div class="col-xs-12 col-md-9">
+            <div class="course-list-item" itemscope itemtype="http://schema.org/CreativeWork">
+                <div class="row">
+                <div class="col-sm-12">
+
+                    <div class="thesis-process" style="margin-top: 1.5em;">
+                    <ol>
+                        <li>
+                        <strong>Research Areas:</strong> Topics (subject to availability) are offered in:<br>
+                        Reinforcement Learning, Program Synthesis, Computer Vision, Mechanistic Interpretability, GUI Prototyping, Explainability, Autonomous Driving.<br>
+                        To apply, send your topic of interest, Transcript of Records, and CV to 
+                        <a href="mailto:patrick.knab@tu-clausthal.de">patrick.knab@tu-clausthal.de</a>.
+                        </li>
+                        <li>
+                        <strong>Writing Expose:</strong> If a topic is available, the supervising researcher will help define a concrete topic. You must then submit an expose including:
+                        <ul>
+                            <li>Background & Motivation</li>
+                            <li>Goals of the Thesis</li>
+                            <li>Work Plan (at least 2 pages, excl. references)</li>
+                        </ul>
+                        Once accepted, you may begin your thesis project.
+                        </li>
+                        <li>
+                        <strong>Thesis Project:</strong> Maintain regular meetings with your supervisor and make consistent progress. Use the provided LaTeX template and write in English. Focus your report on your results; use the appendix for supplementary materials.
+                        </li>
+                        <li>
+                        <strong>Submission:</strong> Submit 2 printed copies of your report and 2 CDs/USB sticks with code, data, and installation instructions to the secretary's office (Wallstr. 6, Goslar). Arrange an appointment in advance and clarify additional requirements with your supervisor.
+                        </li>
+                    </ol>
+                    </div>
+    
+                </div>
+                </div>
+            </div>
+            </div>
+        </div>
+        </div>
+    </section>
+
+    <!-- Bachelor Theses Section -->
+    <section id="bachelor" class="home-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12 col-md-3 section-heading">
+                    <h1>Bachelor&nbsp;Theses</h1>
+                    <p style="font-size: 0.9em; color: #666;">Winter Semester 2025</p>
+                </div>
+                <div class="col-xs-12 col-md-9">
+                    <div class="course-list-item" itemscope itemtype="http://schema.org/CreativeWork">
+                        <div class="row">
+                            <div class="col-sm-12">
+                                <div class="course-description">
+                                    The following topics are available for Bachelor theses. Click on each topic to expand its full description.
+                                </div>
+
+                                <style>
+                                    /* Remove the default bullet so only the arrow shows */
+                                    .thesis-topics ul,
+                                    .thesis-topics li {
+                                        list-style: none;
+                                        margin: 0;
+                                        padding: 0;
+                                    }
+
+                                    details {
+                                        margin-bottom: 1em;
+                                    }
+
+                                    details summary {
+                                        cursor: pointer;
+                                        position: relative;
+                                        padding-left: 1.2em;   /* space for the arrow */
+                                        font-weight: bold;
+                                        line-height: 1.3;
+                                    }
+
+                                    /* closed state ▶ */
+                                    details summary::before {
+                                        content: '\25B6';       /* ▶ */
+                                        position: absolute;
+                                        left: 0;
+                                    }
+
+                                    /* open state ▼ */
+                                    details[open] summary::before {
+                                        content: '\25BC';       /* ▼ */
+                                    }
+
+                                    /* optional hover cues */
+                                    details summary:hover,
+                                    details summary:hover::before {
+                                        color: #007bff;
+                                    }
+                                    details summary:hover {
+                                        background: rgba(0, 123, 255, 0.05);
+                                    }
+                                </style>
+
+                                <div class="thesis-topics" style="margin-top: 1.5em;">
+                                    <ul>
+                                        <li>
+                                            <details>
+                                                <summary>Bob the Language Model: Can LLMs Construct Buildings? (also possible to work on as a research assistant)</summary>
+                                                Recent advances in Large Language Models (LLMs) have enabled them to generate executable code and 3D scene descriptions from natural language. This thesis investigates how well LLMs can translate architectural or spatial descriptions into Building Information Models (BIM). The study will evaluate different prompting strategies, model architectures, and representations (e.g., IFC, USD, or textual scene graphs) to assess the fidelity, consistency, and semantic correctness of generated BIM structures. The goal is to identify the strengths and limitations of LLMs in digital construction workflows and their potential role as assistive tools for architects and engineers.
+                                                <p>
+                                                    <strong>Key References:</strong>
+                                                </p>
+                                                <ul>
+                                                    <li>- Kampelopoulos, Dimitrios, et al. "A review of LLMs and their applications in the architecture, engineering and construction industry." Artificial Intelligence Review 58.8 (2025): 250.</li>
+                                                    <li>- Taiwo, Ridwan, et al. "Generative AI in the Construction Industry: A State-of-the-art Analysis." arXiv preprint arXiv:2402.09939 (2024).</li>
+                                                    <li>- Liu, Yudong, et al. "Dataset and benchmark for as-built BIM reconstruction from real-world point cloud." Automation in Construction 173 (2025): 106096.</li>
+                                                </ul>
+
+                                            </details>
+                                        </li>
+
+                                        <li>
+                                            <details>
+                                                <summary>On the Shoulders of Giants: Putting Peer-Reviewed LLM Papers to the Test (also possible to work on as a research assistant)</summary>
+                                                Reproducibility is fundamental to scientific progress, especially in fast-moving fields like large language models (LLMs) and neural program synthesis. This thesis aims to reproduce the experiments presented in "Program Synthesis via Test-Time Transduction." (Lee, Kang-il, et al. 25) using a different class of LLMs and under a more rigorous and controlled evaluation setup. By systematically replicating their methodology, comparing against their reported baselines, and extending the evaluation to alternative models and metrics, this work will critically assess how general the original results are, what their limitations might be, and how sensitive they are to implementation choices.
+                                                <p>
+                                                    <strong>Key References:</strong>
+                                                </p>
+                                                <ul>
+                                                    <li>- Lee, Kang-il, et al. "Program Synthesis via Test-Time Transduction." arXiv preprint arXiv:2509.17393 (2025).</li>
+                                                </ul>
+                                            </details>
+                                        </li>
+
+                                        <li>
+                                            <details>
+                                                <summary>Beyond Accuracy: Measuring Intelligence in Programming by Example (also possible to work on as a research assistant)</summary>
+                                                <p>
+                                                    Programming by Example (PBE) aims to learn programs that match input–output examples. While many benchmarks report accuracy-based metrics, such measures often fail to capture generalization, compositionality, or partial correctness. This thesis develops and evaluates alternative metrics for assessing PBE models, such as semantic similarity and structural complexity. Using established PBE datasets (e.g., DeepCoder, RobustFill), the study will compare several state-of-the-art models under the proposed metrics to provide a more nuanced understanding of their reasoning ability and robustness.
+                                                </p>
+                                                <p>
+                                                    <strong>Key References:</strong>
+                                                </p>
+                                                <ul>
+                                                    <li>- Zenkner, Janis, Tobias Sesterhenn, and Christian Bartelt. "Shedding Light in Task Decomposition in Program Synthesis: The Driving Force of the Synthesizer Model." arXiv preprint arXiv:2503.08738 (2025).</li>
+                                                    <li>- Sesterhenn, Tobias, et al. "A Compute-Matched Re-Evaluation of TroVE on MATH." arXiv preprint arXiv:2507.22069 (2025).</li>
+                                                </ul>
+                                            </details>
+                                        </li>
+
+                                        <li>
+                                            <details>
+                                                <summary>Physical Guards: Enhancing the GUI and Extending Functionality for Smart Home Intrusion Detection</summary>
+                                                <p>
+                                                    Physical Guards is a research-driven smart home project that aggregates sensor data to detect anomalies and potential security threats within residential environments. The current system processes data locally and visualizes alerts through a basic GUI. However, to support broader usability and improve situational awareness, the system requires both a more advanced interface and additional functionalities.
+                                                </p>
+                                                <p>
+                                                    This thesis focuses on improving the existing GUI by making it more intuitive, informative, and responsive to real-time data. Moreover, it aims to transition the current local setup into a secure web application, enabling remote access and monitoring. Students will work on integrating sensor data streams, implementing real-time alert mechanisms, and enhancing the overall user experience. Additional features such as event history, customizable alert settings, and multi-user support can be explored based on interest and scope.
+                                                </p>
+                                            </details>
+                                        </li>
+
+                                        <li>
+                                            <details>
+                                                <summary>Evaluating LLM-Based Generation of Full-Stack Applications from Natural Language Requirements</summary>
+                                                <p>
+                                                    The rapid evolution of software development tools has enabled the automatic generation of user interfaces from low- to high-fidelity prototypes. However, these approaches typically result in front-end prototypes with limited or no backend functionality, restricting their practical applicability. Recent advancements in Large Language Models (LLMs) offer new possibilities for generating not only front-end interfaces but also complete backend systems directly from natural language requirements.
+                                                </p>
+                                                <p>
+                                                    This bachelor thesis explores and evaluates the effectiveness of current LLMs in generating full-stack applications, including both the backend logic and its integration with the generated front end. Given a collection of requirements described in natural language, the approach aims to automatically produce a functional application that satisfies the specified requirements. The evaluation should be conducted using multiple requirements datasets, assessing the generated applications in terms of correctness, completeness, and integration quality. Furthermore, the thesis systematically investigates and categorizes the typical errors made by LLMs during the generation process. This work provides insights into both the capabilities and limitations of LLM-driven full-stack generation, contributing to the advancement of automated software engineering.
+                                                </p>
+                                            </details>
+                                        </li>
+
+                                        <li>
+                                            <details>
+                                                <summary>BugPlus Studio: An Interactive Environment for Designing, Simulating, and Debugging Programs in the BugPlus Programming Language</summary>
+                                                <p>
+                                                    BugPlus is a minimalist, Turing-complete programming language loosely inspired by marble-logic games like Turing Tumble. A bug is a stateful element that can be connected to other bugs and perform simple additions. When an input signal fires, the bug performs a math operation and forwards the result to the next connected bug. Entire programs are directed graphs of bugbits: the first bugbit receives the only external input; all subsequent activity is determined by wiring and internal states.
+                                                </p>
+                                                <p>
+                                                    Because of its simplicity yet non-trivial behaviour, BugPlus is a compelling playground for teaching digital-logic concepts, exploring program synthesis, and potentially benchmarking reasoning in Large Language Models. Currently, however, no comprehensive tooling exists for humans to lay out, simulate, and debug BugPlus programs.
+                                                </p>
+                                                <p>
+                                                    This thesis aims to design, implement, and evaluate an integrated desktop or web application—BugPlus Studio—that enables users to:
+                                                </p>
+                                                <ul>
+                                                    <li>Place arbitrary numbers of bugs on a canvas</li>
+                                                    <li>Connect bugs with each other using drag-and-drop wiring with real-time validity checks</li>
+                                                    <li>Simulate program execution step-by-step or in continuous mode, visualising state flips, signal propagation, and output traces</li>
+                                                    <li>Load / save / export programs to a machine-readable format (JSON or CSV-encoded adjacency matrix)</li>
+                                                </ul>
+                                            </details>
+                                        </li>
+
+                                        <li>
+                                            <details>
+                                                <summary>P.R.O.G.R.E.S.S. – Procedural Robot Generator & Export System for Simulation</summary>
+                                                <p>
+                                                    P.R.O.G.R.E.S.S. is intended as an Isaac Sim extension for procedurally generating a wide variety of wheeled mobile robots. In this thesis, you will focus on developing the GUI-based extension, with an emphasis on interactive construction and configuration of mobile robots. The core objective is to support the generation of diverse sets of agents to facilitate the training of deep learning models that can generalize across varying robot configurations and control dynamics.
+                                                </p>
+                                                <p>
+                                                    The envisioned system allows users to design SIMPLE mobile robot models by combining basic geometric shapes (e.g., boxes, cylinders) to define the body structure, and to optionally add joints where articulation is desired—such as for arms, grippers, or sensor mounts.
+                                                </p>
+                                                <p>
+                                                    It is expected to support detailed configuration of wheel parameters, including the number of wheels, their placement on the chassis, whether each wheel is steerable or fixed, and relevant control properties (e.g., maximum steering angle).
+                                                </p>
+                                                <p>
+                                                    The system should automatically generate all required files (e.g., USD and URDF), making the robots compatible with Isaac Sim and exportable to other simulators.
+                                                </p>
+                                            </details>
+                                        </li>
+
+
+                                        <li>
+                                            <details>
+                                                <summary>Tracing Circuits: Automated Discovery of Function-Specific Pathways in Small-Scale Transformer Models</summary>
+                                                <p>
+                                                    In this project, the student will first train or fine-tune small Transformer models on a carefully designed suite of synthetic tasks that reveal distinct model behaviours. 
+                                                    Using Anthropic’s newly open-sourced Circuit Tracer framework, they will trace activation pathways from input tokens through attention heads and MLP neurons all the way to the output logits, obtaining ranked causal paths that explain each behaviour. 
+                                                    The student will fuse these path scores into a single “Specificity × Influence” measureand then implement a greedy pruning routine that collapses the network into a minimal, symbolically describable circuit. 
+                                                    To validate their results, they will compare the recovered mechanisms against the ground-truth algorithmic features embedded in the tasks and against insights reported in prior manual studies, quantifying fidelity, compactness and compute efficiency. 
+                                                    The final deliverables will include an open-source notebook suite that wraps Circuit Tracer for small models and a systematic study of how circuit size and interpretability scale with model width, depth and task difficulty, demonstrating a fully automated approach to Transformer interpretability audits.
+                                                </p>
+                                            </details>
+                                        </li>
+                                    </ul>
+                                </div> <!-- end .thesis-topics -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Master Theses Section -->
+    <section id="master" class="home-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12 col-md-3 section-heading">
+                    <h1>Master&nbsp;Theses</h1>
+                    <p style="font-size: 0.9em; color: #666;">Winter Semester 2025</p>
+                </div>
+                <div class="col-xs-12 col-md-9">
+                    <div class="course-list-item" itemscope itemtype="http://schema.org/CreativeWork">
+                        <div class="row">
+                            <div class="col-sm-12">
+                                <div class="course-description">
+                                    The following topics are available for Master theses. Click on each topic to expand its full description.
+                                </div>
+
+                                <style>
+                                    /* Remove default list markers */
+                                    .thesis-topics ul,
+                                    .thesis-topics li {
+                                        list-style: none;
+                                        margin: 0;
+                                        padding: 0;
+                                    }
+
+                                    details {
+                                        margin-bottom: 1em;
+                                    }
+
+                                    details summary {
+                                        cursor: pointer;
+                                        position: relative;
+                                        padding-left: 1.2em;
+                                        font-weight: bold;
+                                        line-height: 1.3;
+                                    }
+
+                                    /* ▶ collapsed */
+                                    details summary::before {
+                                        content: '\25B6';
+                                        position: absolute;
+                                        left: 0;
+                                    }
+
+                                    /* ▼ expanded */
+                                    details[open] summary::before {
+                                        content: '\25BC';
+                                    }
+
+                                    /* Hover effects */
+                                    details summary:hover,
+                                    details summary:hover::before {
+                                        color: #007bff;
+                                    }
+                                    details summary:hover {
+                                        background: rgba(0, 123, 255, 0.05);
+                                    }
+                                </style>
+
+                                <div class="thesis-topics" style="margin-top: 1.5em;">
+                                    <ul>
+
+                                        <li>
+                                            <details>
+                                                <summary>Speak My Language: Softly Guiding LLMs with a DSL</summary>
+                                                <p>
+                                                    Large Language Models excel at open-ended text generation but often struggle with syntactic validity and compositional reasoning in program synthesis. This thesis explores how soft constraints, i.e., gentle guidance through softly restricting the available output tokes, can align LLM outputs with a Domain-Specific Language (DSL) without fully restricting their generative flexibility. The work will evaluate the trade-offs between expressiveness, syntactic correctness, and functional accuracy across different constraint strengths. Results will inform how softly enforcing LLMs on DSLs can improve performance while preserving generative capabilities of LLMs in neural program generation.
+                                                </p>
+                                                <p>
+                                                    <strong>Key References:</strong>
+                                                </p>
+                                                <ul>
+                                                    <li>- Li, Wen-Ding, et al. "Combining induction and transduction for abstract reasoning." arXiv preprint arXiv:2411.02272 (2024).</li>
+                                                    <li>- Li, Wen-Ding. Code Generation With Large Language Models: Inductive Reasoning and Calibration. Diss. Cornell University, 2025.</li>
+                                                </ul>
+                                            </details>
+                                        </li>
+
+                                        <li>
+                                            <details>
+                                                <summary>Explain Reality: Interactive Explanations with Foundation Models on the Meta Quest 3</summary>
+                                                <p>
+                                                    The Explain Reality project aims to bridge the gap between state-of-the-art AI and immersive augmented reality by deploying foundation models such as segmentation and object detection directly on the Meta Quest 3. A first prototype has demonstrated the feasibility of running these models on-device and recognizing objects and regions in the user’s environment.
+                                                </p>
+                                                <p>
+                                                    This thesis takes the next step: making the system truly interactive. The goal is to enable users not just to view visual detections, but to actively engage with their surroundings—asking for explanations about specific objects, receiving contextual information, and navigating their environment through natural interaction.
+                                                </p>
+                                                <p>
+                                                    The work includes enhancing the integration between vision models and user input (e.g., gaze, hand tracking, voice), refining the interface for real-time feedback, and implementing intuitive explanation flows. This thesis is ideal for students excited about building real-world applications at the intersection of machine learning, XR (extended reality), and human-AI interaction.
+                                                </p>
+                                                <p>
+                                                    You will work hands-on with the Meta Quest 3, explore the deployment of machine learning models in immersive environments, and develop APIs and interaction modules that bring intelligent systems closer to daily use.
+                                                </p>
+                                            </details>
+                                        </li>
+
+                                        <li>
+                                            <details>
+                                                <summary>Reimagining MotherNet: Generating Interpretable Models for Tabular Data through Hypernetworks</summary>
+                                                <p>
+                                                    MotherNet is a recent hypernetwork-based approach designed to generate entire neural networks in a single forward pass, enabling efficient in-context learning on new tabular datasets without task-specific gradient descent. While this approach has shown promising results in terms of speed and predictive accuracy, its reliance on standard neural architectures limits interpretability and structural flexibility.
+                                                </p>
+                                                <p>
+                                                    This thesis explores an extension of the MotherNet framework to alternative model representations — such as recursive programs, symbolic rules, or decision trees — with the goal of enabling fast, gradient-free generation of interpretable models. We investigate how to reformulate the decoder of the hypernetwork to emit structured programs or tree-based models, and evaluate the trade-offs in performance, interpretability, and generalization.
+                                                </p>
+                                                <p>
+                                                    This work aims to bridge the gap between hypernetwork-driven meta-learning and the demand for transparent, human-readable model outputs in real-world tabular domains.
+                                                </p>
+                                                <p>
+                                                    <strong>Paper:</strong> <a href="https://arxiv.org/abs/2312.08598" target="_blank">https://arxiv.org/abs/2312.08598</a>
+                                                </p>
+                                            </details>
+                                        </li>
+
+                                        <li>
+                                            <details>
+                                                <summary>Automated Requirements Verification Using LLM-Based GUI Agents</summary>
+                                                <p>
+                                                    The increasing complexity of software systems necessitates robust and efficient methods for requirements verification to ensure system reliability and compliance. Recent advancements in Large Language Models (LLMs) have demonstrated significant potential in automating various software engineering tasks. This thesis investigates the design, implementation, and evaluation of LLM-based Graphical User Interface (GUI) agents for the automated verification of software requirements. Given requirements in natural language (e.g., a collection of user stories) and an implemented interactive GUI-based system, the approach should validate the correct implementation of the requirements. Through a series of experiments on multiple requirements datasets, the proposed approach should be assessed in terms of effectiveness and efficiency. This work should contribute to the field by providing a novel framework and practical insights for adopting LLM-driven agents in requirements engineering processes. 
+                                                </p>
+                                            </details>
+                                        </li>
+
+                                        <li>
+                                            <details>
+                                                <summary>Mechanistically Analyzing Large Language Model Agents</summary>
+                                                <p>
+                                                    Large Language Models (LLMs) are increasingly deployed as autonomous agents capable of reasoning, decision-making across multiple steps. However, the internal mechanisms and the extent to which LLMs can perform agent-like behavior—such as maintaining goals, updating beliefs, or planning — remain poorly understood.
+                                                </p>
+                                                <p>
+                                                    In this you will take a closer look at LLMs and mechanistically analyze their decision-making capabilities.
+                                                </p>
+                                                <p>
+                                                    <strong>Example Paper:</strong> <a href="https://arxiv.org/abs/2210.13382" target="_blank">https://arxiv.org/abs/2210.13382</a>
+                                                </p>
+                                            </details>
+                                        </li>
+
+                                        <li>
+                                            <details>
+                                                <summary>Library Learning for Autoformalization</summary>
+                                                <p>
+                                                    Autoformalization aims to translate informal mathematical text into formal proofs, a key challenge in AI-assisted theorem proving. This thesis investigates how existing library learning techniques, e.g. [1,3], impact the effectiveness and efficiency of autoformalization when integrated with Large Language Models and program synthesis. The goal is to evaluate their ability to reuse previously generated lemmas and improve proof success rates. The study will use benchmark datasets like miniF2F and MATH and compare against baselines without library learning. Results will inform the practical value and limitations of library learning [2] in formal reasoning systems.
+                                                </p>
+                                                <p>
+                                                    <strong>Key references:</strong>
+                                                </p>
+                                                <ul>
+                                                    <li>Wang et al. <em>TROVE: Inducing Verifiable and Efficient Toolboxes for Solving Problems with Large Language Models.</em> ICLR 2024</li>
+                                                    <li>Berlot-Attwell et al. <em>LLM Library Learning Fails: A LEGO-Prover Case Study.</em> arXiv:2504.03048, 2025</li>
+                                                    <li>Zhang et al. <em>Consistent Autoformalization for Constructing Mathematical Libraries.</em> EMNLP 2024</li>
+                                                    <li>Liu et al. <em>Rethinking and Improving Autoformalization: Towards a Faithful Metric and a Dependency Retrieval-based Approach.</em> ICLR 2025</li>
+                                                    <li>Li et al. <em>Autoformalize Mathematical Statements by Symbolic Equivalence and Semantic Consistency.</em> NeurIPS 2024</li>
+                                                </ul>
+                                            </details>
+                                        </li>
+
+                                        <li>
+                                            <details>
+                                                <summary>Interpretable Control of Protein Diffusion Models</summary>
+                                                <p>
+                                                    Protein diffusion models can generate high-quality protein structures, but controlling them to produce specific functional features remains challenging. 
+                                                    This thesis proposes to bridge interpretability research with protein design, asking: can we understand how these models work well enough to control them?
+                                                    The central question is whether interpretability techniques can help us understand and control the generation of functional motifs in protein diffusion models. 
+                                                    Rather than treating these models as black boxes, this work will explore how to probe their internal representations and guide generation toward desired outcomes.
+                                                    The research will adapt interpretability methods like causal tracing to work with continuous diffusion processes, investigating whether model internals contain interpretable directions corresponding to functional features like binding sites or catalytic regions. 
+                                                    If such directions exist, we can explore methods for steering generation along these axes while preserving structural integrity.
+                                                    The scope is intentionally broad, as this intersection remains largely unexplored. 
+                                                    Specific techniques will be refined as we understand what's feasible and most insightful.
+                                                    This work aims to establish new methodologies for interpretable protein design, including tools for probing diffusion model internals and techniques for controlled generation of functional motifs. 
+                                                    More broadly, it could demonstrate how interpretability research can move beyond understanding models to improving their practical utility.
+                                                </p>
+                                            </details>
+                                        </li>
+                                    </ul>
+                                </div> <!-- end .thesis-topics -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer component will be loaded here -->
+    <div id="footer-placeholder"></div>
+
+    <!-- Load component loader and publications script -->
+    <script src="js/components.js"></script>
+    <script src="js/publications.js"></script>
+</body>
+</html>
