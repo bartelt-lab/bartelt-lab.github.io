@@ -4,7 +4,7 @@ import react from '@vitejs/plugin-react'
 // https://vite.dev/config/
 export default defineConfig({
   plugins: [react()],
-  base: '/',
+  base: '/bartelt-lab.github.io/',
   assetsInclude: ['**/*.mp4', '**/*.MP4', '**/*.webm', '**/*.gif'],
   build: {
     rollupOptions: {
