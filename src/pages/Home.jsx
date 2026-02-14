@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom';
 import { useState, useEffect } from 'react';
+import assetUrl from '../utils/assetUrl';
 
 const formatDate = (dateString) => {
     const date = new Date(dateString);
@@ -46,12 +47,12 @@ const MemberProfile = ({ name, role, image, link, socials }) => (
 
 const members = [
     {
-        name: 'Christian Bartelt', role: 'Group Leader', image: '/assets/members/bartelt.png',
+        name: 'Christian Bartelt', role: 'Group Leader', image: assetUrl('/assets/members/bartelt.png'),
         link: '#member/bartelt/',
         socials: [{ url: 'mailto:bartelt@isse.tu-clausthal.de', icon: 'fa fa-envelope' }]
     },
     {
-        name: 'Sascha Marton', role: 'Postdoctoral Researcher', image: '/assets/members/marton.jpg',
+        name: 'Sascha Marton', role: 'Postdoctoral Researcher', image: assetUrl('/assets/members/marton.jpg'),
         link: '#member/sascha/',
         socials: [
             { url: 'mailto:sascha.marton@tu-clausthal.de', icon: 'fa fa-envelope' },
@@ -60,7 +61,7 @@ const members = [
         ]
     },
     {
-        name: 'Kristian Kolthoff', role: 'Research Associate', image: '/assets/members/kolthoff.png',
+        name: 'Kristian Kolthoff', role: 'Research Associate', image: assetUrl('/assets/members/kolthoff.png'),
         link: '#member/kolthoff/',
         socials: [
             { url: 'mailto:kristian.kolthoff@tu-clausthal.de', icon: 'fa fa-envelope' },
@@ -68,7 +69,7 @@ const members = [
         ]
     },
     {
-        name: 'Jannik Brinkmann', role: 'Research Associate', image: '/assets/members/brinkmann.png',
+        name: 'Jannik Brinkmann', role: 'Research Associate', image: assetUrl('/assets/members/brinkmann.png'),
         link: '#member/brinkmann/',
         socials: [
             { url: 'mailto:jannik.brinkmann@tu-clausthal.de', icon: 'fa fa-envelope' },
@@ -76,7 +77,7 @@ const members = [
         ]
     },
     {
-        name: 'Janis Zenkner', role: 'Research Associate', image: '/assets/members/zenkner.png',
+        name: 'Janis Zenkner', role: 'Research Associate', image: assetUrl('/assets/members/zenkner.png'),
         link: '#member/zenkner/',
         socials: [
             { url: 'mailto:janis.zenkner@tu-clausthal.de', icon: 'fa fa-envelope' },
@@ -85,14 +86,14 @@ const members = [
         ]
     },
     {
-        name: 'Tim Grams', role: 'Research Associate', image: '/assets/members/grams.png',
+        name: 'Tim Grams', role: 'Research Associate', image: assetUrl('/assets/members/grams.png'),
         link: '#member/grams/',
         socials: [
             { url: 'mailto:tim.grams@tu-clausthal.de', icon: 'fa fa-envelope' }
         ]
     },
     {
-        name: 'Patrick Knab', role: 'Research Associate', image: '/assets/members/knab.jpg',
+        name: 'Patrick Knab', role: 'Research Associate', image: assetUrl('/assets/members/knab.jpg'),
         link: '#member/knab/',
         socials: [
             { url: 'mailto:patrick.knab@tu-clausthal.de', icon: 'fa fa-envelope' },
@@ -101,35 +102,35 @@ const members = [
         ]
     },
     {
-        name: 'Tobias Sesterhenn', role: 'Research Associate', image: '/assets/members/sesterhenn.png',
+        name: 'Tobias Sesterhenn', role: 'Research Associate', image: assetUrl('/assets/members/sesterhenn.png'),
         link: '#member/sesterhenn/',
         socials: [
             { url: 'mailto:tobias.sesterhenn@tu-clausthal.de', icon: 'fa fa-envelope' }
         ]
     },
     {
-        name: 'David Szilagyi', role: 'Research Associate', image: '/assets/members/david.jpg',
+        name: 'David Szilagyi', role: 'Research Associate', image: assetUrl('/assets/members/david.jpg'),
         link: '#member/david/',
         socials: [
             { url: 'mailto:david.szilagyi@tu-clausthal.de', icon: 'fa fa-envelope' }
         ]
     },
     {
-        name: 'Celina Homa', role: 'PhD Student / Mercedes-Benz', image: '/assets/members/celina.jpeg',
+        name: 'Celina Homa', role: 'PhD Student / Mercedes-Benz', image: assetUrl('/assets/members/celina.jpeg'),
         link: '#member/celina',
         socials: [
             { url: 'https://www.linkedin.com/in/celina-homa-b00a29153/', icon: 'fa fa-linkedin' }
         ]
     },
     {
-        name: 'Markus Herre', role: 'Incoming PhD Student', image: '/assets/members/herre.jpeg',
+        name: 'Markus Herre', role: 'Incoming PhD Student', image: assetUrl('/assets/members/herre.jpeg'),
         link: '#member/markus',
         socials: [
             { url: 'https://www.linkedin.com/in/markus-herre/', icon: 'fa fa-linkedin' }
         ]
     },
     {
-        name: 'Paul Koenig', role: 'PhD Student', image: '/assets/members/paul.jpeg',
+        name: 'Paul Koenig', role: 'PhD Student', image: assetUrl('/assets/members/paul.jpeg'),
         link: '#member/paul',
         socials: [
             { url: 'mailto:paul.koenig@tu-clausthal.de', icon: 'fa fa-envelope' },
@@ -137,7 +138,7 @@ const members = [
         ]
     },
     {
-        name: 'Mihail Birsan', role: 'Research Associate', image: '/assets/members/mihail.jpg',
+        name: 'Mihail Birsan', role: 'Research Associate', image: assetUrl('/assets/members/mihail.jpg'),
         link: '#member/mihail',
         socials: [
             { url: 'https://www.linkedin.com/in/mihail-birsan-4b1916207/', icon: 'fa fa-linkedin' }
@@ -151,7 +152,7 @@ const supportStaff = [
         socials: [{ url: 'mailto:mareike.kroeller@tu-clausthal.de', icon: 'fa fa-envelope' }]
     },
     {
-        name: 'Steffen Ottow', role: 'IT Specialist', image: '/assets/members/steffenottow.jpg',
+        name: 'Steffen Ottow', role: 'IT Specialist', image: assetUrl('/assets/members/steffenottow.jpg'),
         socials: [{ url: 'mailto:steffen.ottow@tu-clausthal.de', icon: 'fa fa-envelope' }]
     }
 ];
@@ -161,7 +162,7 @@ const Home = () => {
     const [loading, setLoading] = useState(true);
 
     useEffect(() => {
-        fetch('/publications.json')
+        fetch(assetUrl('/publications.json'))
             .then(res => res.json())
             .then(data => {
                 const sorted = data.publications.sort((a, b) => new Date(b.date) - new Date(a.date));
@@ -195,12 +196,12 @@ const Home = () => {
                         <div className="col-xs-2 affiliate-logos"></div>
                         <div className="col-xs-4 affiliate-logos">
                             <a href="https://www.tu-clausthal.de">
-                                <img className="affiliate-logos" src="/assets/logos/tu_clausthal.jpeg" alt="logo" />
+                                <img className="affiliate-logos" src={assetUrl("/assets/logos/tu_clausthal.jpeg")} alt="logo" />
                             </a>
                         </div>
                         <div className="col-xs-4 affiliate-logos">
                             <a href="https://www.digit-research.de">
-                                <img className="affiliate-logos" src="/assets/logos/digit.jpg" alt="logo" />
+                                <img className="affiliate-logos" src={assetUrl("/assets/logos/digit.jpg")} alt="logo" />
                             </a>
                         </div>
                         <div className="col-xs-2 affiliate-logos"></div>
@@ -214,12 +215,12 @@ const Home = () => {
                         <div className="col-xs-2 affiliate-logos"></div>
                         <div className="col-xs-4 affiliate-logos">
                             <a href="https://www.uni-mannheim.de">
-                                <img className="affiliate-logos" src="/assets/logos/uma.png" alt="University of Mannheim" />
+                                <img className="affiliate-logos" src={assetUrl("/assets/logos/uma.png")} alt="University of Mannheim" />
                             </a>
                         </div>
                         <div className="col-xs-4 affiliate-logos">
                             <a href="https://www.diepsam.uni-rostock.de/en/">
-                                <img className="affiliate-logos" src="/assets/logos/universitaet-rostock.png" alt="University of Rostock" />
+                                <img className="affiliate-logos" src={assetUrl("/assets/logos/universitaet-rostock.png")} alt="University of Rostock" />
                             </a>
                         </div>
                         <div className="col-xs-2 affiliate-logos"></div>

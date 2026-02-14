@@ -1,4 +1,5 @@
 import ProjectLayout from '../../components/ProjectLayout';
+import assetUrl from '../../utils/assetUrl';
 
 const DynamoProject = () => {
     const requirements = [
@@ -30,12 +31,12 @@ const DynamoProject = () => {
             subtitle="Dynamic Navigation & Autonomous Manipulation Operations"
             status="Active"
             tags={["Robotic Manipulation", "Simulation", "Embodied AI"]}
-            heroImage="/assets/images/dynamo/hero.jpeg"
+            heroImage={assetUrl("/assets/images/dynamo/hero.jpeg")}
             overview="DyNAMO is an ambitious, high-complexity research initiative where students tackle undefined problems in robotics — not follow a fixed tutorial. We physically decouple the Mobile Base (Logistics) from the Manipulator (Dexterity), allowing sub-teams to develop against agreed-upon interfaces. Operating on an agile 2-week sprint cycle with a simulation-first approach using NVIDIA Isaac Lab, teams iterate rapidly and safely before deploying to real hardware."
             features={features}
             requirements={requirements}
             offerings={offerings}
-            downloadUrl="/assets/project_descriptions/DyNAMOv1.2.pdf"
+            downloadUrl={assetUrl("/assets/project_descriptions/DyNAMOv1.2.pdf")}
         >
             {/* Scientific Approach - shown first */}
             <div id="science" className="py-12 border-t border-gray-100">
@@ -62,7 +63,7 @@ const DynamoProject = () => {
 
                     <div className="relative rounded-2xl overflow-hidden shadow-2xl border border-gray-100 group">
                         <img
-                            src="/assets/images/dynamo/goal.png"
+                            src={assetUrl("/assets/images/dynamo/goal.png")}
                             alt="Dynamo Goal Illustration"
                             className="w-full h-auto transform transition-transform duration-700 group-hover:scale-105"
                         />
@@ -83,7 +84,7 @@ const DynamoProject = () => {
                     <div className="max-w-5xl mx-auto shadow-2xl rounded-2xl overflow-hidden bg-white border border-gray-100 relative group">
                         <div className="absolute inset-0 bg-blue-900/5 group-hover:bg-transparent transition-colors duration-300 pointer-events-none"></div>
                         <img
-                            src="/assets/images/dynamo/architecture.png"
+                            src={assetUrl("/assets/images/dynamo/architecture.png")}
                             alt="Dynamo Visual Abstract"
                             className="w-full h-auto"
                         />

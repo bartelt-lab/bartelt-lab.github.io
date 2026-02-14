@@ -1,4 +1,5 @@
 import ProjectLayout from '../../components/ProjectLayout';
+import assetUrl from '../../utils/assetUrl';
 
 const VergabepilotProject = () => {
     const requirements = [
@@ -29,12 +30,12 @@ const VergabepilotProject = () => {
             subtitle="LLM-based Tender Scraping for State-of-the-Art Tender Search"
             status="Active"
             tags={["NLP", "Web Automation", "Startup"]}
-            heroImage="/assets/images/vergabepilot/hero.png"
+            heroImage={assetUrl("/assets/images/vergabepilot/hero.png")}
             overview="Vergabepilot.AI is an emerging German startup tackling the fragility and high maintenance costs of traditional web scrapers used to collect public tender documents. Instead of manually developing scrapers for each tender platform, we build an automated, LLM-driven engineering loop that can generate, validate, and continuously improve scrapers — transforming scraper creation from a one-off coding task into a reproducible, self-improving process."
             features={features}
             requirements={requirements}
             offerings={offerings}
-            downloadUrl="/assets/project_descriptions/Vergabepilot_AIv1.1.pdf"
+            downloadUrl={assetUrl("/assets/project_descriptions/Vergabepilot_AIv1.1.pdf")}
         >
             {/* The Engineering Loop */}
             <div className="py-12 border-t border-gray-100">

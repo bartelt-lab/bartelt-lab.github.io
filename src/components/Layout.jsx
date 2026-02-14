@@ -1,6 +1,7 @@
 import { Link, useLocation } from 'react-router-dom';
 import { useState, useEffect } from 'react';
 import RightSidebar from './RightSidebar';
+import assetUrl from '../utils/assetUrl';
 
 const CURRENT_YEAR = new Date().getFullYear();
 
@@ -32,7 +33,7 @@ const Layout = ({ children }) => {
                         </button>
                         <div className="navbar-brand">
                             <Link className="logo" to="/">
-                                <img src="/assets/logos/core_logo_no_text.png" alt="Research group logo" />
+                                <img src={assetUrl("/assets/logos/core_logo_no_text.png")} alt="Research group logo" />
                             </Link>
                         </div>
                     </div>

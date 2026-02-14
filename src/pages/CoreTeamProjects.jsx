@@ -1,6 +1,7 @@
 import { motion } from 'framer-motion';
 import ProjectCard from '../components/ProjectCard';
 import ProjectRow from '../components/ProjectRow';
+import assetUrl from '../utils/assetUrl';
 
 const activeProjects = [
     {
@@ -8,7 +9,7 @@ const activeProjects = [
         title: "DyNAMO",
         tag: "Cognitive Systems / RL",
         status: "Active",
-        image: "/assets/images/dynamo/hero.jpeg",
+        image: assetUrl("/assets/images/dynamo/hero.jpeg"),
         description: "Developing a cognitive framework for dynamic manipulation and reasoning in unstructured environments. Bridging perception and action with advanced RL.",
         link: "/core-team-projects/dynamo"
     },
@@ -17,7 +18,7 @@ const activeProjects = [
         title: "AI4AI",
         tag: "Computer Vision / LLMs",
         status: "Active",
-        image: "/assets/images/ai4ai/hero.png",
+        image: assetUrl("/assets/images/ai4ai/hero.png"),
         description: "From Image to Model using AI-assisted AI. Transitioning static images into editable engineering models (CAD, BIM, TikZ) by leveraging LLMs and Computer Vision.",
         link: "/core-team-projects/ai4ai"
     },
@@ -26,7 +27,7 @@ const activeProjects = [
         title: "Vergabepilot.AI",
         tag: "LLMs / Web Automation",
         status: "Active",
-        image: "/assets/images/vergabepilot/hero.png",
+        image: assetUrl("/assets/images/vergabepilot/hero.png"),
         description: "LLM-based tender scraping for state-of-the-art tender search. Automating web scraper generation, validation, and improvement using LLMs and MLLM agents.",
         link: "/core-team-projects/vergabepilot"
     }
@@ -47,7 +48,7 @@ const archiveProjects = [
         title: "Traffic Network Builder",
         tag: "Simulation Tools",
         status: "Archive",
-        video: "/assets/videos/TrafficNetworkBuilder.mp4",
+        video: assetUrl("/assets/videos/TrafficNetworkBuilder.mp4"),
         description: "Interactive tools for constructing and simulating complex traffic networks to rigorously test autonomous systems in virtual environments.",
         link: "#"
     }
@@ -190,7 +191,7 @@ const CoreTeamProjects = () => {
                                 </span>
                             </div>
                             <video
-                                src="/assets/videos/CTP_Showcase.mp4"
+                                src={assetUrl("/assets/videos/CTP_Showcase.mp4")}
                                 className="w-full h-full object-cover"
                                 autoPlay
                                 muted
@@ -214,7 +215,7 @@ const CoreTeamProjects = () => {
                                 </span>
                             </div>
                             <video
-                                src="/assets/videos/CTP_Showcase_2022.mp4"
+                                src={assetUrl("/assets/videos/CTP_Showcase_2022.mp4")}
                                 className="w-full h-full object-cover grayscale transition-all duration-500 group-hover:grayscale-0"
                                 autoPlay
                                 muted

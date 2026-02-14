@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react';
+import assetUrl from '../utils/assetUrl';
 
 const PublicationItem = ({ pub }) => {
     const formatDate = (dateString) => {
@@ -54,7 +55,7 @@ const Publications = () => {
     const [loading, setLoading] = useState(true);
 
     useEffect(() => {
-        fetch('/publications.json')
+        fetch(assetUrl('/publications.json'))
             .then(res => res.json())
             .then(data => {
                 const sorted = data.publications.sort((a, b) => new Date(b.date) - new Date(a.date));
