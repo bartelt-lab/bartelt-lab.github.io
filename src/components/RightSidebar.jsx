@@ -123,8 +123,7 @@ const RightSidebar = () => {
                     animate={{ opacity: 1 }}
                     exit={{ opacity: 0 }}
                     transition={{ duration: 0.5 }}
-                    className="fixed top-0 right-0 h-full z-40 flex flex-col items-end justify-center pointer-events-none"
-                    style={{ width: '200px' }}
+                    className="fixed top-0 right-0 h-full w-12 lg:w-48 z-40 flex flex-col items-end justify-center pointer-events-none"
                 >
                     <div className="flex flex-col items-center space-y-6 pointer-events-auto mr-4">
                         <div className={`w-px h-12 ${lineColor} transition-colors duration-300`}></div>
@@ -133,8 +132,7 @@ const RightSidebar = () => {
                             <div key={section.id} className="relative group flex items-center">
                                 {/* Label - Always visible on desktop */}
                                 <span
-                                    style={{ display: 'block' }}
-                                    className={`text-xs font-bold uppercase tracking-widest transition-all duration-200 whitespace-nowrap mr-3
+                                    className={`hidden lg:block text-xs font-bold uppercase tracking-widest transition-all duration-200 whitespace-nowrap mr-3
                                     ${activeSection === section.id
                                             ? 'opacity-100 text-blue-600'
                                             : 'opacity-50 text-gray-500 group-hover:opacity-80'

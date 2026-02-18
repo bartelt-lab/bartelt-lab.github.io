@@ -77,7 +77,7 @@ const CoreTeamProjects = () => {
     return (
         <div className="bg-gray-50 min-h-screen font-sans">
             {/* Hero Section */}
-            <section id="hero" className="relative bg-white pt-32 pb-20 overflow-hidden">
+            <section id="hero" className="relative bg-white pt-24 pb-12 overflow-hidden">
                 <div className="container mx-auto px-4 md:px-8">
                     <div className="flex flex-col lg:flex-row items-center gap-12 text-center lg:text-left">
 
@@ -159,20 +159,20 @@ const CoreTeamProjects = () => {
             </section>
 
             {/* Life at CORE / Experience Section */}
-            <section className="py-20 bg-gray-900 text-white overflow-hidden">
+            <section className="py-16 bg-gray-900 text-white overflow-hidden">
                 <div className="container mx-auto px-4 md:px-8">
                     <motion.div
                         initial={{ opacity: 0, y: 20 }}
                         whileInView={{ opacity: 1, y: 0 }}
                         viewport={{ once: true }}
                         transition={{ duration: 0.8 }}
-                        className="text-center mb-16"
+                        className="text-center mb-12"
                     >
-                        <h2 className="text-sm font-bold tracking-[0.2em] text-blue-400 uppercase mb-4">
+                        <h2 className="text-5xl md:text-7xl lg:text-8xl font-black uppercase tracking-[0.2em] text-white mb-6">
                             The Experience
                         </h2>
-                        <h3 className="text-4xl md:text-6xl font-black italic tracking-tighter text-transparent bg-clip-text bg-gradient-to-r from-white via-gray-200 to-gray-400">
-                            "WORK HARD 💪. PLAY HARD 🏀."
+                        <h3 className="text-2xl md:text-4xl font-light italic tracking-[0.1em] text-gray-400 uppercase">
+                            WORK HARD 💪 PLAY HARD 🏀
                         </h3>
                     </motion.div>
 
@@ -229,12 +229,12 @@ const CoreTeamProjects = () => {
             </section>
 
             {/* Projects Grid Section - Active */}
-            <section id="active-projects" className="py-24 bg-gradient-to-b from-gray-50 to-white relative overflow-hidden">
+            <section id="active-projects" className="py-16 bg-gradient-to-b from-gray-50 to-white relative overflow-hidden">
                 {/* Background Decor */}
                 <div className="absolute top-0 right-0 -mr-20 -mt-20 w-96 h-96 bg-blue-100 rounded-full blur-3xl opacity-30 pointer-events-none"></div>
 
                 <div className="container mx-auto px-4 md:px-8 relative z-10">
-                    <div className="mb-16 text-center max-w-3xl mx-auto">
+                    <div className="mb-12 text-center max-w-3xl mx-auto">
                         <span className="text-blue-600 font-bold tracking-widest uppercase text-sm mb-2 block">
                             Current Focus
                         </span>
@@ -264,21 +264,21 @@ const CoreTeamProjects = () => {
             </section>
 
             {/* Projects Grid Section - Archive */}
-            <section id="archive" className="py-32 bg-white border-t border-gray-100">
+            <section id="archive" className="py-20 bg-white border-t border-gray-100">
                 <div className="container mx-auto px-4 md:px-8">
-                    <div className="mb-20">
+                    <div className="mb-12">
                         <h2 className="text-3xl font-bold text-gray-400 mb-4 uppercase tracking-wider">Project Archive</h2>
                         <div className="h-px w-full bg-gray-200"></div>
                     </div>
 
-                    <div className="space-y-24">
+                    <div className="space-y-12">
                         {archiveProjects.map((project, index) => (
                             <ProjectRow key={project.id} project={project} index={index} />
                         ))}
                     </div>
 
                     {/* Previous University Projects */}
-                    <div className="mt-24 pt-16 border-t border-gray-200">
+                    <div className="mt-16 pt-12 border-t border-gray-200">
                         <div className="max-w-3xl mx-auto text-center">
                             <p className="text-gray-500 text-lg leading-relaxed mb-6">
                                 Looking for earlier iterations? These projects continue the tradition of our team projects from the University of Mannheim, where the same format ran under the European Master Team Project.
