@@ -51,6 +51,24 @@ const archiveProjects = [
         video: assetUrl("/assets/videos/TrafficNetworkBuilder.mp4"),
         description: "Interactive tools for constructing and simulating complex traffic networks to rigorously test autonomous systems in virtual environments.",
         link: "#"
+    },
+    {
+        id: 'neurocore-dashboard',
+        title: "NeuroCore Dashboard",
+        tag: "MLOps / Monitoring",
+        status: "Archive",
+        image: assetUrl("/assets/images/NeuroCore/neurocore-dashboard.svg"),
+        description: "A dashboard for orchestrating machine learning training jobs, monitoring GPU and node health via SSH, and visualizing real-time performance analytics across compute clusters.",
+        link: "https://davszi.github.io/NeuroCore/"
+    },
+    {
+        id: 'stratego-llm-games',
+        title: "Stratego — LLM Based Games",
+        tag: "LLMs / Games",
+        status: "Archive",
+        image: assetUrl("/assets/images/stratego/stratego-llm-games.svg"),
+        description: "Explore how different large language models compete in the classic strategy board game Stratego, with automated matchups, head-to-head win comparisons, and gameplay behavior logging to reveal strengths and patterns in decision making.",
+        link: "https://github.com/davszi/Stratego"
     }
 ];
 
