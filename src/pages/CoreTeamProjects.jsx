@@ -57,7 +57,7 @@ const archiveProjects = [
         title: "NeuroCore Dashboard",
         tag: "MLOps / Monitoring",
         status: "Archive",
-        image: assetUrl("/assets/images/NeuroCore/neurocore-dashboard.svg"),
+        video: assetUrl("/assets/videos/NeuroCore_demo.mp4"),
         description: "A dashboard for orchestrating machine learning training jobs, monitoring GPU and node health via SSH, and visualizing real-time performance analytics across compute clusters.",
         link: "https://davszi.github.io/NeuroCore/"
     },
