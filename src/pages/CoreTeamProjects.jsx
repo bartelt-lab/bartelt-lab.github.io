@@ -59,16 +59,16 @@ const archiveProjects = [
         status: "Archive",
         video: assetUrl("/assets/videos/NeuroCore_demo.mp4"),
         description: "A dashboard for orchestrating machine learning training jobs, monitoring GPU and node health via SSH, and visualizing real-time performance analytics across compute clusters.",
-        link: "https://davszi.github.io/NeuroCore/"
+        link: "/core-team-projects/neurocore"
     },
     {
         id: 'stratego-llm-games',
         title: "Stratego — LLM Based Games",
         tag: "LLMs / Games",
         status: "Archive",
-        image: assetUrl("/assets/images/stratego/stratego-llm-games.svg"),
+        image: assetUrl("/assets/images/stratego/stratego-poster.svg"),
         description: "Explore how different large language models compete in the classic strategy board game Stratego, with automated matchups, head-to-head win comparisons, and gameplay behavior logging to reveal strengths and patterns in decision making.",
-        link: "https://github.com/davszi/Stratego"
+        link: "/core-team-projects/stratego"
     }
 ];
 
