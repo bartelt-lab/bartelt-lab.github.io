@@ -35,24 +35,6 @@ const activeProjects = [
 
 const archiveProjects = [
     {
-        id: 'self-driving',
-        title: "Self-Driving 1:10",
-        tag: "Autonomous Navigation",
-        status: "Legacy",
-        youtubeId: "wrY34WyTEzo",
-        description: "A completed initiative scaling down autonomous driving algorithms for rapid prototyping. Focused on SLAM and path planning in miniature environments.",
-        link: "#"
-    },
-    {
-        id: 'traffic-network',
-        title: "Traffic Network Builder",
-        tag: "Simulation Tools",
-        status: "Archive",
-        video: assetUrl("/assets/videos/TrafficNetworkBuilder.mp4"),
-        description: "Interactive tools for constructing and simulating complex traffic networks to rigorously test autonomous systems in virtual environments.",
-        link: "#"
-    },
-    {
         id: 'neurocore-dashboard',
         title: "NeuroCore Dashboard",
         tag: "MLOps / Monitoring",
@@ -69,6 +51,24 @@ const archiveProjects = [
         image: assetUrl("/assets/images/stratego/stratego-poster.svg"),
         description: "Explore how different large language models compete in the classic strategy board game Stratego, with automated matchups, head-to-head win comparisons, and gameplay behavior logging to reveal strengths and patterns in decision making.",
         link: "/core-team-projects/stratego"
+    },
+    {
+        id: 'self-driving',
+        title: "Self-Driving 1:10",
+        tag: "Autonomous Navigation",
+        status: "Legacy",
+        youtubeId: "wrY34WyTEzo",
+        description: "A completed initiative scaling down autonomous driving algorithms for rapid prototyping. Focused on SLAM and path planning in miniature environments.",
+        link: "#"
+    },
+    {
+        id: 'traffic-network',
+        title: "Traffic Network Builder",
+        tag: "Simulation Tools",
+        status: "Archive",
+        video: assetUrl("/assets/videos/TrafficNetworkBuilder.mp4"),
+        description: "Interactive tools for constructing and simulating complex traffic networks to rigorously test autonomous systems in virtual environments.",
+        link: "#"
     }
 ];
 

@@ -15,6 +15,7 @@ const NeuroCoreProject = () => {
             subtitle="Orchestration, monitoring and analytics for ML compute clusters"
             status="Archive"
             tags={["MLOps", "Monitoring"]}
+            heroVideo={assetUrl('/assets/videos/NeuroCore_demo.mp4')}
             heroImage={assetUrl('/assets/images/NeuroCore/neurocore-dashboard.svg')}
             overview="A dashboard for orchestrating machine learning training jobs, monitoring GPU and node health via SSH, and visualizing real-time performance analytics across compute clusters."
             features={features}

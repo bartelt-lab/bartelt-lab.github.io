@@ -7,6 +7,7 @@ const ProjectLayout = ({
     status = 'Active',
     tags = [],
     heroImage,
+    heroVideo,
     overview,
     features = [],
     requirements = [],
@@ -57,7 +58,22 @@ const ProjectLayout = ({
                     </div>
 
                     {/* Hero Media */}
-                    {heroImage && (
+                    {heroVideo ? (
+                        <div className="max-w-6xl mx-auto rounded-3xl overflow-hidden shadow-2xl border border-gray-100 mb-20 relative group">
+                            {/* Overlay Gradient */}
+                            <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent pointer-events-none"></div>
+                            <video
+                                src={heroVideo}
+                                poster={heroImage || undefined}
+                                className="w-full h-auto object-cover"
+                                controls
+                                muted
+                                loop
+                                playsInline
+                                autoPlay
+                            />
+                        </div>
+                    ) : heroImage && (
                         <div className="max-w-6xl mx-auto rounded-3xl overflow-hidden shadow-2xl border border-gray-100 mb-20 relative group">
                             {/* Overlay Gradient */}
                             <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent pointer-events-none"></div>
