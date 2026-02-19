@@ -24,18 +24,8 @@ const NeuroCoreProject = () => {
             {/* Demo video + repo link */}
             <div className="py-12 border-t border-gray-100">
                 <div className="max-w-3xl mx-auto">
-                    <div className="relative rounded-2xl overflow-hidden shadow-2xl border border-gray-100">
-                        <video
-                            src={assetUrl('/assets/videos/NeuroCore_demo.mp4')}
-                            className="w-full h-auto object-cover"
-                            controls
-                            muted
-                            loop
-                            playsInline
-                        />
-                    </div>
 
-                    <p className="text-center mt-6">
+                    <div className="flex justify-center mt-6">
                         <a
                             href="https://github.com/davszi/NeuroCore.git"
                             target="_blank"
@@ -44,9 +34,7 @@ const NeuroCoreProject = () => {
                         >
                             Open on GitHub
                         </a>
-                    </p>
-
-                    <p className="text-gray-500 text-sm mt-4 text-center">Demo video (use controls to replay).</p>
+                    </div>
                 </div>
             </div>
         </ProjectLayout>
