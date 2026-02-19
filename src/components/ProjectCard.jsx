@@ -64,6 +64,15 @@ const ProjectCard = ({ project }) => {
                         {tag}
                     </span>
                 </div>
+
+                {/* Click hint - visible on media so users know card is clickable */}
+                {link && (
+                    <div className="absolute bottom-4 right-4 z-20">
+                        <span className="px-3 py-1 text-xs font-semibold bg-white/90 text-gray-800 rounded-full shadow-sm">
+                            View details
+                        </span>
+                    </div>
+                )}
             </div>
 
             {/* Content Container */}
@@ -76,6 +85,15 @@ const ProjectCard = ({ project }) => {
                     {description}
                 </p>
 
+                {link && (
+                    <div className="mb-4">
+                        <button className="inline-flex items-center gap-2 px-4 py-2 bg-blue-50 border border-blue-100 rounded-md text-blue-700 font-semibold shadow-sm hover:bg-blue-100 transition-colors">
+                            View details
+                            <span className="transform group-hover:translate-x-1 inline-block transition-transform">→</span>
+                        </button>
+                    </div>
+                )}
+
                 {/* Footer */}
                 <div className="flex items-center justify-between mt-auto pt-6 border-t border-gray-200/60">
                     <span className="flex items-center gap-2">
@@ -86,8 +104,9 @@ const ProjectCard = ({ project }) => {
                     </span>
 
                     {link && (
-                        <span className="text-sm font-bold text-gray-900 group-hover:text-blue-600 flex items-center gap-1 transition-colors">
-                            Explore <span className="transform group-hover:translate-x-1 transition-transform">→</span>
+                        <span className="flex items-center gap-3">
+                            <span className="text-sm font-bold text-gray-900 group-hover:text-blue-600 transition-colors">View details</span>
+                            <span className="inline-flex items-center px-3 py-1 text-xs font-semibold bg-blue-600 text-white rounded-full shadow-sm">Click</span>
                         </span>
                     )}
                 </div>
