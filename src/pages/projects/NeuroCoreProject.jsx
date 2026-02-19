@@ -19,6 +19,7 @@ const NeuroCoreProject = () => {
             heroImage={assetUrl('/assets/images/NeuroCore/neurocore-dashboard.svg')}
             overview="A dashboard for orchestrating machine learning training jobs, monitoring GPU and node health via SSH, and visualizing real-time performance analytics across compute clusters."
             features={features}
+            showEvalSection={false}
         >
             {/* Demo video + repo link */}
             <div className="py-12 border-t border-gray-100">

@@ -18,6 +18,7 @@ const StrategoProject = () => {
             heroImage={assetUrl('/assets/images/stratego/stratego-poster.svg')}
             overview="Explore how different large language models compete in the classic strategy board game Stratego, with automated matchups, head-to-head win comparisons, and gameplay behavior logging to reveal strengths and patterns in decision making."
             features={features}
+            showEvalSection={false}
         >
             <div className="py-12 border-t border-gray-100">
                 <div className="max-w-3xl mx-auto text-center">
