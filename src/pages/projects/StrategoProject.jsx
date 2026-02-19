@@ -21,22 +21,25 @@ const StrategoProject = () => {
             features={features}
             showEvalSection={false}
         >
-            <div className="py-6 border-t border-gray-100">
-                <div className="max-w-3xl mx-auto text-center">
-                    <p className="mb-4 text-gray-600 text-sm">Watch a demo of the Stratego evaluation & match controller.</p>
+            <section className="py-6 border-t border-gray-100">
+                <div className="max-w-4xl mx-auto px-6 flex items-center justify-between gap-6">
+                    <div>
+                        <h3 className="text-lg font-semibold text-gray-900">Project repository</h3>
+                        <p className="mt-1 text-gray-600 text-sm">View source code, implementation details and technical docs on GitHub.</p>
+                    </div>
 
-                    <div className="flex justify-center">
+                    <div className="shrink-0">
                         <a
                             href="https://github.com/davszi/Stratego.git"
                             target="_blank"
                             rel="noopener noreferrer"
-                            className="inline-flex items-center gap-2 px-5 py-2 text-sm font-medium bg-gray-900 text-white rounded-md shadow-sm hover:shadow-md hover:bg-black transition-all duration-150"
+                            className="inline-flex items-center gap-2 px-4 py-2 text-sm font-medium bg-gray-900 text-white rounded-md shadow-sm hover:shadow-md hover:bg-black transition-all duration-150"
                         >
                             Open on GitHub
                         </a>
                     </div>
                 </div>
-            </div>
+            </section>
         </ProjectLayout>
     );
 };
