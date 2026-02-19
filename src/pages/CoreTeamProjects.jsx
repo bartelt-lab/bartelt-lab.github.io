@@ -125,9 +125,9 @@ const CoreTeamProjects = () => {
                             </p>
                         </motion.div>
 
-                        {/* Interactive Abstract Visual */}
+                        {/* Interactive Abstract Visual (hidden on small screens) */}
                         <motion.div
-                            className="lg:w-1/2 relative flex justify-center perspective-1000 h-[400px] items-center"
+                            className="hidden md:flex lg:w-1/2 relative flex justify-center perspective-1000 h-[400px] items-center"
                             initial={{ opacity: 0 }}
                             animate={{ opacity: 1 }}
                             transition={{ duration: 1, delay: 0.2 }}
