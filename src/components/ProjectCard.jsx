@@ -67,7 +67,7 @@ const ProjectCard = ({ project }) => {
 
                 {/* Small overlay CTA on the media (matches your screenshot) */}
                 {link && (
-                    <div className="absolute right-4 bottom-4 z-30 desktop-only pointer-events-none">
+                    <div className="absolute right-4 bottom-4 z-30 pointer-events-none">
                         <span className="inline-flex items-center gap-2 px-3 py-1 bg-white text-sm font-semibold text-gray-700 border border-gray-100 rounded-full shadow-md">
                             View details
                         </span>
