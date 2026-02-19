@@ -47,7 +47,7 @@ const NeuroCoreProject = () => {
                             className="inline-flex items-center gap-2 px-5 py-3 bg-gray-900 text-white rounded-full font-semibold hover:bg-black transition-colors"
                         >
                             View on GitHub
-n                        </a>
+                        </a>
 
                         <div className="mt-8 bg-gray-50 p-6 rounded-xl border border-gray-100">
                             <h4 className="font-bold text-gray-900 mb-2">Technical highlights</h4>
