@@ -1,1 +1,8 @@
 @import "tailwindcss";
+
+/* Hide elements on mobile (< 768px) — works reliably with Tailwind v4 */
+@media (max-width: 767px) {
+  .desktop-only {
+    display: none !important;
+  }
+}
