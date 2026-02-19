@@ -285,14 +285,14 @@ const CoreTeamProjects = () => {
             </section>
 
             {/* Student Experiences Section */}
-            <section className="py-24 bg-white relative overflow-hidden">
+            <section className="py-32 bg-white relative overflow-hidden">
                 <div className="container mx-auto px-4 md:px-8 relative z-10">
                     <motion.div
                         initial={{ opacity: 0, y: 20 }}
                         whileInView={{ opacity: 1, y: 0 }}
                         viewport={{ once: true }}
                         transition={{ duration: 0.8 }}
-                        className="text-center mb-16"
+                        className="text-center mb-20"
                     >
                         <h2 className="text-4xl md:text-5xl font-black text-gray-900 mb-6 tracking-tight">
                             Student Testimonials
@@ -300,7 +300,7 @@ const CoreTeamProjects = () => {
                         <div className="h-1.5 w-24 bg-blue-600 rounded-full mx-auto mb-8"></div>
                     </motion.div>
 
-                    <div className="grid md:grid-cols-3 gap-8 lg:gap-10 max-w-7xl mx-auto">
+                    <div className="grid md:grid-cols-3 gap-10 lg:gap-12 mt-8 max-w-7xl mx-auto">
                         {[
                             { src: "/assets/videos/Student-Testim-1.mp4", poster: "" },
                             { src: "/assets/videos/Student-Testim-2.mp4", poster: "" },
