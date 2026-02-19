@@ -7,6 +7,8 @@ import AI4AIProject from './pages/projects/AI4AIProject';
 import VergabepilotProject from './pages/projects/VergabepilotProject';
 import NeuroCoreProject from './pages/projects/NeuroCoreProject';
 import StrategoProject from './pages/projects/StrategoProject';
+import TrafficNetworkProject from './pages/projects/TrafficNetworkProject';
+import SelfDrivingProject from './pages/projects/SelfDrivingProject';
 
 // Lazy-load pages the user may not visit — splits them into separate chunks
 const Publications = lazy(() => import('./pages/Publications'));
@@ -49,6 +51,8 @@ function App() {
           <Route path="/core-team-projects/vergabepilot" element={<VergabepilotProject />} />
           <Route path="/core-team-projects/neurocore" element={<NeuroCoreProject />} />
           <Route path="/core-team-projects/stratego" element={<StrategoProject />} />
+          <Route path="/core-team-projects/traffic-network" element={<TrafficNetworkProject />} />
+          <Route path="/core-team-projects/self-driving" element={<SelfDrivingProject />} />
         </Routes>
       </Suspense>
     </Layout>

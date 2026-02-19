@@ -59,7 +59,7 @@ const archiveProjects = [
         status: "Legacy",
         youtubeId: "wrY34WyTEzo",
         description: "A completed initiative scaling down autonomous driving algorithms for rapid prototyping. Focused on SLAM and path planning in miniature environments.",
-        link: "#"
+        link: "/core-team-projects/self-driving"
     },
     {
         id: 'traffic-network',
@@ -68,7 +68,7 @@ const archiveProjects = [
         status: "Archive",
         video: assetUrl("/assets/videos/TrafficNetworkBuilder.mp4"),
         description: "Interactive tools for constructing and simulating complex traffic networks to rigorously test autonomous systems in virtual environments.",
-        link: "#"
+        link: "/core-team-projects/traffic-network"
     }
 ];
 
