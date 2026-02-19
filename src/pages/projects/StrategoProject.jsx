@@ -20,20 +20,25 @@ const StrategoProject = () => {
             features={features}
             showEvalSection={false}
         >
-            <div className="py-12 border-t border-gray-100">
-                <div className="max-w-3xl mx-auto text-center">
-                    <img src={assetUrl('/assets/images/stratego/stratego-poster.svg')} alt="Stratego poster" className="w-full rounded-2xl shadow-2xl border border-gray-100 mb-6" />
+            <div className="py-6 border-t border-gray-100">
+                <div className="max-w-4xl mx-auto px-6 flex flex-col md:flex-row items-center md:items-start gap-6">
+                    <div className="md:w-2/3">
+                        <img src={assetUrl('/assets/images/stratego/stratego-poster.svg')} alt="Stratego poster" className="w-full rounded-2xl shadow-2xl border border-gray-100" />
+                    </div>
 
-                    <a
-                        href="https://github.com/davszi/Stratego.git"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="inline-flex items-center gap-2 px-6 py-3 bg-gray-900 text-white rounded-full font-semibold hover:bg-black transition-colors"
-                    >
-                        Open on GitHub
-                    </a>
+                    <div className="md:w-1/3 flex flex-col items-start gap-4">
+                        <h3 className="text-lg font-semibold text-gray-900">Project repository</h3>
+                        <p className="text-gray-600 text-sm">Source, evaluation harness and visualizers available on GitHub.</p>
 
-                    <p className="text-gray-500 text-sm mt-4">Repository, evaluation harness and visualizers on GitHub.</p>
+                        <a
+                            href="https://github.com/davszi/Stratego.git"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="inline-flex items-center gap-2 px-4 py-2 text-sm font-medium bg-gray-900 text-white rounded-md shadow-sm hover:shadow-md hover:bg-black transition-all duration-150"
+                        >
+                            Open on GitHub
+                        </a>
+                    </div>
                 </div>
             </div>
         </ProjectLayout>
