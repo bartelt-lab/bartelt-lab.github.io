@@ -48,7 +48,7 @@ const archiveProjects = [
         title: "Stratego — LLM Based Games",
         tag: "LLMs / Games",
         status: "Archive",
-        image: assetUrl("/assets/images/stratego/stratego-poster.svg"),
+        video: assetUrl("/assets/videos/Stratego - Demo Video (RP 3).mp4"),
         description: "Explore how different large language models compete in the classic strategy board game Stratego, with automated matchups, head-to-head win comparisons, and gameplay behavior logging to reveal strengths and patterns in decision making.",
         link: "/core-team-projects/stratego"
     },
