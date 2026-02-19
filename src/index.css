@@ -6,3 +6,14 @@
     display: none !important;
   }
 }
+
+/* Project CTA — explicit styles so Tailwind v4 build quirks can't hide or override it */
+.project-cta {
+  color: #2563eb !important; /* blue-600 */
+  font-weight: 600 !important;
+  text-decoration: underline !important;
+  font-size: 0.95rem;
+  display: inline-block;
+  margin-bottom: 1rem;
+  pointer-events: auto !important;
+}

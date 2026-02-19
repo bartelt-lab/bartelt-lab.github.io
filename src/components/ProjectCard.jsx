@@ -74,16 +74,13 @@ const ProjectCard = ({ project }) => {
                     {title}
                 </h3>
 
-                <p className="text-gray-600 text-sm leading-relaxed mb-6 flex-grow">
+                <p className="text-gray-600 text-sm leading-relaxed mb-4">
                     {description}
                 </p>
 
                 {link && (
-                    <div className="mb-6 w-full flex justify-center">
-                        <span className="inline-flex items-center px-5 py-2 bg-blue-50 border border-blue-100 rounded-full text-blue-700 font-semibold shadow-sm hover:bg-blue-100 transition-colors">
-                            View details
-                            <span className="ml-2 transform group-hover:translate-x-1 transition-transform">→</span>
-                        </span>
+                    <div className="project-cta">
+                        View details →
                     </div>
                 )}
 
