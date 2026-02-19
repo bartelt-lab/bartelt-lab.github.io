@@ -285,22 +285,22 @@ const CoreTeamProjects = () => {
             </section>
 
             {/* Student Experiences Section */}
-            <section className="py-20 bg-white relative overflow-hidden">
+            <section className="pt-6 pb-20 bg-white relative overflow-hidden">
                 <div className="container mx-auto px-4 md:px-8 relative z-10">
                     <motion.div
                         initial={{ opacity: 0, y: 20 }}
                         whileInView={{ opacity: 1, y: 0 }}
                         viewport={{ once: true }}
                         transition={{ duration: 0.8 }}
-                        className="text-center mb-12"
+                        className="text-center mb-8"
                     >
-                        <h2 className="text-4xl md:text-5xl font-black text-gray-900 mb-6 tracking-tight">
+                        <h2 className="text-4xl md:text-5xl font-black text-gray-900 mb-4 tracking-tight">
                             Student Testimonials
                         </h2>
-                        <div className="h-1.5 w-24 bg-blue-600 rounded-full mx-auto mb-8"></div>
+                        <div className="h-1.5 w-24 bg-blue-600 rounded-full mx-auto mb-4"></div>
                     </motion.div>
 
-                    <div className="grid md:grid-cols-3 gap-6 lg:gap-8 mt-4 max-w-7xl mx-auto">
+                    <div className="grid md:grid-cols-3 gap-4 lg:gap-6 max-w-7xl mx-auto">
                         {[
                             { src: "/assets/videos/Student-Testim-1.mp4", poster: "" },
                             { src: "/assets/videos/Student-Testim-2.mp4", poster: "" },
@@ -312,7 +312,7 @@ const CoreTeamProjects = () => {
                                 whileInView={{ opacity: 1, y: 0 }}
                                 viewport={{ once: true }}
                                 transition={{ duration: 0.5, delay: index * 0.1 }}
-                                className="group relative bg-gray-900 rounded-2xl overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-300"
+                                className="group relative bg-gray-900 rounded-2xl overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-300 mb-4 last:mb-0 md:mb-0"
                             >
                                 <div className="aspect-video bg-black relative">
                                     <video
@@ -330,14 +330,14 @@ const CoreTeamProjects = () => {
             </section>
 
             {/* Projects Grid Section - Archive */}
-            <section id="archive" className="py-20 bg-white border-t border-gray-100">
+            <section id="archive" className="pt-4 pb-20 bg-white border-t border-gray-100">
                 <div className="container mx-auto px-4 md:px-8">
                     <motion.div
                         initial={{ opacity: 0, y: 20 }}
                         whileInView={{ opacity: 1, y: 0 }}
                         viewport={{ once: true }}
                         transition={{ duration: 0.8 }}
-                        className="text-center mb-16"
+                        className="text-center mb-8"
                     >
                         <h2 className="text-4xl md:text-5xl font-black text-gray-900 mb-6 tracking-tight">
                             Project Archive

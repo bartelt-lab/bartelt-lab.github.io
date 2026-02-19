@@ -8,6 +8,7 @@ const ProjectLayout = ({
     tags = [],
     heroImage,
     heroVideo,
+    heroYouTubeId,
     overview,
     features = [],
     requirements = [],
@@ -60,7 +61,22 @@ const ProjectLayout = ({
                     </div>
 
                     {/* Hero Media */}
-                    {heroVideo ? (
+                    {heroYouTubeId ? (
+                        <div className="max-w-6xl mx-auto rounded-3xl overflow-hidden shadow-2xl border border-gray-100 mb-20 relative group">
+                            {/* Overlay Gradient */}
+                            <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent pointer-events-none"></div>
+                            <div className="aspect-video">
+                                <iframe
+                                    src={`https://www.youtube.com/embed/${heroYouTubeId}?rel=0`}
+                                    title={title}
+                                    frameBorder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                    allowFullScreen
+                                    className="w-full h-full"
+                                />
+                            </div>
+                        </div>
+                    ) : heroVideo ? (
                         <div className="max-w-6xl mx-auto rounded-3xl overflow-hidden shadow-2xl border border-gray-100 mb-20 relative group">
                             {/* Overlay Gradient */}
                             <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent pointer-events-none"></div>
