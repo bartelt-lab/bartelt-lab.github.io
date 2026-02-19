@@ -127,7 +127,7 @@ const CoreTeamProjects = () => {
 
                         {/* Interactive Abstract Visual (hidden on small screens) */}
                         <motion.div
-                            className="hidden md:flex md:w-1/2 relative justify-center perspective-1000 h-[400px] items-center"
+                            className="flex w-full md:w-1/2 relative justify-center perspective-1000 h-[400px] items-center"
                             initial={{ opacity: 0 }}
                             animate={{ opacity: 1 }}
                             transition={{ duration: 1, delay: 0.2 }}
@@ -168,13 +168,14 @@ const CoreTeamProjects = () => {
                                     <motion.div
                                         animate={{ rotate: 360 }}
                                         transition={{ duration: 8, ease: "linear", repeat: Infinity }}
-                                        className="absolute inset-[-40px] pointer-events-none"
+                                        className="absolute inset-0 pointer-events-none"
                                     >
                                         <div className="w-4 h-4 bg-blue-400 rounded-full shadow-lg shadow-blue-400/50 absolute top-0 left-1/2 -translate-x-1/2"></div>
                                     </motion.div>
                                 </div>
                             </motion.div>
                         </motion.div>
+
 
                     </div>
                 </div>
