@@ -99,14 +99,14 @@ const CoreTeamProjects = () => {
 
 
                 <div className="container mx-auto px-4 md:px-8">
-                    <div className="flex flex-col lg:flex-row items-center gap-12 text-center lg:text-left">
+                    <div className="flex flex-col md:flex-row items-center gap-12 text-center md:text-left">
 
                         {/* Text Content */}
                         <motion.div
                             initial={{ opacity: 0, x: -20 }}
                             animate={{ opacity: 1, x: 0 }}
                             transition={{ duration: 0.8 }}
-                            className="lg:w-1/2 z-10"
+                            className="md:w-1/2 z-10"
                         >
                             <span className="inline-block px-3 py-1 mb-6 text-sm font-semibold tracking-wider text-blue-600 uppercase bg-blue-50 rounded-full">
                                 Applied Intelligence
@@ -127,7 +127,7 @@ const CoreTeamProjects = () => {
 
                         {/* Interactive Abstract Visual (hidden on small screens) */}
                         <motion.div
-                            className="hidden md:flex lg:w-1/2 relative flex justify-center perspective-1000 h-[400px] items-center"
+                            className="hidden md:flex md:w-1/2 relative justify-center perspective-1000 h-[400px] items-center"
                             initial={{ opacity: 0 }}
                             animate={{ opacity: 1 }}
                             transition={{ duration: 1, delay: 0.2 }}
