@@ -98,8 +98,10 @@ const CoreTeamProjects = () => {
                                 </span>
                             </h1>
                             <p className="text-xl text-gray-500 max-w-2xl mx-auto lg:mx-0 leading-relaxed">
-                                Student-led innovation at the intersection of AI, Machine Learning, and Cognitive Systems.
-                                Building the future of embodied intelligence.
+                                The CORE Team Projects (CTP) bridge academia, cutting-edge AI/ML research, and international collaboration.
+                                Jointly organized by Clausthal University of Technology (Goslar) and Universitatea Babeș-Bolyai (Cluj-Napoca),
+                                this semester-long program challenges mixed teams to
+                                build real-world AI and ML solutions.
                             </p>
                         </motion.div>
 
@@ -174,6 +176,9 @@ const CoreTeamProjects = () => {
                         <h3 className="text-2xl md:text-4xl font-light italic tracking-[0.1em] text-gray-400 uppercase">
                             WORK HARD 💪 PLAY HARD 🏀
                         </h3>
+                        <p className="text-gray-300 max-w-4xl mx-auto mt-8 text-lg leading-relaxed">
+                            The absolute highlight of the CTP experience are the two onsite travel weeks—one hosted in Cluj and one in Goslar. These weeks are full-immersion. Students don't just hack together on their AI models; they participate in all-day events where intense coding sessions are balanced with extensive teambuilding activities, cultural exchange, and evening socials. We believe that the best technical innovations come from teams that know how to connect, adapt, and have fun together.
+                        </p>
                     </motion.div>
 
                     <div className="grid md:grid-cols-2 gap-8 max-w-6xl mx-auto">
