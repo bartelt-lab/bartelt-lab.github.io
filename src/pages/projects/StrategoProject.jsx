@@ -16,25 +16,21 @@ const StrategoProject = () => {
             status="Archive"
             tags={["LLMs", "Games"]}
             heroImage={assetUrl('/assets/images/stratego/stratego-poster.svg')}
+            heroVideo={assetUrl('/assets/videos/Stratego - Demo Video (RP 3).mp4')}
             overview="Explore how different large language models compete in the classic strategy board game Stratego, with automated matchups, head-to-head win comparisons, and gameplay behavior logging to reveal strengths and patterns in decision making."
             features={features}
             showEvalSection={false}
         >
             <div className="py-6 border-t border-gray-100">
-                <div className="max-w-4xl mx-auto px-6 flex flex-col md:flex-row items-center md:items-start gap-6">
-                    <div className="md:w-2/3">
-                        <img src={assetUrl('/assets/images/stratego/stratego-poster.svg')} alt="Stratego poster" className="w-full rounded-2xl shadow-2xl border border-gray-100" />
-                    </div>
+                <div className="max-w-3xl mx-auto text-center">
+                    <p className="mb-4 text-gray-600 text-sm">Watch a demo of the Stratego evaluation & match controller.</p>
 
-                    <div className="md:w-1/3 flex flex-col items-start gap-4">
-                        <h3 className="text-lg font-semibold text-gray-900">Project repository</h3>
-                        <p className="text-gray-600 text-sm">Source, evaluation harness and visualizers available on GitHub.</p>
-
+                    <div className="flex justify-center">
                         <a
                             href="https://github.com/davszi/Stratego.git"
                             target="_blank"
                             rel="noopener noreferrer"
-                            className="inline-flex items-center gap-2 px-4 py-2 text-sm font-medium bg-gray-900 text-white rounded-md shadow-sm hover:shadow-md hover:bg-black transition-all duration-150"
+                            className="inline-flex items-center gap-2 px-5 py-2 text-sm font-medium bg-gray-900 text-white rounded-md shadow-sm hover:shadow-md hover:bg-black transition-all duration-150"
                         >
                             Open on GitHub
                         </a>
