@@ -113,7 +113,7 @@ const RightSidebar = () => {
             window.removeEventListener('scroll', handleScroll);
             clearTimeout(timer);
         };
-    }, [isVisible, location.pathname, sections]);
+    }, [isVisible, resolvedPath, sections]);
 
     const scrollToSection = (id) => {
         const element = document.getElementById(id);
