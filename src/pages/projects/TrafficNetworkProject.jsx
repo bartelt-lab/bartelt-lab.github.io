@@ -32,7 +32,7 @@ const TrafficNetworkProject = () => {
             tags={["Simulation Tools", "OpenDRIVE", "CARLA"]}
             // use the project's demo gif hosted on GitHub as the hero image
             heroImage="https://raw.githubusercontent.com/davszi/Traffic-Network-Builder/main/media/traffic_network_builder.gif"
-            overview={`The Traffic Network Builder provides an interactive Unity map editor to design road networks and export them in OpenDRIVE format for use in simulators such as CARLA. The project includes map-export tooling and example scripts for running exported maps in CARLA.`}
+            overview={`Unity-based map editor and exporter that generates OpenDRIVE 1.4 (.xodr) files with lane geometry, junctions, elevation profiles, traffic signs and signal definitions. Includes an exporter, Python post-processing utilities, CARLA import scripts and sample maps; validated for simulator compatibility and automated map-generation pipelines.`}
             features={features}
             showEvalSection={false}
         >
