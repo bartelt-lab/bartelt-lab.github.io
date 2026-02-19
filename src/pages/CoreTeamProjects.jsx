@@ -104,7 +104,7 @@ const CoreTeamProjects = () => {
                             initial={{ opacity: 0, x: -20 }}
                             animate={{ opacity: 1, x: 0 }}
                             transition={{ duration: 0.8 }}
-                            className="lg:w-1/2 z-10"
+                            className="w-full z-10"
                         >
                             <span className="inline-block px-3 py-1 mb-6 text-sm font-semibold tracking-wider text-blue-600 uppercase bg-blue-50 rounded-full">
                                 Applied Intelligence
@@ -123,57 +123,17 @@ const CoreTeamProjects = () => {
                             </p>
                         </motion.div>
 
-                        {/* Interactive Abstract Visual */}
+                        {/* Subtle rotating decorative visual behind hero text (blurred, non-interactive) */}
                         <motion.div
-                            className="lg:w-1/2 relative flex justify-center perspective-1000 h-[400px] items-center"
-                            initial={{ opacity: 0 }}
-                            animate={{ opacity: 1 }}
-                            transition={{ duration: 1, delay: 0.2 }}
+                            animate={{ rotate: 360 }}
+                            transition={{ duration: 30, ease: "linear", repeat: Infinity }}
+                            className="absolute left-1/2 -translate-x-1/2 top-6 md:top-8 w-40 h-40 md:w-96 md:h-96 -z-10 pointer-events-none opacity-60 filter blur-sm"
                         >
-                            {/* Draggable Container */}
-                            <motion.div
-                                drag
-                                dragConstraints={{ left: -50, right: 50, top: -50, bottom: 50 }}
-                                dragElastic={0.2}
-                                whileHover={{ scale: 1.1, rotate: 5 }}
-                                whileTap={{ scale: 0.95, cursor: "grabbing" }}
-                                className="relative w-72 h-72 md:w-96 md:h-96 cursor-grab touch-none"
-                            >
-                                {/* Decorative Orbits/Grid - Auto Spinning */}
-                                <div className="absolute inset-0 border-2 border-dashed border-blue-100 rounded-full animate-[spin_20s_linear_infinite] pointer-events-none"></div>
-                                <div className="absolute inset-8 border border-gray-100 rounded-full animate-[spin_15s_linear_infinite_reverse] pointer-events-none"></div>
-                                <div className="absolute inset-0 bg-gradient-to-tr from-blue-50 to-indigo-50 rounded-full blur-3xl opacity-60 pointer-events-none"></div>
-
-                                {/* Center "Core" Cube - 3D Rotation */}
-                                <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 perspective-500">
-                                    <motion.div
-                                        animate={{
-                                            rotateX: [0, 360],
-                                            rotateY: [0, 360]
-                                        }}
-                                        transition={{
-                                            duration: 10,
-                                            ease: "linear",
-                                            repeat: Infinity
-                                        }}
-                                        className="w-32 h-32 bg-white/80 backdrop-blur-xl border border-white/50 rounded-2xl shadow-2xl flex items-center justify-center pt-8"
-                                        style={{ transformStyle: "preserve-3d" }}
-                                    /* Added pt-8 to center the inner cube vertically/visually in the spinning box */
-                                    >
-                                        <div className="w-24 h-24 bg-gradient-to-br from-blue-500 to-indigo-600 rounded-xl shadow-inner transform translate-z-10"></div>
-                                    </motion.div>
-
-                                    {/* Orbital Dots */}
-                                    <motion.div
-                                        animate={{ rotate: 360 }}
-                                        transition={{ duration: 8, ease: "linear", repeat: Infinity }}
-                                        className="absolute inset-[-40px]"
-                                    >
-                                        <div className="w-4 h-4 bg-blue-400 rounded-full shadow-lg shadow-blue-400/50 absolute top-0 left-1/2 -translate-x-1/2"></div>
-                                    </motion.div>
-                                </div>
-                            </motion.div>
+                            <div className="absolute inset-0 rounded-full bg-gradient-to-br from-blue-500 to-indigo-600 opacity-20" />
+                            <div className="absolute inset-4 border-2 border-blue-100 rounded-full opacity-40" />
+                            <div className="absolute inset-10 rounded-full bg-gradient-to-tr from-blue-50 to-indigo-50 opacity-60" />
                         </motion.div>
+
                     </div>
                 </div>
             </section>
