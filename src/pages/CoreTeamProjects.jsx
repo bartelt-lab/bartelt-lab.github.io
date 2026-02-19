@@ -192,7 +192,8 @@ const CoreTeamProjects = () => {
                             The Experience
                         </h2>
                         <h3 className="text-2xl md:text-4xl font-light italic tracking-[0.1em] text-gray-400 uppercase">
-                            WORK HARD 💪 PLAY HARD 🏀
+                            <span className="block md:inline">WORK HARD 💪</span>
+                            <span className="block md:inline">PLAY HARD 🏀</span>
                         </h3>
                         <p className="text-gray-300 max-w-4xl mx-auto mt-8 text-lg leading-relaxed">
                             The absolute highlight of the CTP experience are the two onsite travel weeks—one hosted in Cluj and one in Goslar. These weeks are full-immersion. Students don't just hack together on their AI models; they participate in all-day events where intense coding sessions are balanced with extensive teambuilding activities, cultural exchange, and evening socials. We believe that the best technical innovations come from teams that know how to connect, adapt, and have fun together.
