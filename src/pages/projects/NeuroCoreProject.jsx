@@ -22,15 +22,15 @@ const NeuroCoreProject = () => {
             showEvalSection={false}
         >
             {/* Demo video + repo link */}
-            <div className="py-12 border-t border-gray-100">
+            <div className="py-6 border-t border-gray-100">
                 <div className="max-w-3xl mx-auto">
 
-                    <div className="flex justify-center mt-6">
+                    <div className="flex justify-center mt-2">
                         <a
                             href="https://github.com/davszi/NeuroCore.git"
                             target="_blank"
                             rel="noopener noreferrer"
-                            className="inline-flex items-center gap-2 px-6 py-3 bg-gray-900 text-white rounded-full font-semibold hover:bg-black transition-colors"
+                            className="inline-flex items-center gap-2 px-5 py-2 text-sm bg-gray-900 text-white rounded-full font-semibold hover:bg-black transition-colors shadow-sm"
                         >
                             Open on GitHub
                         </a>
