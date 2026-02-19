@@ -116,8 +116,10 @@ const CoreTeamProjects = () => {
                                 </span>
                             </h1>
                             <p className="text-xl text-gray-500 max-w-2xl mx-auto lg:mx-0 leading-relaxed">
-                                Student-led innovation at the intersection of AI, Machine Learning, and Cognitive Systems.
-                                Building the future of embodied intelligence.
+                                The CORE Team Projects (CTP) bridge academia, cutting-edge AI/ML research, and international collaboration.
+                                Jointly organized by Clausthal University of Technology (Goslar) and Universitatea Babeș-Bolyai (Cluj-Napoca),
+                                this semester-long program challenges mixed teams to
+                                build real-world AI and ML solutions.
                             </p>
                         </motion.div>
 
@@ -192,6 +194,9 @@ const CoreTeamProjects = () => {
                         <h3 className="text-2xl md:text-4xl font-light italic tracking-[0.1em] text-gray-400 uppercase">
                             WORK HARD 💪 PLAY HARD 🏀
                         </h3>
+                        <p className="text-gray-300 max-w-4xl mx-auto mt-8 text-lg leading-relaxed">
+                            The absolute highlight of the CTP experience are the two onsite travel weeks—one hosted in Cluj and one in Goslar. These weeks are full-immersion. Students don't just hack together on their AI models; they participate in all-day events where intense coding sessions are balanced with extensive teambuilding activities, cultural exchange, and evening socials. We believe that the best technical innovations come from teams that know how to connect, adapt, and have fun together.
+                        </p>
                     </motion.div>
 
                     <div className="grid md:grid-cols-2 gap-8 max-w-6xl mx-auto">
@@ -253,9 +258,6 @@ const CoreTeamProjects = () => {
 
                 <div className="container mx-auto px-4 md:px-8 relative z-10">
                     <div className="mb-12 text-center max-w-3xl mx-auto">
-                        <span className="text-blue-600 font-bold tracking-widest uppercase text-sm mb-2 block">
-                            Current Focus
-                        </span>
                         <h2 className="text-4xl md:text-5xl font-black text-gray-900 mb-6 tracking-tight">
                             Active Projects
                         </h2>
@@ -281,13 +283,67 @@ const CoreTeamProjects = () => {
                 </div>
             </section>
 
+            {/* Student Experiences Section */}
+            <section className="py-24 bg-white relative overflow-hidden">
+                <div className="container mx-auto px-4 md:px-8 relative z-10">
+                    <motion.div
+                        initial={{ opacity: 0, y: 20 }}
+                        whileInView={{ opacity: 1, y: 0 }}
+                        viewport={{ once: true }}
+                        transition={{ duration: 0.8 }}
+                        className="text-center mb-16"
+                    >
+                        <h2 className="text-4xl md:text-5xl font-black text-gray-900 mb-6 tracking-tight">
+                            Student Testimonials
+                        </h2>
+                        <div className="h-1.5 w-24 bg-blue-600 rounded-full mx-auto mb-8"></div>
+                    </motion.div>
+
+                    <div className="grid md:grid-cols-3 gap-8 lg:gap-10 max-w-7xl mx-auto">
+                        {[
+                            { src: "/assets/videos/Student-Testim-1.mp4", poster: "" },
+                            { src: "/assets/videos/Student-Testim-2.mp4", poster: "" },
+                            { src: "/assets/videos/Student-Testim-3.mp4", poster: "" }
+                        ].map((video, index) => (
+                            <motion.div
+                                key={index}
+                                initial={{ opacity: 0, y: 30 }}
+                                whileInView={{ opacity: 1, y: 0 }}
+                                viewport={{ once: true }}
+                                transition={{ duration: 0.5, delay: index * 0.1 }}
+                                className="group relative bg-gray-900 rounded-2xl overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-300"
+                            >
+                                <div className="aspect-video bg-black relative">
+                                    <video
+                                        src={assetUrl(video.src)}
+                                        className="w-full h-full object-cover"
+                                        controls
+                                        playsInline
+                                        preload="metadata"
+                                    />
+                                </div>
+                            </motion.div>
+                        ))}
+                    </div>
+                </div>
+            </section>
+
             {/* Projects Grid Section - Archive */}
             <section id="archive" className="py-20 bg-white border-t border-gray-100">
                 <div className="container mx-auto px-4 md:px-8">
-                    <div className="mb-12">
-                        <h2 className="text-3xl font-bold text-gray-400 mb-4 uppercase tracking-wider">Project Archive</h2>
-                        <div className="h-px w-full bg-gray-200"></div>
-                    </div>
+                    <motion.div
+                        initial={{ opacity: 0, y: 20 }}
+                        whileInView={{ opacity: 1, y: 0 }}
+                        viewport={{ once: true }}
+                        transition={{ duration: 0.8 }}
+                        className="text-center mb-16"
+                    >
+                        <h2 className="text-4xl md:text-5xl font-black text-gray-900 mb-6 tracking-tight">
+                            Project Archive
+                        </h2>
+                        <div className="h-1.5 w-24 bg-blue-600 rounded-full mx-auto mb-8"></div>
+
+                    </motion.div>
 
                     <div className="space-y-12">
                         {archiveProjects.map((project, index) => (
