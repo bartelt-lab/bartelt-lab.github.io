@@ -5,7 +5,7 @@ const SelfDrivingProject = () => {
         { icon: '🛰️', title: 'SLAM & Perception', description: 'Lightweight SLAM and sensor-fusion methods tailored to 1:10-scale platforms.' },
         { icon: '🧭', title: 'Path Planning', description: 'Trajectory planning and obstacle avoidance tuned for miniature autonomous vehicles.' },
         { icon: '🔧', title: 'End-to-end stack', description: 'Integration of perception, planning and low-level control for rapid prototyping.' },
-        { icon: '⚡', title: 'Classroom-ready', description: "Includes a hardware-abstraction layer, ROS-compatible APIs, prebuilt Docker images and instructor lab scripts for reproducible student experiments and rapid prototyping." }
+        { icon: '🅿️', title: 'Autonomous Parking', description: 'Integrated perception and motion planning tailored for accurate slot detection and collision-free parking in constrained environments.' }
     ];
 
     return (
