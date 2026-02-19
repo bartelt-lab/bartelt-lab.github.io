@@ -79,8 +79,9 @@ const ProjectCard = ({ project }) => {
                 </p>
 
                 {link && (
-                    <div className="project-cta">
-                        View details →
+                    <div className="project-cta" aria-hidden="true">
+                        <span>View details</span>
+                        <span className="arrow">→</span>
                     </div>
                 )}
 
