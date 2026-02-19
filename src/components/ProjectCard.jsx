@@ -64,17 +64,30 @@ const ProjectCard = ({ project }) => {
                         {tag}
                     </span>
                 </div>
+
+                {/* Small overlay CTA on the media (matches your screenshot) */}
+                {link && (
+                    <div className="absolute right-4 bottom-4 z-30 desktop-only pointer-events-none">
+                        <span className="inline-flex items-center gap-2 px-3 py-1 bg-white text-sm font-semibold text-gray-700 border border-gray-100 rounded-full shadow-md">
+                            View details
+                        </span>
+                    </div>
+                )}
+
             </div>
 
             {/* Content Container */}
-            <div className="flex flex-col flex-grow p-8 bg-gradient-to-b from-white to-gray-50">
+            <div className="flex flex-col justify-between flex-grow p-8 pb-0 bg-gradient-to-b from-white to-gray-50">
                 <h3 className="text-2xl font-bold text-gray-900 mb-3 group-hover:text-blue-600 transition-colors">
                     {title}
                 </h3>
 
-                <p className="text-gray-600 text-sm leading-relaxed mb-6 flex-grow">
+                <p className="text-gray-600 text-sm leading-relaxed">
                     {description}
                 </p>
+
+
+
 
                 {/* Footer */}
                 <div className="flex items-center justify-between mt-auto pt-6 border-t border-gray-200/60">
@@ -85,11 +98,7 @@ const ProjectCard = ({ project }) => {
                         </span>
                     </span>
 
-                    {link && (
-                        <span className="text-sm font-bold text-gray-900 group-hover:text-blue-600 flex items-center gap-1 transition-colors">
-                            Explore <span className="transform group-hover:translate-x-1 transition-transform">→</span>
-                        </span>
-                    )}
+
                 </div>
             </div>
         </>

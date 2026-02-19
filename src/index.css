@@ -6,3 +6,34 @@
     display: none !important;
   }
 }
+
+/* Project CTA — explicit styles so Tailwind v4 build quirks can't hide or override it */
+.project-cta {
+  color: #2563eb !important; /* blue-600 */
+  font-weight: 600 !important;
+  text-decoration: none !important;
+  font-size: 0.95rem;
+  display: inline-flex;
+  align-items: center;
+  gap: .5rem;
+  padding: .375rem .875rem; /* ~py-1 px-3 */
+  border-radius: 9999px;
+  background: #eff6ff; /* blue-50 */
+  border: 1px solid #dbeafe; /* blue-100 */
+  box-shadow: 0 6px 18px rgba(2,6,23,0.06);
+  margin-bottom: 1rem;
+  cursor: pointer;
+  transition: background-color .15s ease, transform .12s ease, color .15s ease;
+  pointer-events: auto !important;
+}
+.project-cta:hover {
+  background: #e0f2fe; /* slightly darker blue-100 */
+  transform: translateY(-1px);
+  color: #1d4ed8 !important; /* blue-700 */
+}
+.project-cta .arrow {
+  transition: transform .12s ease;
+}
+.group:hover .project-cta .arrow {
+  transform: translateX(4px);
+}
