@@ -34,7 +34,20 @@ const RightSidebar = () => {
     const [activeSection, setActiveSection] = useState('hero');
     const location = useLocation();
 
-    const sections = useMemo(() => ROUTE_SECTIONS[location.pathname] || [], [location.pathname]);
+    // Resolve route path robustly (handle HashRouter + hash URLs served by GitHub Pages)
+    const resolvedPath = useMemo(() => {
+        if (ROUTE_SECTIONS[location.pathname]) return location.pathname;
+        if (typeof window !== 'undefined') {
+            const hash = (window.location.hash || '').replace(/^#/, '').split('?')[0];
+            if (hash) {
+                const path = hash.startsWith('/') ? hash : `/${hash}`;
+                if (ROUTE_SECTIONS[path]) return path;
+            }
+        }
+        return location.pathname;
+    }, [location.pathname]);
+
+    const sections = useMemo(() => ROUTE_SECTIONS[resolvedPath] || [], [resolvedPath]);
     const isVisible = sections.length > 0;
 
     // Reset active section on route change
@@ -42,7 +55,7 @@ const RightSidebar = () => {
         if (sections.length > 0) {
             setActiveSection(sections[0].id);
         }
-    }, [location.pathname]);
+    }, [resolvedPath]);
 
     // Scroll Spy Logic
     useEffect(() => {
@@ -123,7 +136,7 @@ const RightSidebar = () => {
                     animate={{ opacity: 1 }}
                     exit={{ opacity: 0 }}
                     transition={{ duration: 0.5 }}
-                    className="hidden md:flex fixed top-0 right-0 h-full w-12 lg:w-48 z-40 flex-col items-end justify-center pointer-events-none"
+                    className="hidden lg:flex fixed top-0 right-0 h-full w-12 lg:w-48 z-40 flex-col items-end justify-center pointer-events-none"
                 >
                     <div className="flex flex-col items-center space-y-6 pointer-events-auto mr-4">
                         <div className={`w-px h-12 ${lineColor} transition-colors duration-300`}></div>
