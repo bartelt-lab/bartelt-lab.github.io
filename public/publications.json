@@ -180,7 +180,7 @@
         "date": "2025-10",
         "image": "/assets/papers/DSEG.png",
         "links": [
-          {"text": "PDF", "url": "https://arxiv.org/abs/2403.13622"},
+          {"text": "PDF", "url": "https://arxiv.org/abs/2403.07733"},
           {"text": "Code", "url": "https://github.com/patrick-knab/DSEG-LIME"}
         ]
       },
