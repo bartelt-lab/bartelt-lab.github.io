@@ -96,6 +96,17 @@ const CoreTeamProjects = () => {
         <div className="bg-gray-50 min-h-screen font-sans">
             {/* Hero Section */}
             <section id="hero" className="relative bg-white pt-24 pb-12 overflow-hidden">
+
+                {/* Subtle rotating decorative visual behind hero text (blurred, non-interactive) */}
+                <motion.div
+                    animate={{ rotate: 360 }}
+                    transition={{ duration: 30, ease: "linear", repeat: Infinity }}
+                    className="absolute left-1/2 -translate-x-1/2 top-6 md:top-8 w-40 h-40 md:w-96 md:h-96 -z-10 pointer-events-none opacity-60 filter blur-sm"
+                >
+                    <div className="absolute inset-0 rounded-full bg-gradient-to-br from-blue-500 to-indigo-600 opacity-20" />
+                    <div className="absolute inset-4 border-2 border-blue-100 rounded-full opacity-40" />
+                    <div className="absolute inset-10 rounded-full bg-gradient-to-tr from-blue-50 to-indigo-50 opacity-60" />
+                </motion.div>
                 <div className="container mx-auto px-4 md:px-8">
                     <div className="flex flex-col lg:flex-row items-center gap-12 text-center lg:text-left">
 
@@ -123,16 +134,7 @@ const CoreTeamProjects = () => {
                             </p>
                         </motion.div>
 
-                        {/* Subtle rotating decorative visual behind hero text (blurred, non-interactive) */}
-                        <motion.div
-                            animate={{ rotate: 360 }}
-                            transition={{ duration: 30, ease: "linear", repeat: Infinity }}
-                            className="absolute left-1/2 -translate-x-1/2 top-6 md:top-8 w-40 h-40 md:w-96 md:h-96 -z-10 pointer-events-none opacity-60 filter blur-sm"
-                        >
-                            <div className="absolute inset-0 rounded-full bg-gradient-to-br from-blue-500 to-indigo-600 opacity-20" />
-                            <div className="absolute inset-4 border-2 border-blue-100 rounded-full opacity-40" />
-                            <div className="absolute inset-10 rounded-full bg-gradient-to-tr from-blue-50 to-indigo-50 opacity-60" />
-                        </motion.div>
+
 
                     </div>
                 </div>
