@@ -35,13 +35,31 @@ const activeProjects = [
 
 const archiveProjects = [
     {
+        id: 'neurocore-dashboard',
+        title: "NeuroCore Dashboard",
+        tag: "MLOps / Monitoring",
+        status: "Archive",
+        video: assetUrl("/assets/videos/NeuroCore_demo.mp4"),
+        description: "A dashboard for orchestrating machine learning training jobs, monitoring GPU and node health via SSH, and visualizing real-time performance analytics across compute clusters.",
+        link: "/core-team-projects/neurocore"
+    },
+    {
+        id: 'stratego-llm-games',
+        title: "Stratego — LLM Based Games",
+        tag: "LLMs / Games",
+        status: "Archive",
+        video: assetUrl("/assets/videos/Stratego - Demo Video (RP 3).mp4"),
+        description: "Explore how different large language models compete in the classic strategy board game Stratego, with automated matchups, head-to-head win comparisons, and gameplay behavior logging to reveal strengths and patterns in decision making.",
+        link: "/core-team-projects/stratego"
+    },
+    {
         id: 'self-driving',
         title: "Self-Driving 1:10",
         tag: "Autonomous Navigation",
         status: "Legacy",
         youtubeId: "wrY34WyTEzo",
         description: "A completed initiative scaling down autonomous driving algorithms for rapid prototyping. Focused on SLAM and path planning in miniature environments.",
-        link: "#"
+        link: "/core-team-projects/self-driving"
     },
     {
         id: 'traffic-network',
@@ -50,7 +68,7 @@ const archiveProjects = [
         status: "Archive",
         video: assetUrl("/assets/videos/TrafficNetworkBuilder.mp4"),
         description: "Interactive tools for constructing and simulating complex traffic networks to rigorously test autonomous systems in virtual environments.",
-        link: "#"
+        link: "/core-team-projects/traffic-network"
     }
 ];
 
@@ -174,7 +192,8 @@ const CoreTeamProjects = () => {
                             The Experience
                         </h2>
                         <h3 className="text-2xl md:text-4xl font-light italic tracking-[0.1em] text-gray-400 uppercase">
-                            WORK HARD 💪 PLAY HARD 🏀
+                            <span className="block md:inline">WORK HARD 💪</span>
+                            <span className="block md:inline">PLAY HARD 🏀</span>
                         </h3>
                         <p className="text-gray-300 max-w-4xl mx-auto mt-8 text-lg leading-relaxed">
                             The absolute highlight of the CTP experience are the two onsite travel weeks—one hosted in Cluj and one in Goslar. These weeks are full-immersion. Students don't just hack together on their AI models; they participate in all-day events where intense coding sessions are balanced with extensive teambuilding activities, cultural exchange, and evening socials. We believe that the best technical innovations come from teams that know how to connect, adapt, and have fun together.
@@ -266,22 +285,22 @@ const CoreTeamProjects = () => {
             </section>
 
             {/* Student Experiences Section */}
-            <section className="py-24 bg-white relative overflow-hidden">
+            <section className="pt-6 pb-20 bg-white relative overflow-hidden">
                 <div className="container mx-auto px-4 md:px-8 relative z-10">
                     <motion.div
                         initial={{ opacity: 0, y: 20 }}
                         whileInView={{ opacity: 1, y: 0 }}
                         viewport={{ once: true }}
                         transition={{ duration: 0.8 }}
-                        className="text-center mb-16"
+                        className="text-center mb-8"
                     >
-                        <h2 className="text-4xl md:text-5xl font-black text-gray-900 mb-6 tracking-tight">
+                        <h2 className="text-4xl md:text-5xl font-black text-gray-900 mb-4 tracking-tight">
                             Student Testimonials
                         </h2>
-                        <div className="h-1.5 w-24 bg-blue-600 rounded-full mx-auto mb-8"></div>
+                        <div className="h-1.5 w-24 bg-blue-600 rounded-full mx-auto mb-4"></div>
                     </motion.div>
 
-                    <div className="grid md:grid-cols-3 gap-8 lg:gap-10 max-w-7xl mx-auto">
+                    <div className="grid md:grid-cols-3 gap-4 lg:gap-6 max-w-7xl mx-auto">
                         {[
                             { src: "/assets/videos/Student-Testim-1.mp4", poster: "" },
                             { src: "/assets/videos/Student-Testim-2.mp4", poster: "" },
@@ -293,7 +312,7 @@ const CoreTeamProjects = () => {
                                 whileInView={{ opacity: 1, y: 0 }}
                                 viewport={{ once: true }}
                                 transition={{ duration: 0.5, delay: index * 0.1 }}
-                                className="group relative bg-gray-900 rounded-2xl overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-300"
+                                className="group relative bg-gray-900 rounded-2xl overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-300 mb-4 last:mb-0 md:mb-0"
                             >
                                 <div className="aspect-video bg-black relative">
                                     <video
@@ -311,14 +330,14 @@ const CoreTeamProjects = () => {
             </section>
 
             {/* Projects Grid Section - Archive */}
-            <section id="archive" className="py-20 bg-white border-t border-gray-100">
+            <section id="archive" className="pt-4 pb-20 bg-white border-t border-gray-100">
                 <div className="container mx-auto px-4 md:px-8">
                     <motion.div
                         initial={{ opacity: 0, y: 20 }}
                         whileInView={{ opacity: 1, y: 0 }}
                         viewport={{ once: true }}
                         transition={{ duration: 0.8 }}
-                        className="text-center mb-16"
+                        className="text-center mb-8"
                     >
                         <h2 className="text-4xl md:text-5xl font-black text-gray-900 mb-6 tracking-tight">
                             Project Archive

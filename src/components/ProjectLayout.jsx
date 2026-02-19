@@ -7,11 +7,15 @@ const ProjectLayout = ({
     status = 'Active',
     tags = [],
     heroImage,
+    heroVideo,
+    heroYouTubeId,
     overview,
     features = [],
     requirements = [],
     offerings = [],
     downloadUrl,
+    // showEvalSection: when false, hide the "How We Evaluate / What We Offer" block
+    showEvalSection = true,
     children
 }) => {
     return (
@@ -57,7 +61,37 @@ const ProjectLayout = ({
                     </div>
 
                     {/* Hero Media */}
-                    {heroImage && (
+                    {heroYouTubeId ? (
+                        <div className="max-w-6xl mx-auto rounded-3xl overflow-hidden shadow-2xl border border-gray-100 mb-20 relative group">
+                            {/* Overlay Gradient */}
+                            <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent pointer-events-none"></div>
+                            <div className="aspect-video">
+                                <iframe
+                                    src={`https://www.youtube.com/embed/${heroYouTubeId}?rel=0`}
+                                    title={title}
+                                    frameBorder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                    allowFullScreen
+                                    className="w-full h-full"
+                                />
+                            </div>
+                        </div>
+                    ) : heroVideo ? (
+                        <div className="max-w-6xl mx-auto rounded-3xl overflow-hidden shadow-2xl border border-gray-100 mb-20 relative group">
+                            {/* Overlay Gradient */}
+                            <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent pointer-events-none"></div>
+                            <video
+                                src={heroVideo}
+                                poster={heroImage || undefined}
+                                className="w-full h-auto object-cover"
+                                controls
+                                muted
+                                loop
+                                playsInline
+                                autoPlay
+                            />
+                        </div>
+                    ) : heroImage && (
                         <div className="max-w-6xl mx-auto rounded-3xl overflow-hidden shadow-2xl border border-gray-100 mb-20 relative group">
                             {/* Overlay Gradient */}
                             <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent pointer-events-none"></div>
@@ -82,58 +116,60 @@ const ProjectLayout = ({
                         </div>
                     </div>
 
-                    {/* Requirements & Offerings Grid */}
-                    <div id="evaluation" className="grid md:grid-cols-2 gap-12 max-w-6xl mx-auto mb-24">
-                        {/* Student Requirements */}
-                        <motion.div
-                            initial={{ opacity: 0, x: -20 }}
-                            whileInView={{ opacity: 1, x: 0 }}
-                            viewport={{ once: true }}
-                            className="bg-gray-900 text-white rounded-3xl p-10 md:p-12 shadow-2xl relative overflow-hidden"
-                        >
-                            <div className="absolute top-0 right-0 p-8 opacity-10 font-black text-9xl leading-none select-none pointer-events-none">
-                                REQ
-                            </div>
-                            <h2 className="text-3xl font-bold mb-8 flex items-center gap-3">
-                                <span>📋</span> How We Evaluate
-                            </h2>
-                            <ul className="space-y-6">
-                                {requirements.map((req, i) => (
-                                    <li key={i} className="flex items-start gap-4">
-                                        <span className="w-6 h-6 rounded-full bg-blue-500 flex items-center justify-center text-xs font-bold flex-shrink-0 mt-0.5">✓</span>
-                                        <span className="text-gray-300 leading-relaxed font-light text-lg">
-                                            {req}
-                                        </span>
-                                    </li>
-                                ))}
-                            </ul>
-                        </motion.div>
+                    {/* Requirements & Offerings Grid (render only when showEvalSection !== false) */}
+                    {showEvalSection !== false && (
+                        <div id="evaluation" className="grid md:grid-cols-2 gap-12 max-w-6xl mx-auto mb-24">
+                            {/* Student Requirements */}
+                            <motion.div
+                                initial={{ opacity: 0, x: -20 }}
+                                whileInView={{ opacity: 1, x: 0 }}
+                                viewport={{ once: true }}
+                                className="bg-gray-900 text-white rounded-3xl p-10 md:p-12 shadow-2xl relative overflow-hidden"
+                            >
+                                <div className="absolute top-0 right-0 p-8 opacity-10 font-black text-9xl leading-none select-none pointer-events-none">
+                                    REQ
+                                </div>
+                                <h2 className="text-3xl font-bold mb-8 flex items-center gap-3">
+                                    <span>📋</span> How We Evaluate
+                                </h2>
+                                <ul className="space-y-6">
+                                    {requirements.map((req, i) => (
+                                        <li key={i} className="flex items-start gap-4">
+                                            <span className="w-6 h-6 rounded-full bg-blue-500 flex items-center justify-center text-xs font-bold flex-shrink-0 mt-0.5">✓</span>
+                                            <span className="text-gray-300 leading-relaxed font-light text-lg">
+                                                {req}
+                                            </span>
+                                        </li>
+                                    ))}
+                                </ul>
+                            </motion.div>
 
-                        {/* What We Offer */}
-                        <motion.div
-                            initial={{ opacity: 0, x: 20 }}
-                            whileInView={{ opacity: 1, x: 0 }}
-                            viewport={{ once: true }}
-                            className="bg-blue-600 text-white rounded-3xl p-10 md:p-12 shadow-2xl relative overflow-hidden"
-                        >
-                            <div className="absolute top-0 right-0 p-8 opacity-10 font-black text-9xl leading-none select-none pointer-events-none">
-                                OFF
-                            </div>
-                            <h2 className="text-3xl font-bold mb-8 flex items-center gap-3">
-                                <span>🚀</span> What We Offer
-                            </h2>
-                            <ul className="space-y-6">
-                                {offerings.map((offering, i) => (
-                                    <li key={i} className="flex items-start gap-4">
-                                        <span className="w-6 h-6 rounded-full bg-white text-blue-600 flex items-center justify-center text-xs font-bold flex-shrink-0 mt-0.5">★</span>
-                                        <span className="text-blue-50 leading-relaxed font-medium text-lg">
-                                            {offering}
-                                        </span>
-                                    </li>
-                                ))}
-                            </ul>
-                        </motion.div>
-                    </div>
+                            {/* What We Offer */}
+                            <motion.div
+                                initial={{ opacity: 0, x: 20 }}
+                                whileInView={{ opacity: 1, x: 0 }}
+                                viewport={{ once: true }}
+                                className="bg-blue-600 text-white rounded-3xl p-10 md:p-12 shadow-2xl relative overflow-hidden"
+                            >
+                                <div className="absolute top-0 right-0 p-8 opacity-10 font-black text-9xl leading-none select-none pointer-events-none">
+                                    OFF
+                                </div>
+                                <h2 className="text-3xl font-bold mb-8 flex items-center gap-3">
+                                    <span>🚀</span> What We Offer
+                                </h2>
+                                <ul className="space-y-6">
+                                    {offerings.map((offering, i) => (
+                                        <li key={i} className="flex items-start gap-4">
+                                            <span className="w-6 h-6 rounded-full bg-white text-blue-600 flex items-center justify-center text-xs font-bold flex-shrink-0 mt-0.5">★</span>
+                                            <span className="text-blue-50 leading-relaxed font-medium text-lg">
+                                                {offering}
+                                            </span>
+                                        </li>
+                                    ))}
+                                </ul>
+                            </motion.div>
+                        </div>
+                    )}
 
                     {/* Additional Content (Children) */}
                     <div id="extra" className="max-w-5xl mx-auto">

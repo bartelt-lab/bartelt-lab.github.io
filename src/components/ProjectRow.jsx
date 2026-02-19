@@ -71,7 +71,17 @@ const ProjectRow = ({ project, index }) => {
                     {description}
                 </p>
 
-                {link && (
+                {link && (/^https?:\/\//.test(link) ? (
+                    <a
+                        href={link}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="group inline-flex items-center gap-2 text-blue-600 font-semibold text-lg hover:text-blue-800 transition-colors"
+                    >
+                        View Project Details
+                        <span className="transform group-hover:translate-x-1 transition-transform">→</span>
+                    </a>
+                ) : (
                     <Link
                         to={link}
                         className="group inline-flex items-center gap-2 text-blue-600 font-semibold text-lg hover:text-blue-800 transition-colors"
@@ -79,7 +89,7 @@ const ProjectRow = ({ project, index }) => {
                         View Project Details
                         <span className="transform group-hover:translate-x-1 transition-transform">→</span>
                     </Link>
-                )}
+                ))}
             </div>
         </motion.div>
     );
