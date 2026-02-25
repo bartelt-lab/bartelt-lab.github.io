@@ -91,7 +91,7 @@ const itemVariants = {
     }
 };
 
-const CoreTeamProjects = () => {
+const AiTeamProjects = () => {
     return (
         <div className="bg-gray-50 min-h-screen font-sans">
             {/* Hero Section */}
@@ -112,13 +112,13 @@ const CoreTeamProjects = () => {
                                 Applied Intelligence
                             </span>
                             <h1 className="text-5xl md:text-6xl font-extrabold text-gray-900 tracking-tight leading-tight mb-6">
-                                CORE Team <br />
+                                AI Team <br />
                                 <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-indigo-600">
                                     Projects
                                 </span>
                             </h1>
                             <p className="text-xl text-gray-500 max-w-2xl mx-auto lg:mx-0 leading-relaxed">
-                                The CORE Team Projects (CTP) bridge academia, cutting-edge AI/ML research, and international collaboration.
+                                The AI Team Projects (ATP) bridge academia, cutting-edge AI/ML research, and international collaboration.
                                 Jointly organized by Clausthal University of Technology (Goslar) and Universitatea Babeș-Bolyai (Cluj-Napoca),
                                 this semester-long program challenges mixed teams to
                                 build real-world AI and ML solutions.
@@ -146,7 +146,7 @@ const CoreTeamProjects = () => {
                                 <div className="absolute inset-8 border border-gray-100 rounded-full animate-[spin_15s_linear_infinite_reverse] pointer-events-none"></div>
                                 <div className="absolute inset-0 bg-gradient-to-tr from-blue-50 to-indigo-50 rounded-full blur-3xl opacity-60 pointer-events-none"></div>
 
-                                {/* Center \"Core\" Cube - 3D Rotation */}
+                                {/* Center "Core" Cube - 3D Rotation */}
                                 <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 perspective-500">
                                     <motion.div
                                         animate={{
@@ -181,7 +181,7 @@ const CoreTeamProjects = () => {
                 </div>
             </section>
 
-            {/* Life at CORE / Experience Section */}
+            {/* Life at AI / Experience Section */}
             <section className="py-16 bg-gray-900 text-white overflow-hidden">
                 <div className="container mx-auto px-4 md:px-8">
                     <motion.div
@@ -199,7 +199,7 @@ const CoreTeamProjects = () => {
                             <span className="block md:inline">PLAY HARD 🏀</span>
                         </h3>
                         <p className="text-gray-300 max-w-4xl mx-auto mt-8 text-lg leading-relaxed">
-                            The absolute highlight of the CTP experience are the two onsite travel weeks—one hosted in Cluj and one in Goslar. These weeks are full-immersion. Students don't just hack together on their AI models; they participate in all-day events where intense coding sessions are balanced with extensive teambuilding activities, cultural exchange, and evening socials. We believe that the best technical innovations come from teams that know how to connect, adapt, and have fun together.
+                            The absolute highlight of the ATP experience are the two onsite travel weeks—one hosted in Cluj and one in Goslar. These weeks are full-immersion. Students don't just hack together on their AI models; they participate in all-day events where intense coding sessions are balanced with extensive teambuilding activities, cultural exchange, and evening socials. We believe that the best technical innovations come from teams that know how to connect, adapt, and have fun together.
                         </p>
                     </motion.div>
 
@@ -378,4 +378,4 @@ const CoreTeamProjects = () => {
     );
 };
 
-export default CoreTeamProjects;
+export default AiTeamProjects;

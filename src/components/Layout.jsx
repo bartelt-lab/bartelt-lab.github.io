@@ -53,7 +53,7 @@ const Layout = ({ children }) => {
                                 <Link to="/join-us">Join Us</Link>
                             </li>
                             <li className="nav-item">
-                                <Link to="/core-team-projects">CORE Projects</Link>
+                                <Link to="/core-team-projects">AI Team Projects</Link>
                             </li>
                         </ul>
                     </div>

@@ -17,7 +17,7 @@ const JoinUs = lazy(() => import('./pages/JoinUs'));
 const Projects = lazy(() => import('./pages/Projects'));
 const Seminar = lazy(() => import('./pages/Seminar'));
 const Theses = lazy(() => import('./pages/Theses'));
-const CoreTeamProjects = lazy(() => import('./pages/CoreTeamProjects'));
+const AiTeamProjects = lazy(() => import('./pages/AiTeamProjects'));
 
 // Scroll to top on route change
 function ScrollToTop() {
@@ -45,7 +45,7 @@ function App() {
           <Route path="/projects" element={<Projects />} />
           <Route path="/seminar" element={<Seminar />} />
           <Route path="/theses" element={<Theses />} />
-          <Route path="/core-team-projects" element={<CoreTeamProjects />} />
+          <Route path="/core-team-projects" element={<AiTeamProjects />} />
           <Route path="/core-team-projects/dynamo" element={<DynamoProject />} />
           <Route path="/core-team-projects/ai4ai" element={<AI4AIProject />} />
           <Route path="/core-team-projects/vergabepilot" element={<VergabepilotProject />} />
