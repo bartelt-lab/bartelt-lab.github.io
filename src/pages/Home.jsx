@@ -123,10 +123,12 @@ const members = [
         ]
     },
     {
-        name: 'Markus Herre', role: 'Incoming PhD Student', image: assetUrl('/assets/members/herre.jpeg'),
+        name: 'Markus Herre', role: 'Research Associate', image: assetUrl('/assets/members/herre.jpeg'),
         link: '#member/markus',
         socials: [
-            { url: 'https://www.linkedin.com/in/markus-herre/', icon: 'fa fa-linkedin' }
+            { url: 'https://www.linkedin.com/in/markus-herre/', icon: 'fa fa-linkedin' },
+            { url: 'mailto:Markus.herre@tu-clausthal.de', icon: 'fa fa-envelope' },
+            { url: 'https://m-herre.github.io/', icon: 'fa fa-globe' }
         ]
     },
     {
