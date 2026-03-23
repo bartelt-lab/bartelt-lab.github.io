@@ -1,3 +1,49 @@
+const researchAreas = [
+    {
+        supervisor: 'Markus Herre',
+        title: 'Tabular Data / Tabular Foundation Models'
+    },
+    {
+        supervisor: 'Paul König',
+        title: 'Adversarial Attacks & Model Robustness'
+    },
+    {
+        supervisor: 'Kristian Kolthoff',
+        title: 'AI for Software Engineering',
+        content: 'This topic area explores the application of artificial intelligence to support and automate key activities in software engineering. Research focuses particularly on automated requirements engineering, AI-assisted GUI prototyping, and adaptive user interfaces that automatically evolve based on user needs, contexts, and changing requirements. The goal is to improve the efficiency, quality, and usability of modern software systems.'
+    },
+    {
+        supervisor: 'Mihail Birsan',
+        title: 'Mathematical Theory behind ML'
+    },
+    {
+        supervisor: 'Tobias Sesterhenn',
+        title: 'Generative AI for Building Information Modeling (BIM)',
+        content: 'Recent advances in generative AI and large language models (LLMs) open new possibilities for interacting with and generating Building Information Models. In particular, current research investigates how natural language, semantic building models (e.g., IFC), and automated design processes can be connected to support digital planning workflows.\n\nThis topic explores methods that enable AI systems to interpret, generate, or modify BIM models. Research may focus on algorithmic approaches, system architectures, or evaluation methods that support reliable and transparent interaction between AI systems and BIM data.',
+        directions: [
+            'Generating or editing BIM/IFC models from natural language or structured requirements',
+            'Ensuring semantic consistency and correctness in generated BIM models',
+            'AI agents for interacting with BIM software and model servers',
+            'Benchmarks and evaluation methods for generative BIM systems',
+            'Integration of design rules, regulations, or compliance checks',
+            'Multimodal approaches combining text, geometry, and graph-based BIM data'
+        ]
+    },
+    {
+        supervisor: 'Sascha Marton',
+        title: 'Deep Learning for Tabular Data & Tabular Foundation Models'
+    },
+    {
+        supervisor: 'Janis Zenkner',
+        title: 'Combining Transduction and Induction in Programming by Example',
+        content: 'Inductive methods aim to learn general rules from data, whereas transductive methods focus on making accurate predictions for given instances without necessarily constructing a fully general model. The goal is to combine the strengths of both approaches while compensating for their individual limitations, leading to more robust and flexible learning systems.\n\nWe investigate this idea in the domain of Programming by Example, where solutions are synthesized from input–output examples. This domain provides a suitable testbed for studying how transductive and inductive techniques can be combined to improve generalization, efficiency, and reliability.'
+    },
+    {
+        supervisor: 'Patrick Knab',
+        title: 'Concept Based Deep Learning & Computer Vision in the Wild'
+    }
+];
+
 const bachelorTheses = [
     {
         title: 'Bob the Language Model: Can LLMs Construct Buildings? (also possible to work on as a research assistant)',
@@ -161,28 +207,110 @@ const Theses = () => {
                                 <div className="row">
                                     <div className="col-sm-12">
                                         <div style={{ marginTop: '1.5em' }}>
+                                            <h4>Application</h4>
+                                            <p>
+                                                We offer thesis topics (subject to availability) in the research areas listed below.
+                                                To apply, send your topic of interest, Transcript of Records, and CV to{' '}
+                                                <a href="mailto:patrick.knab@tu-clausthal.de">patrick.knab@tu-clausthal.de</a>.
+                                            </p>
                                             <ol>
-                                                <li>
-                                                    <strong>Research Areas:</strong> Topics (subject to availability) are offered in: Reinforcement Learning, Program Synthesis, Computer Vision, Mechanistic Interpretability, GUI Prototyping, Explainability, Autonomous Driving.<br />
-                                                    To apply, send your topic of interest, Transcript of Records, and CV to{' '}
-                                                    <a href="mailto:patrick.knab@tu-clausthal.de">patrick.knab@tu-clausthal.de</a>.
-                                                </li>
-                                                <li>
-                                                    <strong>Writing Expose:</strong> If a topic is available, the supervising researcher will help define a concrete topic. You must then submit an expose including:
-                                                    <ul>
-                                                        <li>Background & Motivation</li>
-                                                        <li>Goals of the Thesis</li>
-                                                        <li>Work Plan (at least 2 pages, excl. references)</li>
-                                                    </ul>
-                                                    Once accepted, you may begin your thesis project.
-                                                </li>
-                                                <li>
-                                                    <strong>Thesis Project:</strong> Maintain regular meetings with your supervisor and make consistent progress. Use the provided LaTeX template and write in English.
-                                                </li>
-                                                <li>
-                                                    <strong>Submission:</strong> Submit 2 printed copies of your report and 2 CDs/USB sticks with code, data, and installation instructions to the secretary's office (Wallstr. 6, Goslar).
-                                                </li>
+                                                <li>Submit your application</li>
+                                                <li>Write and submit an exposé</li>
+                                                <li>Receive approval of your exposé</li>
+                                                <li>Register your thesis with the Studienbüro</li>
                                             </ol>
+
+                                            <h4>Exposé</h4>
+                                            <p>
+                                                Use the provided proposal template; maximum 2 pages (excluding references).
+                                                Include your name and a preliminary title at the top.
+                                                The exposé consists of three sections:
+                                            </p>
+                                            <ul>
+                                                <li><strong>Introduction.</strong> A short paragraph sketching the topic and its relevance.</li>
+                                                <li><strong>Background.</strong> A compact description of relevant concepts leading clearly to the "what and why" of your proposal. Arguments must be grounded in cited literature — do not speculate. Introduction and Background together should not exceed one page.</li>
+                                                <li><strong>Goals and Work Plan.</strong> Outline your research questions, planned approach, possible outcomes, evaluation strategy, and a realistic timeline with milestones. Distinguish must-have from nice-to-have items. Write scientifically: prefer "I will investigate whether X can improve Y" over "I will improve Y with X."</li>
+                                            </ul>
+                                            <p>Avoid formulas, algorithms, and low-level technical details throughout — prefer high-level, intuitive descriptions. Completing the exposé is the first milestone of your thesis.</p>
+
+                                            <h4>Formatting</h4>
+                                            <ul>
+                                                <li>Language: English, using the official LaTeX template (available from your supervisor)</li>
+                                                <li>Length (excluding references and appendices): Bachelor's 30–50 pages, Master's 50–70 pages</li>
+                                            </ul>
+
+                                            <h4>Supervision</h4>
+                                            <ul>
+                                                <li>You are responsible for scheduling all meetings</li>
+                                                <li>Schedule a mid-term presentation at the halfway point of your thesis</li>
+                                                <li>Meet with your advisor at least once per month</li>
+                                                <li>Come prepared with slides and results that demonstrate meaningful progress</li>
+                                                <li>Send slides to your supervisor in advance of each meeting</li>
+                                                <li>Note: failing to schedule and prepare meetings can negatively affect your grade</li>
+                                            </ul>
+
+                                            <h4>Final Presentation</h4>
+                                            <ul>
+                                                <li>Scheduled by the Studienbüro after submission</li>
+                                                <li>After the presentation, 3–5 comprehension questions will be asked</li>
+                                                <li>You have 30 seconds to consult your slides or thesis before answering each question</li>
+                                            </ul>
+
+                                            <h4>Submission</h4>
+                                            <ul>
+                                                <li>For binding requirements and deadlines, consult your Studienordnung or contact the Prüfungsamt</li>
+                                                <li>Submit source code, data, and setup instructions via an online repository (e.g. GitHub) or optionally CD-ROM/USB stick</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            {/* Research Areas Section */}
+            <section id="research-areas" className="home-section">
+                <div className="container">
+                    <div className="row">
+                        <div className="col-xs-12 col-md-3 section-heading">
+                            <h1>Research Areas</h1>
+                        </div>
+                        <div className="col-xs-12 col-md-9">
+                            <div className="course-list-item" itemScope itemType="http://schema.org/CreativeWork">
+                                <div className="row">
+                                    <div className="col-sm-12">
+                                        <div className="course-description">
+                                            Each group member supervises theses in their area of research. Click on a topic to learn more.
+                                        </div>
+                                        <div className="seminar-details" style={{ marginTop: '1.5em' }}>
+                                            {researchAreas.map((area, index) => (
+                                                area.content || area.directions ? (
+                                                    <details key={index} style={{ marginBottom: '1em' }}>
+                                                        <summary style={{ cursor: 'pointer', position: 'relative', paddingLeft: '1.2em', fontWeight: 'bold', lineHeight: '1.4' }}>
+                                                            {area.title} <span style={{ fontWeight: 'normal', color: '#555' }}>— {area.supervisor}</span>
+                                                        </summary>
+                                                        {area.content && area.content.split('\n\n').map((p, i) => (
+                                                            <p key={i}>{p}</p>
+                                                        ))}
+                                                        {area.directions && (
+                                                            <>
+                                                                <strong>Possible thesis directions:</strong>
+                                                                <ul>
+                                                                    {area.directions.map((d, i) => (
+                                                                        <li key={i}>{d}</li>
+                                                                    ))}
+                                                                </ul>
+                                                            </>
+                                                        )}
+                                                    </details>
+                                                ) : (
+                                                    <div key={index} style={{ marginBottom: '0.75em', paddingLeft: '1.2em', lineHeight: '1.4' }}>
+                                                        <strong>{area.title}</strong> <span style={{ color: '#555' }}>— {area.supervisor}</span>
+                                                    </div>
+                                                )
+                                            ))}
                                         </div>
                                     </div>
                                 </div>

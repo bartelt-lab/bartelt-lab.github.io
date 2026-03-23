@@ -118,9 +118,17 @@ const Seminar = () => {
             <section id="intro-ai" className="home-section">
                 <div className="container">
                     <p>
-                        We offer seminars that dive into current research questions and recent developments in our field.
-                        These are a great opportunity to engage with cutting-edge topics, practice critical thinking, and get a feel for ongoing work in the lab and beyond.
-                        Below is a list of seminar topics we have recently offered or are planning for upcoming terms.
+                        We are currently introducing a new seminar format. The previous format — where students independently wrote seminar papers — has been discontinued
+                        because it no longer fulfilled its purpose: students rarely developed genuine understanding of the material, and the format incentivized AI-generated work.
+                    </p>
+                    <p>
+                        The new format is built around two stages: a supervised reading and comprehension phase, followed by an independent literature research phase.
+                        The goal is that students actually engage with and understand the research they are working on — and that supervisors benefit from the exchange too.
+                    </p>
+                    <p>
+                        Seminars for the upcoming term will be announced here once the new format is finalized.
+                        If you are interested, contact us at{' '}
+                        <a href="mailto:patrick.knab@tu-clausthal.de">patrick.knab@tu-clausthal.de</a>.
                     </p>
                 </div>
             </section>
@@ -137,17 +145,49 @@ const Seminar = () => {
                                 <div className="row">
                                     <div className="col-sm-12">
                                         <div style={{ marginTop: '1.5em' }}>
+                                            <h4>Step 1: Supervised Reading Phase</h4>
+                                            <ol>
+                                                <li>Your supervisor sends you a set of papers to read and understand.</li>
+                                                <li>
+                                                    After 3 weeks, your understanding is assessed in an oral comprehension test with your supervisor:
+                                                    <ul>
+                                                        <li>At least 2 questions per paper: one testing general understanding, one testing deeper understanding</li>
+                                                        <li>Example questions are provided with one of the papers so you know what to expect</li>
+                                                    </ul>
+                                                </li>
+                                                <li>You propose 3 possible seminar topic ideas based on the material.</li>
+                                            </ol>
+
+                                            <h4>Step 2: Independent Literature Research</h4>
                                             <ol>
                                                 <li>
-                                                    <strong>Application:</strong> Send your Transcript of Records (CV optional) and topic preferences to{' '}
-                                                    <a href="mailto:patrick.knab@tu-clausthal.de">patrick.knab@tu-clausthal.de</a>.
+                                                    We provide guidance on how to conduct a literature search:
+                                                    <ul>
+                                                        <li>Tools: ConnectedPapers, citation chains, and more</li>
+                                                        <li>Quality criteria: how to identify peer-reviewed and high-quality papers</li>
+                                                        <li>Example seminar papers that demonstrate what good work looks like</li>
+                                                    </ul>
                                                 </li>
-                                                <li><strong>Selection:</strong> You will be informed whether you have been accepted due to limited slots.</li>
-                                                <li><strong>Kick-Off Meeting:</strong> Introductory session & milestone schedule announcement.</li>
-                                                <li><strong>Milestone 1:</strong> Submit your seminar paper (~2.5 months in).</li>
-                                                <li><strong>Milestone 2:</strong> Write two peer reviews.</li>
-                                                <li><strong>Milestone 3:</strong> Present your paper to the group.</li>
-                                                <li><strong>Milestone 4:</strong> Submit the camera-ready paper & change log.</li>
+                                                <li>
+                                                    You independently research your chosen topic:
+                                                    <ul>
+                                                        <li>Find related work</li>
+                                                        <li>Complete a transfer task (e.g., categorize papers into a taxonomy)</li>
+                                                    </ul>
+                                                </li>
+                                            </ol>
+
+                                            <h4>Step 3–5: Submission, Presentation, Final Submission</h4>
+                                            <ol start="3">
+                                                <li><strong>Submit</strong> your seminar paper.</li>
+                                                <li>
+                                                    <strong>Present</strong> your work:
+                                                    <ul>
+                                                        <li>Presentation: max 10 minutes</li>
+                                                        <li>Questions: 20 minutes</li>
+                                                    </ul>
+                                                </li>
+                                                <li><strong>Final submission</strong> of the revised seminar paper.</li>
                                             </ol>
                                         </div>
                                     </div>
@@ -163,7 +203,7 @@ const Seminar = () => {
                 <div className="container">
                     <div className="row">
                         <div className="col-xs-12 col-md-3 section-heading">
-                            <h1>Seminar Topics</h1>
+                            <h1>Past Topics</h1>
                             <p style={{ fontSize: '0.9em', color: '#666' }}>Winter Semester 2025</p>
                         </div>
                         <div className="col-xs-12 col-md-9">
@@ -171,7 +211,7 @@ const Seminar = () => {
                                 <div className="row">
                                     <div className="col-sm-12">
                                         <div className="course-description">
-                                            The following seminar topics are available. Click on each to expand the full description and objectives.
+                                            The following topics were offered in the previous semester. They are listed here for reference.
                                         </div>
                                         <div className="seminar-details" style={{ marginTop: '1.5em' }}>
                                             {seminarTopics.map((topic, index) => (
