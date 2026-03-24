@@ -523,9 +523,9 @@ const Teaching = ({ initialSection }) => {
                 <div className="container">
                     <h1>Teaching</h1>
                     <p>
-                        This page brings together our teaching offer, the updated seminar format, and the current
-                        thesis process. It is designed to help students quickly understand what we offer, how the
-                        process works, and which research areas they can apply to.
+                        This page gives an overview of our courses, seminars, and thesis opportunities, including
+                        the current seminar format and thesis process. It is meant to help students quickly see what
+                        we offer, how to apply, and which topics are available.
                     </p>
 
                     <div className="teaching-quick-links">
