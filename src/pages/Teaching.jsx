@@ -186,6 +186,17 @@ const SectionBlock = ({ title, intro, topContent, children, id }) => (
 const Teaching = ({ initialSection }) => {
     const location = useLocation();
 
+    const scrollToSection = (targetId) => {
+        const element = document.getElementById(targetId);
+        if (!element) {
+            return;
+        }
+
+        const offset = 82;
+        const top = element.getBoundingClientRect().top + window.scrollY - offset;
+        window.scrollTo({ top, behavior: 'smooth' });
+    };
+
     useEffect(() => {
         const targetId = location.hash ? location.hash.slice(1) : initialSection;
 
@@ -194,12 +205,7 @@ const Teaching = ({ initialSection }) => {
         }
 
         window.requestAnimationFrame(() => {
-            const element = document.getElementById(targetId);
-            if (element) {
-                const offset = 82;
-                const top = element.getBoundingClientRect().top + window.scrollY - offset;
-                window.scrollTo({ top, behavior: 'smooth' });
-            }
+            scrollToSection(targetId);
         });
     }, [initialSection, location.hash]);
 
@@ -258,7 +264,7 @@ const Teaching = ({ initialSection }) => {
                 .teaching-quick-links {
                     grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
                 }
-                .teaching-quick-links a,
+                .teaching-quick-links button,
                 .teaching-card,
                 .teaching-timeline-card,
                 .teaching-topic-card,
@@ -267,16 +273,20 @@ const Teaching = ({ initialSection }) => {
                     border: 1px solid rgba(31, 45, 61, 0.08);
                     box-shadow: 0 18px 40px rgba(36, 54, 80, 0.08);
                 }
-                .teaching-quick-links a {
+                .teaching-quick-links button {
                     display: block;
+                    width: 100%;
                     padding: 16px 18px;
                     background: rgba(255, 255, 255, 0.8);
+                    border: 1px solid rgba(31, 45, 61, 0.08);
                     color: #1f2d3d;
                     font-weight: 700;
                     text-decoration: none;
+                    text-align: left;
+                    cursor: pointer;
                     transition: transform 0.18s ease, box-shadow 0.18s ease;
                 }
-                .teaching-quick-links a:hover {
+                .teaching-quick-links button:hover {
                     transform: translateY(-2px);
                     box-shadow: 0 22px 48px rgba(36, 54, 80, 0.12);
                 }
@@ -530,7 +540,9 @@ const Teaching = ({ initialSection }) => {
 
                     <div className="teaching-quick-links">
                         {quickLinks.map((item) => (
-                            <a key={item.href} href={item.href}>{item.label}</a>
+                            <button key={item.href} type="button" onClick={() => scrollToSection(item.href.slice(1))}>
+                                {item.label}
+                            </button>
                         ))}
                     </div>
                 </div>
