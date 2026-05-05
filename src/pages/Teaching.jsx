@@ -579,6 +579,9 @@ const Teaching = ({ initialSection }) => {
                             <a href="mailto:patrick.knab@tu-clausthal.de">patrick.knab@tu-clausthal.de</a>.
                             {' '}You can also include a short CV if relevant.
                         </p>
+                        <p>
+                            Please allow 2-3 weeks for a response after your initial request.
+                        </p>
                     </div>
                 }
                 intro="The seminar process is organized in two stages: first a guided reading phase, then an independent research phase, followed by submission and presentation."
@@ -608,6 +611,9 @@ const Teaching = ({ initialSection }) => {
                         <p>
                             Send your topic of interest, Transcript of Records, and CV to{' '}
                             <a href="mailto:patrick.knab@tu-clausthal.de">patrick.knab@tu-clausthal.de</a>.
+                        </p>
+                        <p>
+                            Please allow 2-3 weeks for a response after your initial request.
                         </p>
                     </div>
                 }
