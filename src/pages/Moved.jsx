@@ -43,7 +43,8 @@ const Moved = () => {
             />
             <h1 style={{ fontSize: '2rem', fontWeight: 700, margin: 0 }}>We&rsquo;ve moved</h1>
             <p style={{ fontSize: '1.125rem', maxWidth: '34rem', lineHeight: 1.6, margin: 0, color: '#444' }}>
-                The CORE research group website of TU Clausthal now lives at{' '}
+                The CORE research group at TU Clausthal is now part of the
+                CORE Network. Our website has a new home at{' '}
                 <strong>core-network.ai</strong>.
             </p>
             <a
@@ -59,10 +60,10 @@ const Moved = () => {
                     fontSize: '1rem',
                 }}
             >
-                Go to the new site &rarr;
+                Continue to the new site &rarr;
             </a>
             <p style={{ fontSize: '0.875rem', color: '#888', margin: 0 }} aria-live="polite">
-                Redirecting in {secondsLeft}s&hellip;
+                Redirecting you in {secondsLeft}s&hellip;
             </p>
         </main>
     );
