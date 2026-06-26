@@ -1,60 +1,9 @@
-import { Routes, Route, useLocation } from 'react-router-dom';
-import { lazy, Suspense, useEffect } from 'react';
-import Layout from './components/Layout';
-import Home from './pages/Home';
-import DynamoProject from './pages/projects/DynamoProject';
-import AI4AIProject from './pages/projects/AI4AIProject';
-import VergabepilotProject from './pages/projects/VergabepilotProject';
-import NeuroCoreProject from './pages/projects/NeuroCoreProject';
-import StrategoProject from './pages/projects/StrategoProject';
-import TrafficNetworkProject from './pages/projects/TrafficNetworkProject';
-import SelfDrivingProject from './pages/projects/SelfDrivingProject';
+import Moved from './pages/Moved';
 
-// Lazy-load pages the user may not visit — splits them into separate chunks
-const Publications = lazy(() => import('./pages/Publications'));
-const Teaching = lazy(() => import('./pages/Teaching'));
-const JoinUs = lazy(() => import('./pages/JoinUs'));
-const Projects = lazy(() => import('./pages/Projects'));
-const AiTeamProjects = lazy(() => import('./pages/AiTeamProjects'));
-
-// Scroll to top on route change
-function ScrollToTop() {
-  const { pathname } = useLocation();
-  useEffect(() => { window.scrollTo(0, 0); }, [pathname]);
-  return null;
-}
-
+// This site has moved to the CORE Network (core-network.ai/#/tuc).
+// Every route now renders the redirect notice; the old pages remain in git history.
 function App() {
-  return (
-    <Layout>
-      <ScrollToTop />
-      <Suspense fallback={
-        <section className="home-section">
-          <div className="container" style={{ minHeight: '60vh', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
-            <p>Loading...</p>
-          </div>
-        </section>
-      }>
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/publications" element={<Publications />} />
-          <Route path="/teaching" element={<Teaching />} />
-          <Route path="/join-us" element={<JoinUs />} />
-          <Route path="/projects" element={<Projects />} />
-          <Route path="/seminar" element={<Teaching initialSection="seminars" />} />
-          <Route path="/theses" element={<Teaching initialSection="theses" />} />
-          <Route path="/core-team-projects" element={<AiTeamProjects />} />
-          <Route path="/core-team-projects/dynamo" element={<DynamoProject />} />
-          <Route path="/core-team-projects/ai4ai" element={<AI4AIProject />} />
-          <Route path="/core-team-projects/vergabepilot" element={<VergabepilotProject />} />
-          <Route path="/core-team-projects/neurocore" element={<NeuroCoreProject />} />
-          <Route path="/core-team-projects/stratego" element={<StrategoProject />} />
-          <Route path="/core-team-projects/traffic-network" element={<TrafficNetworkProject />} />
-          <Route path="/core-team-projects/self-driving" element={<SelfDrivingProject />} />
-        </Routes>
-      </Suspense>
-    </Layout>
-  );
+  return <Moved />;
 }
 
 export default App;
